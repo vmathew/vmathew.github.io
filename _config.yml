@@ -1,6 +1,6 @@
-title: "Vivek's Blog"
+title: "Human in the Cloud"
 author: "Vivek Mathew"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Exploring life, family, and innovation — one cloud at a time." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -29,6 +29,15 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag    # add this one for metadata
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/page:num"
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
 
 titles_from_headings:
   strip_title: true
@@ -39,4 +48,6 @@ defaults:
       path: ""
       type: post
     values:
-      tags: Other
+      layout: post
+      tags: []
+      categories: [tech, travel, family, sports]
