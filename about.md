@@ -1,3 +1,9 @@
+---
+layout: default
+title: "About"
+permalink: /about/
+---
+
 ## 👋 About Me
 
 Hi, I'm **Vivek Mathew**, a Principal Platform Engineer working in Fifth Third bank.
