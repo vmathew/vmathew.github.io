@@ -3,7 +3,7 @@ layout: post
 title: "AI Governance Is the New Cloud Security"
 date: 2025-11-02
 categories: [AI, Governance]
-tags: [AI Governance, Responsible AI, Cloud Security, ]
+tags: [AI Governance, Responsible AI, Cloud Security]
 description: "Exploring the foundations of responsible AI and why governance is the new form of security in the era of intelligent systems."
 author: Vivek Mathew
 ---
