@@ -25,12 +25,12 @@ We worried about encryption, access controls, and compliance frameworks.
 
 Today, the challenge is different. We’re no longer just managing systems, we’re managing intelligence.
 
-Large language models and generative AI systems can analyze, summarize, and create information faster than any team could.  
+Large language models and generative AI systems can analyze, summarize, and create information faster than humans ever could.  
 But they can also make confident mistakes, reveal sensitive information, or amplify bias.  
 That changes how we think about risk.
 
-AI is not just another workload.  
-It’s a decision engine that learns from your data — and sometimes imagines things that aren’t there.  
+AI isn’t just another workload.
+It’s a decision engine that learns from your data and sometimes imagines things that aren’t really there, a behavior often called hallucinating.
 That means the old ways of thinking about security no longer fit.
 
 ---
@@ -93,7 +93,7 @@ AI needs the same shared understanding.
 | Customization | Organization | Filters and validates domain-specific data |
 | Usage and Decisions | End User | Applies human review and ethical judgment |
 
-When ownership isn’t clear, governance gaps appear — and risks often go unnoticed until it’s too late.
+When ownership isn’t clear, governance gaps emerge and risks often go unnoticed until it’s too late.
 
 ---
 
