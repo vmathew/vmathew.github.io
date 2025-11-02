@@ -108,12 +108,12 @@ Organizations that treat governance as an enabler rather than an obstacle will m
 
 In the end, trust will become the most valuable competitive advantage any organization can have.
 
----
+<!-- ---
 
 ### 💬 Let’s Discuss
 
 How is your organization approaching AI governance today?  
-Do you see it as a compliance task, or as an opportunity to lead with trust and accountability?
+Do you see it as a compliance task, or as an opportunity to lead with trust and accountability? -->
 
 ---
 
