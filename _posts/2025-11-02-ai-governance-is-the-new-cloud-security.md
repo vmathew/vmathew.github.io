@@ -35,9 +35,9 @@ That means the old ways of thinking about security no longer fit.
 
 ---
 
-## 🧱 The Three Foundations of Responsible AI
+## 🏛️ The Three Foundations of Responsible AI
 
-### 1️⃣ Clear Purpose and Policy
+### 🧭 Clear Purpose and Policy
 
 Responsible AI starts with intent.  
 Before you build or deploy an AI system, it helps to define what you want it to achieve and what boundaries it should respect.
@@ -52,7 +52,7 @@ Policies don’t slow innovation. They give it direction.
 
 ---
 
-### 2️⃣ Strong Technical Guardrails
+### 🛡️ Strong Technical Guardrails
 
 Just like we secure cloud systems with encryption and access control, AI systems need their own layer of protection.
 
@@ -66,7 +66,7 @@ These safeguards help creativity stay safe and reliable.
 
 ---
 
-### 3️⃣ A Culture of Accountability
+### 🤝 A Culture of Accountability
 
 Even the best-designed framework will fail if the culture doesn’t support it.  
 Responsible AI is not a job for one team — it’s everyone’s responsibility.
@@ -97,7 +97,7 @@ When ownership isn’t clear, governance gaps emerge and risks often go unnotice
 
 ---
 
-## 🚀 Moving Forward
+## 🌟 Moving Forward
 
 Responsible AI is not about slowing progress.  
 It’s about building trust in what we create.
