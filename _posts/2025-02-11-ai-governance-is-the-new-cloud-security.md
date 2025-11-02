@@ -1,4 +1,4 @@
-# AI Governance Is the New Cloud Security: Foundations for Responsible AI
+# AI Governance Is the New Cloud Security
 
 Artificial Intelligence (AI) is changing how we work, build, and make decisions.  
 But without the right guardrails, it can quickly become unpredictable.  
