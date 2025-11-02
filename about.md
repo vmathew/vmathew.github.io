@@ -18,6 +18,7 @@ This blog shares insights about:
 - AIOps
 
 When I’m not building products, I enjoy travelling and spending time with family.
+
 ---
 
 ### Passionate about
