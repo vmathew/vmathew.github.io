@@ -50,4 +50,4 @@ defaults:
     values:
       layout: post
       tags: []
-      categories: [tech, travel, family, sports]
+      categories: [tech]
