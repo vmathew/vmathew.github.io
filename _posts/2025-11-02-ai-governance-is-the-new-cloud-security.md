@@ -9,6 +9,7 @@ author: Vivek Mathew
 ---
 
 # AI Governance Is the New Cloud Security
+![alt text](image.png)
 
 Artificial Intelligence (AI) is changing how we work, build, and make decisions.  
 But without the right guardrails, it can quickly become unpredictable.  
@@ -86,6 +87,8 @@ In the cloud, we learned the idea of shared responsibility.
 The provider protects the cloud itself, and the organization protects what runs inside it.
 
 AI needs the same shared understanding.
+
+![alt text](image-1.png)
 
 | **Layer** | **Who’s Responsible** | **Example** |
 |------------|------------------------|--------------|
