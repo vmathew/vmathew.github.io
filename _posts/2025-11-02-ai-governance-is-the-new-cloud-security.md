@@ -38,6 +38,8 @@ That means the old ways of thinking about security no longer fit.
 
 ## 🏛️ The Three Foundations of Responsible AI
 
+![AI governance title image]({{ '/assets/img/image.png' | relative_url }})
+![AI governance title image](/assets/img/image.png)
 ### 🧭 Clear Purpose and Policy
 
 Responsible AI starts with intent.  
