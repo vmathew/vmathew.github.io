@@ -90,7 +90,7 @@ The provider protects the cloud itself, and the organization protects what runs 
 
 AI needs the same shared understanding.
 
-![Shared Responsibility for AI image]({{ '/assets/img/image-2.png' | relative_url }})
+![Shared Responsibility for AI image]({{ '/assets/img/image-1.png' | relative_url }})
 
 | **Layer** | **Who’s Responsible** | **Example** |
 |------------|------------------------|--------------|
