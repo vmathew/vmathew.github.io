@@ -9,7 +9,7 @@ author: Vivek Mathew
 ---
 
 # AI Governance Is the New Cloud Security
-![alt text](image.png)
+![AI governance title image]({{ '/assets/img/image.png' | relative_url }})
 
 Artificial Intelligence (AI) is changing how we work, build, and make decisions.  
 But without the right guardrails, it can quickly become unpredictable.  
@@ -38,8 +38,8 @@ That means the old ways of thinking about security no longer fit.
 
 ## 🏛️ The Three Foundations of Responsible AI
 
-![AI governance title image]({{ '/assets/img/image.png' | relative_url }})
-![AI governance title image](/assets/img/image.png)
+![Responsible AI image]({{ '/assets/img/image-3.png' | relative_url }})
+
 ### 🧭 Clear Purpose and Policy
 
 Responsible AI starts with intent.  
@@ -90,7 +90,7 @@ The provider protects the cloud itself, and the organization protects what runs 
 
 AI needs the same shared understanding.
 
-![alt text](image-1.png)
+![Shared Responsibility for AI image]({{ '/assets/img/image-2.png' | relative_url }})
 
 | **Layer** | **Who’s Responsible** | **Example** |
 |------------|------------------------|--------------|
