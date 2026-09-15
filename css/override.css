@@ -692,3 +692,17 @@ hr {
   color: var(--text);
 }
 .topic-link:hover { color: var(--accent); text-decoration: none; }
+
+/* --- Home lede ------------------------------------------------------------ */
+
+.page-content > .wrapper > p.site-lede {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  margin: 2px 0 34px;
+}
+@media screen and (max-width: 600px) {
+  .page-content > .wrapper > p.site-lede { font-size: 18px; margin-bottom: 26px; }
+}

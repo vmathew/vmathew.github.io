@@ -1,1 +1,1 @@
-#### Exploring life, family, and innovation — one cloud at a time.
+<p class="site-lede">How enterprises adopt AI without losing control of it.</p>

@@ -1,0 +1,54 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 332" role="img" aria-labelledby="mcp-approval-t mcp-approval-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="mcp-approval-t">The approval gate for consequential actions</title>
+  <desc id="mcp-approval-d">The agent calls a consequential tool, the gateway intercepts and writes a pending action record, a human with the right entitlement approves or rejects, and only on approval does the gateway execute the tool and record the approver. A rejection is logged and never executed.</desc>
+  <defs><marker id="mcp-approval-g" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-green-2, #0f7a56)"/></marker><marker id="mcp-approval-r" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-red, #c0392b)"/></marker></defs>
+  <rect width="800" height="332" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Where &#8220;human in the loop&#8221; becomes a design</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The record is the point: a named human authorised this action, with these arguments, at this time.</text>
+  <rect x="24" y="86" width="176" height="66" rx="9" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <circle cx="44" cy="106" r="9.5" fill="var(--fig-blue, #2563eb)"/>
+  <text x="44" y="110" font-size="10.5" font-weight="700" fill="var(--fig-on-accent, #ffffff)" text-anchor="middle">1</text>
+  <text x="40" y="130" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Agent calls a</text>
+  <text x="40" y="145" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">consequential tool</text>
+  <rect x="220" y="86" width="186" height="66" rx="9" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <circle cx="240" cy="106" r="9.5" fill="var(--fig-blue, #2563eb)"/>
+  <text x="240" y="110" font-size="10.5" font-weight="700" fill="var(--fig-on-accent, #ffffff)" text-anchor="middle">2</text>
+  <text x="236" y="130" font-size="10.5" font-weight="600" fill="var(--fig-blue-ink, #17315e)">Gateway intercepts,</text>
+  <text x="236" y="145" font-size="10.5" font-weight="600" fill="var(--fig-blue-ink, #17315e)">writes pending action</text>
+  <rect x="432" y="86" width="164" height="66" rx="9" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <circle cx="452" cy="106" r="9.5" fill="var(--fig-blue, #2563eb)"/>
+  <text x="452" y="110" font-size="10.5" font-weight="700" fill="var(--fig-on-accent, #ffffff)" text-anchor="middle">3</text>
+  <text x="448" y="130" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Human reviews</text>
+  <text x="448" y="145" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">and decides</text>
+  <rect x="624" y="86" width="152" height="66" rx="9" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <circle cx="644" cy="106" r="9.5" fill="var(--fig-blue, #2563eb)"/>
+  <text x="644" y="110" font-size="10.5" font-weight="700" fill="var(--fig-on-accent, #ffffff)" text-anchor="middle">4</text>
+  <text x="640" y="130" font-size="10.5" font-weight="600" fill="var(--fig-green, #0f6f4f)">Gateway executes,</text>
+  <text x="640" y="145" font-size="10.5" font-weight="600" fill="var(--fig-green, #0f6f4f)">records approver</text>
+  <line x1="200" y1="119" x2="214" y2="119" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#mcp-approval-g)"/>
+  <line x1="406" y1="119" x2="426" y2="119" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#mcp-approval-g)"/>
+  <line x1="596" y1="119" x2="618" y2="119" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#mcp-approval-g)"/>
+  <text x="514" y="80" font-size="9" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">approve</text>
+  <path d="M514,152 L514,178 L640,178" fill="none" stroke="var(--fig-red, #c0392b)" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#mcp-approval-r)"/>
+  <text x="560" y="172" font-size="9" fill="var(--fig-red, #c0392b)">reject</text>
+  <text x="648" y="182" font-size="10" fill="var(--fig-red, #c0392b)">Logged, never executed</text>
+  <rect x="24" y="206" width="752" height="96" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="230" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">The pending action record</text>
+  <text x="44" y="248" font-size="10" fill="var(--fig-muted, #5b6b7b)">Written before anything executes, updated after. This is the artefact a regulator asks for.</text>
+  <rect x="44" y="264" width="40" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="64" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">user</text>
+  <rect x="93" y="264" width="102" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="144" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">agent + version</text>
+  <rect x="204" y="264" width="85" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="247" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">tool + class</text>
+  <rect x="299" y="264" width="68" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="333" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">arguments</text>
+  <rect x="376" y="264" width="63" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="407" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">trace id</text>
+  <rect x="448" y="264" width="85" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="490" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">context hash</text>
+  <rect x="542" y="264" width="63" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="573" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">approver</text>
+  <rect x="614" y="264" width="52" height="21" rx="10.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="640" y="278" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">result</text>
+</svg>

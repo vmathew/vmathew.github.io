@@ -1,0 +1,24 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 376" role="img" aria-labelledby="mcp-tool-classes-t mcp-tool-classes-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="mcp-tool-classes-t">Classify every tool by what it can do</title>
+  <desc id="mcp-tool-classes-d">Four tool classes with escalating default posture: read tools run with user-scoped identity, reversible writes are logged and rate-limited, consequential writes require human approval, and open-world tools are egress-controlled and treated as untrusted input.</desc>
+  <rect width="800" height="376" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;A tool&#8221; is not one category</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Classification is self-declared by the server, so make it mandatory and reviewed &#8212; then gate everything else on it.</text>
+  <rect x="24" y="70" width="752" height="64" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="44" y="96" font-size="13" font-weight="700" fill="var(--fig-green, #0f6f4f)">Read</text>
+  <text x="44" y="116" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">search, lookup, list, summarize</text>
+  <text x="756" y="96" font-size="10.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="end">User-scoped identity</text>
+  <rect x="24" y="140" width="752" height="64" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line-2, #c4d5f7)"/>
+  <text x="44" y="166" font-size="13" font-weight="700" fill="var(--fig-blue-ink-2, #33507f)">Write, reversible</text>
+  <text x="44" y="186" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">create draft, add comment, update with history</text>
+  <text x="756" y="166" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="end">Logged and rate-limited</text>
+  <rect x="24" y="210" width="752" height="64" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="44" y="236" font-size="13" font-weight="700" fill="var(--fig-red, #c0392b)">Write, consequential</text>
+  <text x="44" y="256" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">send, submit, approve, transfer, provision, delete</text>
+  <text x="756" y="236" font-size="10.5" font-weight="700" fill="var(--fig-red, #c0392b)" text-anchor="end">Human approval required</text>
+  <rect x="24" y="280" width="752" height="64" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="44" y="306" font-size="13" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">Open-world</text>
+  <text x="44" y="326" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">web, email, third-party APIs</text>
+  <text x="756" y="306" font-size="10.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="end">Egress-controlled, treated as untrusted</text>
+  <text x="400" y="366" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Split servers that mix classes, so the read side can run with a read-only credential.</text>
+</svg>
