@@ -17,10 +17,14 @@
   --code-inline: #eef2f7;
   --figure-bg:   #ffffff;
   --measure:     820px;
+  color-scheme: light;
 }
 
+/* Dark palette applies when the OS asks for it AND the reader hasn't pinned
+   light, or whenever the reader has explicitly chosen dark. Keeping both
+   selectors means the toggle wins in either direction. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg:          #0f1419;
     --surface:     #161b22;
     --text:        #e3e8ee;
@@ -32,7 +36,23 @@
     --code-text:   #e6edf3;
     --code-inline: #1c232b;
     --figure-bg:   #f4f6f8;
+    color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+    --bg:          #0f1419;
+    --surface:     #161b22;
+    --text:        #e3e8ee;
+    --muted:       #9aa7b4;
+    --rule:        #2a3138;
+    --accent:      #7aa7ff;
+    --accent-deep: #a9c6ff;
+    --code-bg:     #12171d;
+    --code-text:   #e6edf3;
+    --code-inline: #1c232b;
+    --figure-bg:   #f4f6f8;
+  color-scheme: dark;
 }
 
 /* --- Base ---------------------------------------------------------------- */
@@ -321,3 +341,102 @@ hr {
 .post_navi { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 40px; }
 .post_navi .post_navi-item:hover { text-decoration: none; }
 .post_navi .post_navi-label { text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* --- Standalone pages (layout: default) ----------------------------------
+   about.md and categories.md render their markdown straight into .wrapper
+   rather than into a .post-content block, so the content rules above miss
+   them. Re-apply the essentials to direct children of the wrapper. The
+   child combinator keeps posts (nested in article > .post-content) out. */
+
+.page-content > .wrapper > h2 {
+  font-size: 27px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.page-content > .wrapper > h2:first-child { margin-top: 0; }
+
+.page-content > .wrapper > h3 {
+  font-size: 21px;
+  margin-top: 34px;
+  margin-bottom: 10px;
+}
+
+.page-content > .wrapper > h4 { font-size: 18px; margin-top: 26px; }
+
+.page-content > .wrapper > p,
+.page-content > .wrapper > ul,
+.page-content > .wrapper > ol { margin-bottom: 18px; }
+
+.page-content > .wrapper > ul > li,
+.page-content > .wrapper > ol > li { margin-bottom: 8px; }
+
+.page-content > .wrapper > hr { margin: 36px 0 30px; }
+
+/* --- LinkedIn profile badge ----------------------------------------------
+   Both themed variants are in the DOM (LinkedIn's script can't follow
+   prefers-color-scheme itself); show only the one that matches. */
+
+.li-badge { display: flex; justify-content: center; margin: 6px 0 2px; }
+.li-badge-dark { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .li-badge-light { display: none; }
+  :root:not([data-theme="light"]) .li-badge-dark  { display: block; }
+}
+
+:root[data-theme="dark"]  .li-badge-light { display: none; }
+:root[data-theme="dark"]  .li-badge-dark  { display: block; }
+:root[data-theme="light"] .li-badge-light { display: block; }
+:root[data-theme="light"] .li-badge-dark  { display: none; }
+
+/* Author card at the foot of each post */
+.post-author-card {
+  border-top: 1px solid var(--rule);
+  margin-top: 46px;
+  padding-top: 24px;
+  text-align: center;
+}
+.post-author-kicker {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+/* --- Theme toggle --------------------------------------------------------- */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.theme-toggle-icon { display: block; }
+
+/* Show the icon for the theme you'd switch TO: moon while light, sun while dark. */
+.theme-toggle-sun { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle-moon { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle-sun  { display: block; }
+}
+
+:root[data-theme="dark"]  .theme-toggle-moon { display: none; }
+:root[data-theme="dark"]  .theme-toggle-sun  { display: block; }
+:root[data-theme="light"] .theme-toggle-moon { display: block; }
+:root[data-theme="light"] .theme-toggle-sun  { display: none; }

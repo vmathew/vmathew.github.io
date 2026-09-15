@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      /* Runs before any paint so a pinned theme never flashes the other one. */
+      (function(){try{var t=localStorage.getItem('theme');
+        if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}
+      }catch(e){}}());
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
@@ -18,6 +24,7 @@
         <nav class="site-nav">
           <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
           <a class="page-link" href="{{ '/categories/' | relative_url }}">Categories</a>
+          {% include theme-toggle.html %}
           <!-- <a href="{{ site.github.repository_url }}">GitHub</a> -->
         </nav>
       </div>

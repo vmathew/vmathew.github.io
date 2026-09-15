@@ -1,0 +1,61 @@
+<button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch between light and dark">
+  <svg class="theme-toggle-icon theme-toggle-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+  </svg>
+  <svg class="theme-toggle-icon theme-toggle-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+    <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+      <path d="M12 2.4v2.4M12 19.2v2.4M4.2 12H1.8M22.2 12h-2.4M6.5 6.5 4.8 4.8M19.2 19.2l-1.7-1.7M17.5 6.5l1.7-1.7M4.8 19.2l1.7-1.7"/>
+    </g>
+  </svg>
+</button>
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn  = document.querySelector('.theme-toggle');
+  if (!btn) return;
+
+  var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+  // The effective theme: an explicit choice if one is pinned, else the OS.
+  function effective() {
+    var set = root.getAttribute('data-theme');
+    if (set === 'dark' || set === 'light') return set;
+    return (mq && mq.matches) ? 'dark' : 'light';
+  }
+
+  function sync() {
+    var now = effective();
+    btn.setAttribute('aria-pressed', now === 'dark' ? 'true' : 'false');
+    btn.setAttribute('aria-label',
+      now === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+
+  // giscus renders in its own iframe and needs telling separately.
+  function syncGiscus(theme) {
+    var frame = document.querySelector('iframe.giscus-frame');
+    if (!frame || !frame.contentWindow) return;
+    frame.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: theme === 'dark' ? 'dark' : 'light_tritanopia' } } },
+      'https://giscus.app'
+    );
+  }
+
+  btn.addEventListener('click', function () {
+    var next = effective() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    sync();
+    syncGiscus(next);
+  });
+
+  // With no explicit choice pinned, keep following the OS if it changes.
+  if (mq && mq.addEventListener) {
+    mq.addEventListener('change', function () {
+      if (!root.hasAttribute('data-theme')) { sync(); syncGiscus(effective()); }
+    });
+  }
+
+  sync();
+}());
+</script>

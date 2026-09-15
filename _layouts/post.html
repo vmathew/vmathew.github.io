@@ -22,6 +22,12 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+
+    <aside class="post-author-card">
+      <p class="post-author-kicker">Found this useful? Let's connect.</p>
+      {% include linkedin-badge.html %}
+    </aside>
+
     {% include navlinks.html %}
   </div>
 

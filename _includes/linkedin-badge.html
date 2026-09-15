@@ -1,0 +1,19 @@
+{%- comment -%}
+  LinkedIn profile badge.
+
+  LinkedIn's script reads data-theme once, at render time, and has no idea about
+  prefers-color-scheme — so both variants are emitted and CSS shows whichever
+  matches the reader's theme (see .li-badge-* in css/override.css).
+
+  If the script is blocked (ad blockers commonly block it), each variant still
+  contains a plain anchor to the profile, so the section degrades to a link.
+{%- endcomment -%}
+<div class="li-badge">
+  <div class="li-badge-light">
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="vjmathew" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/vjmathew?trk=profile-badge">Vivek Mathew</a></div>
+  </div>
+  <div class="li-badge-dark">
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="vjmathew" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/vjmathew?trk=profile-badge">Vivek Mathew</a></div>
+  </div>
+</div>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
