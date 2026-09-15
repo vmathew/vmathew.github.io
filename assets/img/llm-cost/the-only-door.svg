@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 322" width="800" height="322" role="img" aria-labelledby="t2 d2" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t2">Making tags unforgeable with inference profiles</title>
+  <desc id="d2">Applications invoke a tagged application inference profile, which routes to the model and carries five cost allocation tags into Cost Explorer and the Cost and Usage Report. A direct call to a raw foundation model ARN is denied by a Service Control Policy, so an untagged call becomes a denied call.</desc>
+  <defs>
+    <marker id="g2" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#0f7a56"/></marker>
+    <marker id="r2" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#c0392b"/></marker>
+  </defs>
+  <rect width="800" height="322" fill="#ffffff"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="#1f2933">Make the tags unforgeable</text>
+  <text x="24" y="48" font-size="12.5" fill="#5b6b7b">The inference profile is the only door. Every profile is tagged at creation by the platform, so attribution stops being a habit.</text>
+
+  <rect x="40" y="110" width="120" height="48" rx="8" fill="#ffffff" stroke="#cfd8e3"/>
+  <text x="100" y="132" font-size="12" fill="#1f2933" text-anchor="middle">Application</text>
+  <text x="100" y="146" font-size="8.5" fill="#7a8896" text-anchor="middle">receives an ARN</text>
+
+  <text x="202" y="104" font-size="9.5" fill="#7a8896" text-anchor="middle">invokes</text>
+  <line x1="160" y1="134" x2="244" y2="134" stroke="#0f7a56" stroke-width="1.6" marker-end="url(#g2)"/>
+
+  <rect x="250" y="96" width="200" height="76" rx="10" fill="#e3f5ec" stroke="#9fd8bf" stroke-width="2"/>
+  <text x="350" y="122" font-size="11.5" font-weight="700" fill="#0f6f4f" text-anchor="middle">Application inference profile</text>
+  <text x="350" y="138" font-size="8.5" fill="#4a8f75" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">app-1234-chat-prod</text>
+  <text x="350" y="156" font-size="9" fill="#4a8f75" text-anchor="middle">created at onboarding, already tagged</text>
+
+  <text x="482" y="104" font-size="9.5" fill="#7a8896" text-anchor="middle">routes to</text>
+  <line x1="450" y1="134" x2="514" y2="134" stroke="#0f7a56" stroke-width="1.6" marker-end="url(#g2)"/>
+  <rect x="520" y="110" width="80" height="48" rx="8" fill="#eef2f7" stroke="#cfd8e3"/>
+  <text x="560" y="138" font-size="11" fill="#1f2933" text-anchor="middle">Model</text>
+
+  <text x="622" y="104" font-size="9.5" fill="#7a8896" text-anchor="middle">tagged spend</text>
+  <line x1="600" y1="134" x2="644" y2="134" stroke="#0f7a56" stroke-width="1.6" marker-end="url(#g2)"/>
+  <rect x="650" y="110" width="130" height="48" rx="8" fill="#e7edfd" stroke="#93b0f5"/>
+  <text x="715" y="131" font-size="11" fill="#17315e" text-anchor="middle">Cost Explorer</text>
+  <text x="715" y="147" font-size="11" fill="#17315e" text-anchor="middle">+ CUR</text>
+
+  <path d="M350,172 L350,190 M190,190 L596,190" fill="none" stroke="#9fd8bf" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="40" y="211" font-size="10" fill="#5b6b7b">Tagged at</text>
+  <text x="40" y="224" font-size="10" fill="#5b6b7b">creation:</text>
+  <g font-size="9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="190" y="200" width="78" height="20" rx="10" fill="#e3f5ec" stroke="#9fd8bf"/><text x="229" y="214" fill="#0f6f4f" text-anchor="middle">cost-center</text>
+    <rect x="276" y="200" width="78" height="20" rx="10" fill="#e3f5ec" stroke="#9fd8bf"/><text x="315" y="214" fill="#0f6f4f" text-anchor="middle">application</text>
+    <rect x="362" y="200" width="64" height="20" rx="10" fill="#e3f5ec" stroke="#9fd8bf"/><text x="394" y="214" fill="#0f6f4f" text-anchor="middle">use-case</text>
+    <rect x="434" y="200" width="82" height="20" rx="10" fill="#e3f5ec" stroke="#9fd8bf"/><text x="475" y="214" fill="#0f6f4f" text-anchor="middle">environment</text>
+    <rect x="524" y="200" width="72" height="20" rx="10" fill="#e3f5ec" stroke="#9fd8bf"/><text x="560" y="214" fill="#0f6f4f" text-anchor="middle">model-tier</text>
+  </g>
+
+  <path d="M100,158 L100,264 L232,264" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#r2)"/>
+  <text x="112" y="250" font-size="9.5" fill="#c0392b">direct call?</text>
+  <circle cx="250" cy="264" r="11" fill="#fdeceb" stroke="#c0392b" stroke-width="1.6"/>
+  <path d="M245.5,259.5 L254.5,268.5 M254.5,259.5 L245.5,268.5" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="270" y="246" width="192" height="36" rx="8" fill="#fdeceb" stroke="#eab5ae" stroke-dasharray="5 4"/>
+  <text x="366" y="269" font-size="9.5" fill="#c0392b" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">arn:...::foundation-model/*</text>
+  <text x="480" y="261" font-size="10.5" font-weight="700" fill="#c0392b">Denied by SCP</text>
+  <text x="480" y="276" font-size="10" fill="#5b6b7b">No inference profile, no attribution &#8212; so no call.</text>
+</svg>

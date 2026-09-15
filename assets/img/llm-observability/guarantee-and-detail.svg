@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" width="800" height="336" role="img" aria-labelledby="t4 d4" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t4">The guarantee and the detail</title>
+  <desc id="d4">Account-level model invocation logging is the enforced guarantee; the gateway span adds application-aware detail. The two join on the provider request ID. An SCP prevents anyone but platform automation from changing the logging configuration, and a Config rule proves it is still on.</desc>
+  <rect width="800" height="336" fill="#ffffff"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="#1f2933">The guarantee and the detail</text>
+  <text x="24" y="48" font-size="12.5" fill="#5b6b7b">If the gateway is bypassed, the invocation log still exists. That is the difference between evidence and hope.</text>
+
+  <rect x="40" y="86" width="290" height="126" rx="10" fill="#e7edfd" stroke="#93b0f5" stroke-width="2"/>
+  <rect x="240" y="98" width="76" height="17" rx="8.5" fill="#ffffff" stroke="#2563eb"/>
+  <text x="278" y="110" font-size="8.5" font-weight="700" fill="#2563eb" text-anchor="middle" letter-spacing="0.4">ENFORCED</text>
+  <text x="58" y="112" font-size="12.5" font-weight="700" fill="#17315e">Model invocation logging</text>
+  <text x="58" y="130" font-size="9.5" fill="#33507f">Account-level. Set at vending. Platform-owned.</text>
+  <g font-size="9.5" fill="#33507f">
+    <circle cx="62" cy="151" r="2.2" fill="#93b0f5"/><text x="72" y="154">Model and version</text>
+    <circle cx="62" cy="168" r="2.2" fill="#93b0f5"/><text x="72" y="171">Input / output tokens</text>
+    <circle cx="62" cy="185" r="2.2" fill="#93b0f5"/><text x="72" y="188">Inference profile ARN</text>
+    <circle cx="62" cy="202" r="2.2" fill="#93b0f5"/><text x="72" y="205">Provider request ID</text>
+  </g>
+
+  <line x1="330" y1="126" x2="470" y2="126" stroke="#93b0f5" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="400" y="148" font-size="9.5" fill="#5b6b7b" text-anchor="middle">joined on</text>
+  <text x="400" y="162" font-size="8.5" fill="#33507f" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">request_id</text>
+
+  <rect x="470" y="86" width="290" height="126" rx="10" fill="#f8f9fa" stroke="#dde4ec"/>
+  <rect x="690" y="98" width="52" height="17" rx="8.5" fill="#eef1f4" stroke="#cfd8e3"/>
+  <text x="716" y="110" font-size="8.5" font-weight="700" fill="#5b6b7b" text-anchor="middle" letter-spacing="0.4">RICH</text>
+  <text x="488" y="112" font-size="12.5" font-weight="700" fill="#1f2933">Gateway span</text>
+  <text x="488" y="130" font-size="9.5" fill="#5b6b7b">Application-aware. Bypassable &#8212; the log isn't.</text>
+  <g font-size="9.5" fill="#3c4a59">
+    <circle cx="492" cy="151" r="2.2" fill="#98a4b3"/><text x="502" y="154">Guardrail assessment</text>
+    <circle cx="492" cy="168" r="2.2" fill="#98a4b3"/><text x="502" y="171">Use case and cost center</text>
+    <circle cx="492" cy="185" r="2.2" fill="#98a4b3"/><text x="502" y="188">Time to first token</text>
+    <circle cx="492" cy="202" r="2.2" fill="#98a4b3"/><text x="502" y="205">Prompt hash</text>
+  </g>
+
+  <rect x="40" y="238" width="350" height="64" rx="9" fill="#f3f7fd" stroke="#c4d5f7"/>
+  <text x="58" y="262" font-size="12" font-weight="700" fill="#17315e">Preventive &#8212; the SCP</text>
+  <text x="58" y="282" font-size="9.5" fill="#33507f">Only the platform automation role may change the</text>
+  <text x="58" y="294" font-size="9.5" fill="#33507f">logging configuration. Nobody in the account can.</text>
+
+  <rect x="410" y="238" width="350" height="64" rx="9" fill="#f8f9fa" stroke="#dde4ec"/>
+  <text x="428" y="262" font-size="12" font-weight="700" fill="#1f2933">Detective &#8212; the Config rule</text>
+  <text x="428" y="282" font-size="9.5" fill="#5b6b7b">Every Bedrock account checked for logging enabled;</text>
+  <text x="428" y="294" font-size="9.5" fill="#5b6b7b">the compliance status feeds the governance report.</text>
+
+  <text x="400" y="324" font-size="11" fill="#7a8896" text-anchor="middle">Preventive controls stop the change. Detective controls prove the state. Auditors want both.</text>
+</svg>
