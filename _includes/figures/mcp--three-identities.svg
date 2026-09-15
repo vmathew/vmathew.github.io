@@ -1,4 +1,4 @@
-<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" role="img" aria-labelledby="mcp-identities-t mcp-identities-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" width="800" height="336" role="img" aria-labelledby="mcp-identities-t mcp-identities-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title id="mcp-identities-t">Three identities in every tool call</title>
   <desc id="mcp-identities-d">The user signs in to the agent, the agent presents a user-scoped token plus its own identity to the gateway, the gateway applies policy and passes identity to the MCP server, and the server calls the downstream system as the user. All three identities — user, agent and server — must be real and visible in the audit log.</desc>
   <defs><marker id="mcp-identities-a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-green-2, #0f7a56)"/></marker></defs>

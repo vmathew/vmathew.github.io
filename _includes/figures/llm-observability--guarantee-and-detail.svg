@@ -1,4 +1,4 @@
-<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" role="img" aria-labelledby="guarantee-and-detail-t4 guarantee-and-detail-d4" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" width="800" height="336" role="img" aria-labelledby="guarantee-and-detail-t4 guarantee-and-detail-d4" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title id="guarantee-and-detail-t4">The guarantee and the detail</title>
   <desc id="guarantee-and-detail-d4">Account-level model invocation logging is the enforced guarantee; the gateway span adds application-aware detail. The two join on the provider request ID. An SCP prevents anyone but platform automation from changing the logging configuration, and a Config rule proves it is still on.</desc>
   <rect width="800" height="336" fill="var(--fig-bg, #ffffff)"/>

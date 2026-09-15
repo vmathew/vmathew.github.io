@@ -1,4 +1,4 @@
-<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 376" role="img" aria-labelledby="mcp-tool-classes-t mcp-tool-classes-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 376" width="800" height="376" role="img" aria-labelledby="mcp-tool-classes-t mcp-tool-classes-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title id="mcp-tool-classes-t">Classify every tool by what it can do</title>
   <desc id="mcp-tool-classes-d">Four tool classes with escalating default posture: read tools run with user-scoped identity, reversible writes are logged and rate-limited, consequential writes require human approval, and open-world tools are egress-controlled and treated as untrusted input.</desc>
   <rect width="800" height="376" fill="var(--fig-bg, #ffffff)"/>

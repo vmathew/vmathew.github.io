@@ -1,4 +1,4 @@
-<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-labelledby="trace-anatomy-t2 trace-anatomy-d2" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-labelledby="trace-anatomy-t2 trace-anatomy-d2" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title id="trace-anatomy-t2">The six groups every LLM span needs</title>
   <desc id="trace-anatomy-d2">Identity and attribution, model, guardrail, usage, timing, and content captured carefully.</desc>
   <rect width="800" height="320" fill="var(--fig-bg, #ffffff)"/>
