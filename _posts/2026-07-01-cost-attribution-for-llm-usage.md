@@ -11,7 +11,7 @@ author: Vivek Mathew
 # Cost Attribution for LLM Usage: What to Tag, What to Report, Who Reads It
 ![A taggable cloud resource compared with an ephemeral LLM invocation]({{ '/assets/img/llm-cost/why-llm-cost-is-different.svg' | relative_url }})
 
-I've argued before that [guardrail enforcement belongs in your SCPs](/ai/governance/2024/10/01/guardrail-enforcement-must-live-in-your-scps.html), because a control a developer can forget is a control you'll lose. Cost attribution has the same shape. If attribution depends on every team remembering to tag every call, you'll end up with a bill that says "Bedrock: $X" and a room full of people insisting it wasn't them.
+I've argued before that [guardrail enforcement belongs in your SCPs]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}), because a control a developer can forget is a control you'll lose. Cost attribution has the same shape. If attribution depends on every team remembering to tag every call, you'll end up with a bill that says "Bedrock: $X" and a room full of people insisting it wasn't them.
 
 This post is about making LLM spend attributable by construction: the tags that matter, the three reports that are actually worth building, and who should be reading each one.
 

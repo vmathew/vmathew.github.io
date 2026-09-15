@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title | escape }} | {{ site.description | escape }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/override.css' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911008403069012"
      crossorigin="anonymous"></script>
     {% seo %}  <!-- Enables jekyll-seo-tag plugin -->
@@ -17,8 +16,8 @@
       <div class="wrapper">
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         <nav class="site-nav">
-          <a href="{{ '/about/' | relative_url }}">About</a>
-          <a href="{{ '/categories/' | relative_url }}">Categories</a>
+          <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
+          <a class="page-link" href="{{ '/categories/' | relative_url }}">Categories</a>
           <!-- <a href="{{ site.github.repository_url }}">GitHub</a> -->
         </nav>
       </div>
