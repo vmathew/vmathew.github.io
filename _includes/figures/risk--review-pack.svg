@@ -1,0 +1,38 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 438" width="800" height="438" role="img" aria-labelledby="risk-review-pack-t risk-review-pack-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="risk-review-pack-t">The five parts of a risk review pack</title>
+  <desc id="risk-review-pack-d">A capability envelope on one page, a control map as a table, real evidence rather than a promise of it, residual risks stated plainly, and an ownership table with a name against every row.</desc>
+  <rect width="800" height="438" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">What to bring</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Five parts, and none of them is an architecture diagram. Bring one, but it is an appendix.</text>
+  <rect x="24" y="72" width="752" height="64" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <circle cx="52" cy="104" r="12" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="52" y="108" font-size="11.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">1</text>
+  <text x="76" y="99" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The capability envelope</text>
+  <text x="76" y="118" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">What models, from where, by whom. What data in, what out. Can it act, or only answer?</text>
+  <text x="756" y="99" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="end" letter-spacing="0.6">ONE PAGE</text>
+  <rect x="24" y="142" width="752" height="64" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <circle cx="52" cy="174" r="12" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="52" y="178" font-size="11.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">2</text>
+  <text x="76" y="169" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The control map</text>
+  <text x="76" y="188" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Each risk in their taxonomy, its control, preventive or detective, and where it is enforced.</text>
+  <text x="756" y="169" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="end" letter-spacing="0.6">A TABLE</text>
+  <rect x="24" y="212" width="752" height="64" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <circle cx="52" cy="244" r="12" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="52" y="248" font-size="11.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">3</text>
+  <text x="76" y="239" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The evidence</text>
+  <text x="76" y="258" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Actual output: coverage queries, a sample blocked-prompt trace, the Config rule status.</text>
+  <text x="756" y="239" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="end" letter-spacing="0.6">NOT A PROMISE</text>
+  <rect x="24" y="282" width="752" height="64" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <circle cx="52" cy="314" r="12" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="52" y="318" font-size="11.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">4</text>
+  <text x="76" y="309" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The residual risks</text>
+  <text x="76" y="328" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">What the controls do not cover, with the compensating measure or the accepted exposure.</text>
+  <text x="756" y="309" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="end" letter-spacing="0.6">STATED PLAINLY</text>
+  <rect x="24" y="352" width="752" height="64" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <circle cx="52" cy="384" r="12" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="52" y="388" font-size="11.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">5</text>
+  <text x="76" y="379" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The ownership table</text>
+  <text x="76" y="398" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Policy, platform, each use case, the monthly report. A name against every row.</text>
+  <text x="756" y="379" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="end" letter-spacing="0.6">NAMES</text>
+  <text x="400" y="428" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">A pack that claims no residual risk is a pack nobody believes.</text>
+</svg>

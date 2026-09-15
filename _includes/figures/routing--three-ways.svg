@@ -1,0 +1,52 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-labelledby="routing-three-ways-t routing-three-ways-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="routing-three-ways-t">The three ways to route</title>
+  <desc id="routing-three-ways-d">Rules route on what you already know and are deterministic and explainable. A classifier scores each prompt for complexity, adding latency and a small cost. Cascading tries the cheap model first and escalates only when a check fails.</desc>
+  <rect width="800" height="320" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Three ways to route</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Roughly in order of sophistication. Most mature platforms end up blending all three.</text>
+  <rect x="20" y="66" width="244" height="232" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="20" y="66" width="244" height="4" rx="2" fill="var(--fig-green-line, #9fd8bf)"/>
+  <circle cx="54" cy="96" r="11" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="54" y="100" font-size="11" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">1</text>
+  <text x="74" y="101" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Rules</text>
+  <text x="40" y="128" font-size="10" fill="var(--fig-muted, #5b6b7b)">Route on what you already know:</text>
+  <text x="40" y="143" font-size="10" fill="var(--fig-muted, #5b6b7b)">use case, request type, input</text>
+  <text x="40" y="158" font-size="10" fill="var(--fig-muted, #5b6b7b)">length, whether tools are involved.</text>
+  <line x1="40" y1="188" x2="244" y2="188" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="40" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">COST</text>
+  <text x="40" y="224" font-size="10.5" fill="var(--fig-ink, #1f2933)">none</text>
+  <text x="40" y="238" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">LATENCY</text>
+  <text x="40" y="252" font-size="10.5" fill="var(--fig-ink, #1f2933)">none</text>
+  <text x="40" y="266" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">EXPLAINABLE</text>
+  <text x="40" y="280" font-size="10.5" fill="var(--fig-ink, #1f2933)">fully</text>
+  <rect x="278" y="66" width="244" height="232" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="278" y="66" width="244" height="4" rx="2" fill="var(--fig-blue-line, #93b0f5)"/>
+  <circle cx="312" cy="96" r="11" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="312" y="100" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">2</text>
+  <text x="332" y="101" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">A classifier</text>
+  <text x="298" y="128" font-size="10" fill="var(--fig-muted, #5b6b7b)">A small model scores each prompt</text>
+  <text x="298" y="143" font-size="10" fill="var(--fig-muted, #5b6b7b)">and returns a fixed label:</text>
+  <text x="298" y="158" font-size="10" fill="var(--fig-muted, #5b6b7b)">simple, moderate, complex.</text>
+  <line x1="298" y1="188" x2="502" y2="188" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="298" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">COST</text>
+  <text x="298" y="224" font-size="10.5" fill="var(--fig-ink, #1f2933)">a fraction of a cent</text>
+  <text x="298" y="238" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">LATENCY</text>
+  <text x="298" y="252" font-size="10.5" fill="var(--fig-ink, #1f2933)">+ a few hundred ms</text>
+  <text x="298" y="266" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">EXPLAINABLE</text>
+  <text x="298" y="280" font-size="10.5" fill="var(--fig-ink, #1f2933)">the logged label</text>
+  <rect x="536" y="66" width="244" height="232" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="536" y="66" width="244" height="4" rx="2" fill="var(--fig-amber-line, #e8cc9a)"/>
+  <circle cx="570" cy="96" r="11" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="570" y="100" font-size="11" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">3</text>
+  <text x="590" y="101" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Cascading</text>
+  <text x="556" y="128" font-size="10" fill="var(--fig-muted, #5b6b7b)">Try the cheap model, check the</text>
+  <text x="556" y="143" font-size="10" fill="var(--fig-muted, #5b6b7b)">answer, escalate to the strong</text>
+  <text x="556" y="158" font-size="10" fill="var(--fig-muted, #5b6b7b)">one only when the check fails.</text>
+  <line x1="556" y1="188" x2="760" y2="188" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="556" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">COST</text>
+  <text x="556" y="224" font-size="10.5" fill="var(--fig-ink, #1f2933)">best on easy traffic</text>
+  <text x="556" y="238" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">LATENCY</text>
+  <text x="556" y="252" font-size="10.5" fill="var(--fig-ink, #1f2933)">two calls when it escalates</text>
+  <text x="556" y="266" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.5">EXPLAINABLE</text>
+  <text x="556" y="280" font-size="10.5" fill="var(--fig-ink, #1f2933)">needs a good-enough signal</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" width="800" height="336" role="img" aria-labelledby="risk-promise-vs-evidence-t risk-promise-vs-evidence-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="risk-promise-vs-evidence-t">A promise compared with evidence</title>
+  <desc id="risk-promise-vs-evidence-d">The procedural answer is that every team is required to apply guardrails and has been trained. The structural answer is an organization policy that denies any un-guardrailed call, plus a query showing zero such calls in ninety days.</desc>
+  <rect width="800" height="336" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">A promise, or evidence</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Two answers to the same question. Risk partners tell them apart immediately, and remember which teams bring which.</text>
+  <rect x="20" y="66" width="372" height="240" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="288" y="80" width="88" height="20" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="332" y="94" font-size="10" font-weight="700" fill="var(--fig-red, #c0392b)" text-anchor="middle" letter-spacing="0.5">PROCEDURAL</text>
+  <text x="40" y="95" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">A promise</text>
+  <rect x="40" y="116" width="332" height="66" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="56" y="140" font-size="11" fill="var(--fig-ink, #1f2933)">&#8220;Every application team is required to</text>
+  <text x="56" y="156" font-size="11" fill="var(--fig-ink, #1f2933)">apply guardrails, and we&#8217;ve trained them.&#8221;</text>
+  <text x="40" y="208" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; Depends on every team remembering</text>
+  <text x="40" y="228" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; Weakens with every team you add</text>
+  <text x="40" y="248" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; Cannot prove the negative</text>
+  <line x1="40" y1="266" x2="372" y2="266" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="40" y="288" font-size="11" fill="var(--fig-red, #c0392b)">Answers question 2 with a paragraph.</text>
+  <rect x="408" y="66" width="372" height="240" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="686" y="80" width="86" height="20" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="729" y="94" font-size="10" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle" letter-spacing="0.5">STRUCTURAL</text>
+  <text x="428" y="95" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Evidence</text>
+  <rect x="428" y="116" width="332" height="66" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="444" y="136" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Deny bedrock:InvokeModel</text>
+  <text x="444" y="150" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">  unless GuardrailIdentifier in catalog</text>
+  <text x="444" y="170" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">90d un-guardrailed calls: 0</text>
+  <text x="428" y="208" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; Enforced above the account</text>
+  <text x="428" y="228" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; No code path can skip it</text>
+  <text x="428" y="248" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#183; The proof already exists</text>
+  <line x1="428" y1="266" x2="760" y2="266" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="428" y="288" font-size="11" fill="var(--fig-green, #0f6f4f)">Answers question 2 with a query.</text>
+</svg>
