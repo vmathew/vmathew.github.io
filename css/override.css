@@ -524,14 +524,17 @@ hr {
   border-radius: 12px;
 }
 .connect-card-avatar {
+  position: relative;
   flex: 0 0 60px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  object-fit: cover;
+  overflow: hidden;
 }
 .connect-card-monogram {
-  display: inline-flex;
+  position: absolute;
+  inset: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: var(--accent);
@@ -539,6 +542,18 @@ hr {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+/* Scoped to .connect-card so it outranks `.post-content img` (0,1,1),
+   which would otherwise give the photo the figure margin and border. */
+.connect-card .connect-card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
 .connect-card-body { min-width: 0; }
 .connect-card-name {

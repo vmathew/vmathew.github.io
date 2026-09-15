@@ -10,11 +10,17 @@
   assets/img/ and add to _config.yml:   avatar: /assets/img/vivek.jpg
 {%- endcomment -%}
 <div class="connect-card">
-  {%- if site.avatar -%}
-  <img class="connect-card-avatar" src="{{ site.avatar | relative_url }}" alt="" width="64" height="64" loading="lazy">
-  {%- else -%}
-  <span class="connect-card-avatar connect-card-monogram" aria-hidden="true">VM</span>
-  {%- endif -%}
+  {%- comment -%}
+    The monogram sits underneath and the photo covers it. If the photo is
+    missing or fails to load, the monogram shows through instead of a broken
+    image icon.
+  {%- endcomment -%}
+  <span class="connect-card-avatar" aria-hidden="true">
+    <span class="connect-card-monogram">VM</span>
+    {%- if site.avatar -%}
+    <img class="connect-card-photo" src="{{ site.avatar | relative_url }}" alt="" loading="lazy" onerror="this.remove()">
+    {%- endif -%}
+  </span>
   <div class="connect-card-body">
     <p class="connect-card-name">{{ site.author }}</p>
     <p class="connect-card-role">Principal Architect · AI governance, enterprise AI platforms and cloud architecture</p>
