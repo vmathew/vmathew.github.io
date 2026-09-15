@@ -34,7 +34,7 @@ Strip away the vocabulary and a risk partner is asking four questions:
 3. **How would we know if it did?** After the fact, with evidence, in a form that survives a regulator's request.
 4. **Who is accountable?** For the policy, for the platform, for each use case, by name.
 
-Every objection you'll ever hear in that room is one of those four wearing a different outfit. "What about prompt injection" is question 2. "What's the audit trail" is question 3. "Which business unit owns this" is question 4. If you walk in with a clear answer to all four, the meeting is short. If you walk in with a demo, it isn't.
+Every objection you'll ever hear in that room is one of those four wearing a different outfit. Question 1 arrives as "what else can it reach?", question 2 as "what about prompt injection?", question 3 as "what's the audit trail?", and question 4 as "which business unit owns this?" If you walk in with a clear answer to all four, the meeting is short. If you walk in with a demo, it isn't.
 
 ---
 

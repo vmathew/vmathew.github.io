@@ -1,7 +1,7 @@
-<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 364" width="800" height="364" role="img" aria-labelledby="risk-four-questions-t risk-four-questions-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="risk-four-questions-t risk-four-questions-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
   <title id="risk-four-questions-t">The four questions a risk committee is actually asking</title>
   <desc id="risk-four-questions-d">What can this thing do, what stops it doing the wrong thing, how would we know if it did, and who is accountable. Every objection in a risk review is one of these four.</desc>
-  <rect width="800" height="364" fill="var(--fig-bg, #ffffff)"/>
+  <rect width="800" height="380" fill="var(--fig-bg, #ffffff)"/>
   <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">The four questions behind every objection</text>
   <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The committee isn't judging whether the system is good. It's judging whether the organisation can defend it afterwards.</text>
   <rect x="20" y="76" width="372" height="112" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
@@ -28,5 +28,6 @@
   <text x="472" y="237" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Who is accountable?</text>
   <text x="436" y="268" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">For the policy, the platform and each</text>
   <text x="436" y="284" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">use case — by name.</text>
-  <text x="400" y="340" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">&#8220;What about prompt injection&#8221; is question 2. &#8220;What&#8217;s the audit trail&#8221; is question 3. &#8220;Who owns this&#8221; is question 4.</text>
+  <text x="400" y="342" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">1 &#8594; &#8220;what else can it reach?&#8221;&#160;&#160;&#160;&#160;2 &#8594; &#8220;what about prompt injection?&#8221;</text>
+  <text x="400" y="360" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">3 &#8594; &#8220;what&#8217;s the audit trail?&#8221;&#160;&#160;&#160;&#160;4 &#8594; &#8220;which business unit owns this?&#8221;</text>
 </svg>
