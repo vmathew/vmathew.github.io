@@ -623,13 +623,13 @@ hr {
 :root[data-theme="light"] .theme-toggle-moon { display: block; }
 :root[data-theme="light"] .theme-toggle-sun  { display: none; }
 
-/* --- Categories page ------------------------------------------------------ */
+/* --- Topics page ------------------------------------------------------ */
 
 .page-heading { font-size: 30px; margin-bottom: 8px; }
-.cat-intro { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+.topic-intro { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
 
 /* Chips jump to the sections below — no per-category pages to generate. */
-.cat-chips {
+.topic-chips {
   list-style: none;
   margin: 0 0 8px;
   padding: 0;
@@ -637,8 +637,8 @@ hr {
   flex-wrap: wrap;
   gap: 8px;
 }
-.cat-chips li { margin: 0; }
-.cat-chips a {
+.topic-chips li { margin: 0; }
+.topic-chips a {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -650,12 +650,12 @@ hr {
   border: 1px solid var(--rule);
   border-radius: 999px;
 }
-.cat-chips a:hover {
+.topic-chips a:hover {
   color: var(--accent);
   border-color: var(--accent);
   text-decoration: none;
 }
-.cat-count {
+.topic-count {
   font-size: 11.5px;
   font-weight: 700;
   color: var(--muted);
@@ -664,8 +664,8 @@ hr {
   padding: 1px 7px;
 }
 
-.cat-section { margin-top: 38px; scroll-margin-top: 20px; }
-.cat-title {
+.topic-section { margin-top: 38px; scroll-margin-top: 20px; }
+.topic-title {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -675,14 +675,14 @@ hr {
   margin-bottom: 0;
   border-bottom: 1px solid var(--rule);
 }
-.cat-list { list-style: none; margin: 0; padding: 0; }
-.cat-list li {
+.topic-list { list-style: none; margin: 0; padding: 0; }
+.topic-list li {
   margin: 0;
   padding: 16px 0;
   border-bottom: 1px solid var(--rule);
 }
-.cat-link,
-.cat-link:visited {
+.topic-link,
+.topic-link:visited {
   display: block;
   margin-top: 3px;
   font-size: 18px;
@@ -691,4 +691,4 @@ hr {
   letter-spacing: -0.015em;
   color: var(--text);
 }
-.cat-link:hover { color: var(--accent); text-decoration: none; }
+.topic-link:hover { color: var(--accent); text-decoration: none; }

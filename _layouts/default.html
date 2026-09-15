@@ -15,6 +15,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911008403069012"
      crossorigin="anonymous"></script>
     {% seo %}  <!-- Enables jekyll-seo-tag plugin -->
+    {% feed_meta %}  <!-- RSS autodiscovery for jekyll-feed -->
     {%- if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
     {%- endif %}
@@ -26,7 +27,7 @@
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         <nav class="site-nav">
           <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
-          <a class="page-link" href="{{ '/categories/' | relative_url }}">Categories</a>
+          <a class="page-link" href="{{ '/categories/' | relative_url }}">Topics</a>
           {% include theme-toggle.html %}
           <!-- <a href="{{ site.github.repository_url }}">GitHub</a> -->
         </nav>
