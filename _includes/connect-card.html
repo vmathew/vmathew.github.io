@@ -1,0 +1,26 @@
+{%- comment -%}
+  Static "connect" card.
+
+  This replaces LinkedIn's profile badge, which LinkedIn is retiring on
+  12/12/2026. No third-party script and no iframe, so it can't break when
+  that date passes, is never eaten by an ad blocker, and follows the site's
+  theme toggle like everything else.
+
+  To use a real photo instead of the monogram, drop the file in
+  assets/img/ and add to _config.yml:   avatar: /assets/img/vivek.jpg
+{%- endcomment -%}
+<div class="connect-card">
+  {%- if site.avatar -%}
+  <img class="connect-card-avatar" src="{{ site.avatar | relative_url }}" alt="" width="64" height="64" loading="lazy">
+  {%- else -%}
+  <span class="connect-card-avatar connect-card-monogram" aria-hidden="true">VM</span>
+  {%- endif -%}
+  <div class="connect-card-body">
+    <p class="connect-card-name">{{ site.author }}</p>
+    <p class="connect-card-role">Principal Architect · AI governance, enterprise AI platforms and cloud architecture</p>
+    <a class="connect-card-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" rel="me noopener">
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9z"/></svg>
+      Connect on LinkedIn
+    </a>
+  </div>
+</div>

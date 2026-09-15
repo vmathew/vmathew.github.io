@@ -30,4 +30,4 @@ The full story is on [LinkedIn](https://www.linkedin.com/in/vjmathew).
 ### 📫 Connect
 [LinkedIn](https://www.linkedin.com/in/vjmathew) · [GitHub](https://github.com/vmathew) · [Credly](https://www.credly.com/users/vivek-j-mathew/badges)
 
-{% include linkedin-badge.html %}
+{% include connect-card.html %}

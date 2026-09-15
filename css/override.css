@@ -22,6 +22,7 @@
   /* Figure palette — inlined SVGs inherit these. */
   --fig-bg: #ffffff;
   --fig-box: #ffffff;
+  --on-accent: #ffffff;
   --fig-on-accent: #ffffff;
   --fig-ink: #1f2933;
   --fig-ink-2: #3c4a59;
@@ -77,7 +78,9 @@
     --figure-bg:   #f4f6f8;
     --fig-bg: #12171d;
     --fig-box: #222b35;
-    --fig-on-accent: #0f1419;
+    --on-accent: #0f1419;
+    --on-accent: #0f1419;
+  --fig-on-accent: #0f1419;
     --fig-ink: #e3e8ee;
     --fig-ink-2: #c8d2dc;
     --fig-muted: #9aa7b4;
@@ -130,6 +133,7 @@
     --figure-bg:   #f4f6f8;
   --fig-bg: #12171d;
   --fig-box: #222b35;
+  --on-accent: #0f1419;
   --fig-on-accent: #0f1419;
   --fig-ink: #e3e8ee;
   --fig-ink-2: #c8d2dc;
@@ -503,22 +507,69 @@ hr {
 
 .page-content > .wrapper > hr { margin: 36px 0 30px; }
 
-/* --- LinkedIn profile badge ----------------------------------------------
-   Both themed variants are in the DOM (LinkedIn's script can't follow
-   prefers-color-scheme itself); show only the one that matches. */
+/* --- Connect card --------------------------------------------------------- */
 
-.li-badge { display: flex; justify-content: center; margin: 6px 0 2px; }
-.li-badge-dark { display: none; }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .li-badge-light { display: none; }
-  :root:not([data-theme="light"]) .li-badge-dark  { display: block; }
+.connect-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 16px 18px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
 }
+.connect-card-avatar {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.connect-card-monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.connect-card-body { min-width: 0; }
+.connect-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 2px;
+}
+.connect-card-role {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.connect-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.connect-card-link:hover,
+.connect-card-link:visited { color: var(--on-accent); text-decoration: none; }
+.connect-card-link:hover { filter: brightness(1.08); }
 
-:root[data-theme="dark"]  .li-badge-light { display: none; }
-:root[data-theme="dark"]  .li-badge-dark  { display: block; }
-:root[data-theme="light"] .li-badge-light { display: block; }
-:root[data-theme="light"] .li-badge-dark  { display: none; }
+@media screen and (max-width: 480px) {
+  .connect-card { flex-direction: column; text-align: center; }
+  .connect-card-body { text-align: center; }
+}
 
 /* Author card at the foot of each post */
 .post-author-card {
