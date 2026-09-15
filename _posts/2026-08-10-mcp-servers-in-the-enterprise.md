@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MCP Servers in the Enterprise: What Changes When Tools Can Act"
-date: 2026-09-15
+date: 2026-08-10
 categories: [AI, Governance]
 tags: [AI Governance, MCP, Agents, Amazon Bedrock, AgentCore, Security, Platform Engineering]
 description: "A chatbot that says the wrong thing is a content problem. An agent that does the wrong thing is an incident. What changes in your threat model, your identity model, and your controls the moment an LLM can call a tool that writes."
@@ -13,7 +13,7 @@ author: Vivek Mathew
 {% include figures/mcp--text-vs-tools.svg %}
 </figure>
 
-This is the fifth post in a series on running generative AI in a regulated enterprise. The series opened with the claim that [AI governance is the new cloud security]({% post_url 2024-09-01-ai-governance-is-the-new-cloud-security %}), then put it to work on [guardrails]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}), [cost attribution]({% post_url 2026-07-01-cost-attribution-for-llm-usage %}), and [observability]({% post_url 2026-09-10-observability-for-llm-calls %}). All three of those posts had one thing in common: the model only ever produced *text*.
+This is the fifth post in a series on running generative AI in a regulated enterprise. The series opened with the claim that [AI governance is the new cloud security]({% post_url 2024-09-01-ai-governance-is-the-new-cloud-security %}), then put it to work on [guardrails]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}), [cost attribution]({% post_url 2026-07-01-cost-attribution-for-llm-usage %}), and [observability]({% post_url 2026-07-16-observability-for-llm-calls %}). All three of those posts had one thing in common: the model only ever produced *text*.
 
 That assumption is about to break. The Model Context Protocol (MCP) has become the de facto way to give a model tools, and the tools are increasingly ones that *do* things: open a ticket, update a record, run a query, call an internal API, provision infrastructure. A chatbot that says the wrong thing is a content problem. An agent that does the wrong thing is an incident.
 

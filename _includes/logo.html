@@ -1,0 +1,15 @@
+{%- comment -%}
+  Header mark. Inlined rather than <img src="favicon.svg"> so the tile can
+  follow the theme toggle — an <img> is an isolated document and can't see
+  the page's data-theme. The favicon file keeps the fixed dark tile, since
+  a tab icon has no theme to follow.
+
+  Keep this shape in sync with assets/img/favicon.svg if either changes.
+{%- endcomment -%}
+<svg class="site-logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false">
+  <rect width="32" height="32" rx="7" fill="var(--logo-tile, #1f2933)"/>
+  <rect x="7"  y="7"  width="7" height="7" rx="1.6" fill="var(--logo-dot, #ffffff)"/>
+  <rect x="18" y="7"  width="7" height="7" rx="1.6" fill="var(--logo-dot, #ffffff)"/>
+  <rect x="7"  y="18" width="7" height="7" rx="1.6" fill="var(--logo-dot, #ffffff)"/>
+  <rect x="18" y="18" width="7" height="7" rx="1.6" fill="#2563eb"/>
+</svg>
