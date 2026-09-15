@@ -9,7 +9,9 @@ author: Vivek Mathew
 ---
 
 # Cost Attribution for LLM Usage: What to Tag, What to Report, Who Reads It
-![A taggable cloud resource compared with an ephemeral LLM invocation]({{ '/assets/img/llm-cost/why-llm-cost-is-different.svg' | relative_url }})
+<figure class="fig">
+{% include figures/llm-cost--why-llm-cost-is-different.svg %}
+</figure>
 
 I've argued before that [guardrail enforcement belongs in your SCPs]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}), because a control a developer can forget is a control you'll lose. Cost attribution has the same shape. If attribution depends on every team remembering to tag every call, you'll end up with a bill that says "Bedrock: $X" and a room full of people insisting it wasn't them.
 
@@ -45,9 +47,10 @@ Notice what's *not* on the list. Not the user's identity, which is a privacy que
 
 ### Make the tags unforgeable
 
-![Applications reach the model only through a tagged inference profile; direct foundation-model calls are denied by an SCP]({{ '/assets/img/llm-cost/the-only-door.svg' | relative_url }})
-
-*Same shape as the guardrail policy: the attributable path is the only path that works.*
+<figure class="fig">
+{% include figures/llm-cost--the-only-door.svg %}
+<figcaption>Same shape as the guardrail policy: the attributable path is the only path that works.</figcaption>
+</figure>
 
 On Amazon Bedrock, the mechanism that makes this work is the **application inference profile**. You can't tag a foundation model directly, but you can create an inference profile that wraps one, tag the profile with cost allocation tags, and require that invocations go through it. Costs incurred through a tagged profile then show up in Cost Explorer and the Cost and Usage Report under those tags.
 
@@ -86,9 +89,10 @@ Two cautions. Log prompts and responses only if your data classification allows 
 
 ## What to report
 
-![Three reports: the monthly chargeback, the weekly efficiency view, and the monthly governance view]({{ '/assets/img/llm-cost/three-reports.svg' | relative_url }})
-
-*The audience column is the one people skip, and the reason their dashboards go unread.*
+<figure class="fig">
+{% include figures/llm-cost--three-reports.svg %}
+<figcaption>The audience column is the one people skip, and the reason their dashboards go unread.</figcaption>
+</figure>
 
 Most organizations build a single "AI spend" dashboard, put everything on it, and watch nobody use it. Three narrow reports, each with a named audience, do far better.
 

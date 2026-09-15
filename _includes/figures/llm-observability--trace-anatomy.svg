@@ -1,0 +1,57 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-labelledby="trace-anatomy-t2 trace-anatomy-d2" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="trace-anatomy-t2">The six groups every LLM span needs</title>
+  <desc id="trace-anatomy-d2">Identity and attribution, model, guardrail, usage, timing, and content captured carefully.</desc>
+  <rect width="800" height="320" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Six groups every LLM span needs</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Align the names to the OpenTelemetry GenAI conventions and the trace works in any backend.</text>
+
+  <g>
+    <rect x="20" y="66" width="244" height="112" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+    <circle cx="42" cy="90" r="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/><text x="42" y="94" font-size="10.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">1</text>
+    <text x="60" y="94" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Identity and attribution</text>
+    <text x="40" y="116" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">Who is calling, for which use case,</text>
+    <text x="40" y="129" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">on whose budget.</text>
+    <text x="40" y="150" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">app.id &#183; app.use_case</text>
+    <text x="40" y="163" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">app.cost_center</text>
+
+    <rect x="278" y="66" width="244" height="112" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+    <circle cx="300" cy="90" r="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/><text x="300" y="94" font-size="10.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">2</text>
+    <text x="318" y="94" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Model</text>
+    <text x="298" y="116" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">What was asked for, and what</text>
+    <text x="298" y="129" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">actually served. They differ.</text>
+    <text x="298" y="150" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gen_ai.request.model</text>
+    <text x="298" y="163" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gen_ai.response.model</text>
+
+    <rect x="536" y="66" width="244" height="112" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)" stroke-width="1.6"/>
+    <circle cx="558" cy="90" r="10" fill="var(--fig-blue, #2563eb)"/><text x="558" y="94" font-size="10.5" font-weight="700" fill="var(--fig-on-accent, #ffffff)" text-anchor="middle">3</text>
+    <text x="576" y="94" font-size="12" font-weight="700" fill="var(--fig-blue-ink, #17315e)">Guardrail</text>
+    <text x="556" y="116" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)">The decision, and the assessment</text>
+    <text x="556" y="129" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)">behind it. Ask for the trace.</text>
+    <text x="556" y="150" font-size="8.5" fill="var(--fig-blue, #2563eb)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">guardrail.input.action</text>
+    <text x="556" y="163" font-size="8.5" fill="var(--fig-blue, #2563eb)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">guardrail.input.policy</text>
+
+    <rect x="20" y="194" width="244" height="112" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+    <circle cx="42" cy="218" r="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/><text x="42" y="222" font-size="10.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">4</text>
+    <text x="60" y="222" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Usage</text>
+    <text x="40" y="244" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">Tokens, not dollars &#8212; the rate</text>
+    <text x="40" y="257" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">changes, the token count doesn't.</text>
+    <text x="40" y="278" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gen_ai.usage.input_tokens</text>
+    <text x="40" y="291" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gen_ai.usage.output_tokens</text>
+
+    <rect x="278" y="194" width="244" height="112" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+    <circle cx="300" cy="218" r="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/><text x="300" y="222" font-size="10.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">5</text>
+    <text x="318" y="222" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Timing</text>
+    <text x="298" y="244" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">Guardrail latency gets its own span,</text>
+    <text x="298" y="257" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">so it's measured, not debated.</text>
+    <text x="298" y="278" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">llm.time_to_first_token_ms</text>
+    <text x="298" y="291" font-size="8.5" fill="var(--fig-blue-ink-2, #33507f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">guardrail.latency_ms</text>
+
+    <rect x="536" y="194" width="244" height="112" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+    <circle cx="558" cy="218" r="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/><text x="558" y="222" font-size="10.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">6</text>
+    <text x="576" y="222" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Content, carefully</text>
+    <text x="556" y="244" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">Off by default. Hash it even when</text>
+    <text x="556" y="257" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">you don't store it.</text>
+    <text x="556" y="278" font-size="8.5" fill="var(--fig-amber-ink, #8a5a13)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">prompt.sha256</text>
+    <text x="556" y="291" font-size="8.5" fill="var(--fig-amber-ink, #8a5a13)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">per-use-case capture tier</text>
+  </g>
+</svg>

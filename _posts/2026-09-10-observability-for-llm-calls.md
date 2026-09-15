@@ -9,7 +9,9 @@ author: Vivek Mathew
 ---
 
 # Observability for LLM Calls: What a Trace Should Contain, and How to Debug a Blocked Prompt
-![A generic HTTP span reporting 200 OK beside an LLM span showing a guardrail intervention]({{ '/assets/img/llm-observability/generic-vs-llm-span.svg' | relative_url }})
+<figure class="fig">
+{% include figures/llm-observability--generic-vs-llm-span.svg %}
+</figure>
 
 This is the fourth post in a series on running generative AI in a regulated enterprise. It started with the argument that [AI governance is the new cloud security]({% post_url 2024-09-01-ai-governance-is-the-new-cloud-security %}): the same discipline that took cloud from "please be careful" to enforced, auditable controls now has to be applied to AI. The [second post]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}) put that into practice for guardrails, arguing enforcement must live in your SCPs. The [third]({% post_url 2026-07-01-cost-attribution-for-llm-usage %}) made the same argument for cost attribution: make the tags unforgeable, don't ask developers to remember.
 
@@ -31,9 +33,10 @@ A generic trace tells you the call took 1,400 ms and returned 200. That's true a
 
 ## What a trace should contain
 
-![The six groups of information every LLM span needs]({{ '/assets/img/llm-observability/trace-anatomy.svg' | relative_url }})
-
-*Group 3 is the one teams forget to ask for, and the one every blocked-prompt ticket needs.*
+<figure class="fig">
+{% include figures/llm-observability--trace-anatomy.svg %}
+<figcaption>Group 3 is the one teams forget to ask for, and the one every blocked-prompt ticket needs.</figcaption>
+</figure>
 
 The OpenTelemetry project has been standardizing this under its GenAI semantic conventions, and it's worth aligning attribute names to them so your traces work in any backend. Whatever the naming, every LLM span needs six groups of information.
 
@@ -87,9 +90,10 @@ Read that span for a moment. Output tokens are zero, total latency is 52 ms, and
 
 "My prompt got blocked and I don't know why" is the single most common ticket an AI platform team receives. Without traces it's a guessing game that ends in someone asking to loosen the guardrail. With traces it's a five-minute walk. Here's the walk.
 
-![The five-step walk through a trace, with the four assessment cases]({{ '/assets/img/llm-observability/blocked-prompt-walk.svg' | relative_url }})
-
-*Note that only one of the four cases ends in changing the guardrail.*
+<figure class="fig">
+{% include figures/llm-observability--blocked-prompt-walk.svg %}
+<figcaption>Note that only one of the four cases ends in changing the guardrail.</figcaption>
+</figure>
 
 **Step 1: Find the span by request ID, not by searching content.** The application should surface the provider request ID in its error response or logs. Search on that. Searching by prompt text is slow, fails when content isn't stored, and trains people to paste prompts into tickets.
 
@@ -145,9 +149,10 @@ With that in place, "the trace is missing" cannot be caused by an application te
 
 **A detective control confirms it's on.** An AWS Config rule (or an equivalent scheduled check) evaluates every Bedrock-enabled account for logging enabled, and the compliance status feeds the governance report from the cost attribution post. Preventive controls stop the change; detective controls prove the state. Auditors want both.
 
-![Account-level invocation logging as the enforced guarantee, joined to the richer gateway span by request ID]({{ '/assets/img/llm-observability/guarantee-and-detail.svg' | relative_url }})
-
-*The log is the guarantee. The span is the detail. Only one of them survives a bypass.*
+<figure class="fig">
+{% include figures/llm-observability--guarantee-and-detail.svg %}
+<figcaption>The log is the guarantee. The span is the detail. Only one of them survives a bypass.</figcaption>
+</figure>
 
 The gateway adds the richer, application-aware spans (the guardrail assessment, the use case, the cost center) on top of the invocation log, and the two are joined by the provider request ID. The invocation log is the guarantee; the gateway trace is the detail. If the gateway is bypassed, the guarantee still holds.
 

@@ -1,0 +1,76 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="where-the-control-lives-t1 where-the-control-lives-d1" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="where-the-control-lives-t1">Where the guardrail control lives</title>
+  <desc id="where-the-control-lives-d1">Left: a guardrail called from application code can be skipped by a new retry path, and the model call still succeeds. Right: a Service Control Policy denies any invocation without an approved guardrail, so the same retry path fails with AccessDeniedException.</desc>
+  <defs>
+    <marker id="where-the-control-lives-a-ink" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-muted, #5b6b7b)"/></marker>
+    <marker id="where-the-control-lives-a-green" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-green-2, #0f7a56)"/></marker>
+    <marker id="where-the-control-lives-a-red" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-red, #c0392b)"/></marker>
+  </defs>
+  <rect width="800" height="380" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="30" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Where the control lives</text>
+  <text x="24" y="50" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The same requirement, enforced in two different places — with two very different guarantees.</text>
+
+  <!-- LEFT PANEL -->
+  <rect x="20" y="66" width="372" height="300" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="40" y="95" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">In application code</text>
+  <rect x="288" y="80" width="84" height="20" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="330" y="94" font-size="10.5" font-weight="700" fill="var(--fig-red, #c0392b)" text-anchor="middle" letter-spacing="0.6">OPTIONAL</text>
+
+  <rect x="40" y="128" width="112" height="44" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="96" y="147" font-size="12" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Service A</text>
+  <text x="96" y="161" font-size="9" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">guardrail.check()</text>
+  <line x1="152" y1="150" x2="190" y2="150" stroke="var(--fig-muted, #5b6b7b)" stroke-width="1.6" marker-end="url(#where-the-control-lives-a-ink)"/>
+  <rect x="196" y="132" width="92" height="36" rx="8" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="242" y="149" font-size="11.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">Guardrail</text>
+  <text x="242" y="161" font-size="8.5" fill="var(--fig-green-3, #4a8f75)" text-anchor="middle">in app code</text>
+  <line x1="288" y1="150" x2="310" y2="150" stroke="var(--fig-muted, #5b6b7b)" stroke-width="1.6" marker-end="url(#where-the-control-lives-a-ink)"/>
+  <rect x="316" y="128" width="56" height="44" rx="8" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="344" y="154" font-size="11" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Model</text>
+
+  <rect x="40" y="208" width="112" height="44" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="96" y="227" font-size="12" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Service A</text>
+  <text x="96" y="241" font-size="9" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">retry path added</text>
+  <text x="231" y="219" font-size="10" fill="var(--fig-red, #c0392b)" text-anchor="middle">new code path, no guardrail</text>
+  <line x1="152" y1="230" x2="310" y2="230" stroke="var(--fig-red, #c0392b)" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#where-the-control-lives-a-red)"/>
+  <text x="231" y="247" font-size="10" font-weight="700" fill="var(--fig-red, #c0392b)" text-anchor="middle">call succeeds &#183; 200 OK</text>
+  <rect x="316" y="208" width="56" height="44" rx="8" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="344" y="234" font-size="11" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Model</text>
+
+  <line x1="40" y1="282" x2="372" y2="282" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="40" y="304" font-size="11" fill="var(--fig-muted, #5b6b7b)">A guardrail someone must remember to call</text>
+  <text x="40" y="320" font-size="11" fill="var(--fig-muted, #5b6b7b)">can be forgotten &#8212; and eventually will be.</text>
+
+  <!-- RIGHT PANEL -->
+  <rect x="408" y="66" width="372" height="300" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="428" y="95" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">In the Service Control Policy</text>
+  <rect x="676" y="80" width="104" height="20" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="728" y="94" font-size="10.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle" letter-spacing="0.6">MANDATORY</text>
+
+  <text x="578" y="116" font-size="10.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">SCP</text>
+  <rect x="566" y="124" width="24" height="148" rx="6" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+
+  <rect x="428" y="128" width="112" height="44" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="484" y="147" font-size="12" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Service A</text>
+  <text x="484" y="161" font-size="9" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">declares use case</text>
+  <line x1="540" y1="150" x2="562" y2="150" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#where-the-control-lives-a-green)"/>
+  <line x1="592" y1="150" x2="606" y2="150" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#where-the-control-lives-a-green)"/>
+  <rect x="610" y="132" width="86" height="36" rx="8" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="653" y="149" font-size="11.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">Guardrail</text>
+  <text x="653" y="161" font-size="8" fill="var(--fig-green-3, #4a8f75)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">EXTERNAL_STRICT</text>
+  <line x1="696" y1="150" x2="718" y2="150" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#where-the-control-lives-a-green)"/>
+  <rect x="724" y="128" width="56" height="44" rx="8" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="752" y="154" font-size="11" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Model</text>
+
+  <rect x="428" y="208" width="112" height="44" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="484" y="227" font-size="12" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Service A</text>
+  <text x="484" y="241" font-size="9" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">retry path added</text>
+  <line x1="540" y1="230" x2="556" y2="230" stroke="var(--fig-red, #c0392b)" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#where-the-control-lives-a-red)"/>
+  <circle cx="578" cy="230" r="11" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red, #c0392b)" stroke-width="1.6"/>
+  <path d="M573.5,225.5 L582.5,234.5 M582.5,225.5 L573.5,234.5" stroke="var(--fig-red, #c0392b)" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="598" y="227" font-size="10.5" fill="var(--fig-red, #c0392b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">AccessDeniedException</text>
+  <text x="598" y="243" font-size="10" fill="var(--fig-muted, #5b6b7b)">no code path can skip it</text>
+
+  <line x1="428" y1="282" x2="780" y2="282" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="428" y="304" font-size="11" fill="var(--fig-muted, #5b6b7b)">Deny unless the call carries an approved guardrail.</text>
+  <text x="428" y="320" font-size="11" fill="var(--fig-muted, #5b6b7b)">Not overridable inside the account, by anyone.</text>
+</svg>

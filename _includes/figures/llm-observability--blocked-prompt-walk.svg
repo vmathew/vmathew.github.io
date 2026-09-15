@@ -1,0 +1,67 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 334" role="img" aria-labelledby="blocked-prompt-walk-t3 blocked-prompt-walk-d3" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="blocked-prompt-walk-t3">The five-step walk for a blocked prompt</title>
+  <desc id="blocked-prompt-walk-d3">Find the span by request ID, read whether the input or output guardrail intervened, read the assessment, check the guardrail version, then look at neighbouring spans. Step three has four common cases: denied topic at high confidence, denied topic at low confidence, a PII filter, and a content filter on output.</desc>
+  <rect width="800" height="334" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Debugging a blocked prompt</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">With a trace this is a five-minute walk. Without one it is a guessing game that ends in loosening the guardrail.</text>
+
+  <line x1="90" y1="96" x2="710" y2="96" stroke="var(--fig-rule, #dde4ec)" stroke-width="2"/>
+  <g text-anchor="middle">
+    <circle cx="90" cy="96" r="17" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line-2, #c4d5f7)" stroke-width="2"/>
+    <text x="90" y="101" font-size="13" font-weight="700" fill="var(--fig-blue, #2563eb)">1</text>
+    <text x="90" y="134" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Find the span by</text>
+    <text x="90" y="148" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">request ID</text>
+    <text x="90" y="168" font-size="9.5" fill="var(--fig-muted-2, #7a8896)">never by prompt text</text>
+
+    <circle cx="245" cy="96" r="17" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line-2, #c4d5f7)" stroke-width="2"/>
+    <text x="245" y="101" font-size="13" font-weight="700" fill="var(--fig-blue, #2563eb)">2</text>
+    <text x="245" y="134" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Input guardrail,</text>
+    <text x="245" y="148" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">or output?</text>
+    <text x="245" y="168" font-size="9.5" fill="var(--fig-muted-2, #7a8896)">two different problems</text>
+
+    <circle cx="400" cy="96" r="18" fill="var(--fig-blue, #2563eb)" stroke="var(--fig-blue, #2563eb)" stroke-width="2"/>
+    <text x="400" y="101" font-size="13" font-weight="700" fill="var(--fig-on-accent, #ffffff)">3</text>
+    <text x="400" y="134" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">Read the</text>
+    <text x="400" y="148" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">assessment</text>
+    <text x="400" y="168" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">policy, category, confidence</text>
+
+    <circle cx="555" cy="96" r="17" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line-2, #c4d5f7)" stroke-width="2"/>
+    <text x="555" y="101" font-size="13" font-weight="700" fill="var(--fig-blue, #2563eb)">4</text>
+    <text x="555" y="134" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Check the</text>
+    <text x="555" y="148" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">guardrail version</text>
+    <text x="555" y="168" font-size="9.5" fill="var(--fig-muted-2, #7a8896)">turns it into a diff</text>
+
+    <circle cx="710" cy="96" r="17" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line-2, #c4d5f7)" stroke-width="2"/>
+    <text x="710" y="101" font-size="13" font-weight="700" fill="var(--fig-blue, #2563eb)">5</text>
+    <text x="710" y="134" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">Look at the</text>
+    <text x="710" y="148" font-size="10.5" font-weight="600" fill="var(--fig-ink, #1f2933)">neighbours</text>
+    <text x="710" y="168" font-size="9.5" fill="var(--fig-muted-2, #7a8896)">one block, or fifty?</text>
+  </g>
+
+  <path d="M400,178 L400,196" stroke="var(--fig-blue-line, #93b0f5)" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="400" y="212" font-size="11" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Step 3 &#8212; the four cases you will actually see</text>
+
+  <rect x="20" y="222" width="178" height="96" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="34" y="246" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Denied topic, high conf.</text>
+  <text x="34" y="269" font-size="9" fill="var(--fig-muted, #5b6b7b)">The guardrail did its job.</text>
+  <text x="34" y="283" font-size="9" fill="var(--fig-muted, #5b6b7b)">The fix is in the product,</text>
+  <text x="34" y="297" font-size="9" fill="var(--fig-muted, #5b6b7b)">not the policy.</text>
+
+  <rect x="214" y="222" width="178" height="96" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="228" y="246" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Denied topic, low conf.</text>
+  <text x="228" y="269" font-size="9" fill="var(--fig-muted, #5b6b7b)">Check a week of similar</text>
+  <text x="228" y="283" font-size="9" fill="var(--fig-muted, #5b6b7b)">spans. Evidence for the</text>
+  <text x="228" y="297" font-size="9" fill="var(--fig-muted, #5b6b7b)">guardrail owner.</text>
+
+  <rect x="408" y="222" width="178" height="96" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="422" y="246" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">PII filter</text>
+  <text x="422" y="269" font-size="9" fill="var(--fig-muted, #5b6b7b)">BLOCKED or ANONYMIZED?</text>
+  <text x="422" y="283" font-size="9" fill="var(--fig-muted, #5b6b7b)">Often the app failed to</text>
+  <text x="422" y="297" font-size="9" fill="var(--fig-muted, #5b6b7b)">handle anonymization.</text>
+
+  <rect x="602" y="222" width="178" height="96" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="616" y="246" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Content filter on output</text>
+  <text x="616" y="269" font-size="9" fill="var(--fig-muted, #5b6b7b)">Check the parent span.</text>
+  <text x="616" y="283" font-size="9" fill="var(--fig-muted, #5b6b7b)">In agentic flows it came</text>
+  <text x="616" y="297" font-size="9" fill="var(--fig-muted, #5b6b7b)">from a tool, not the user.</text>
+</svg>

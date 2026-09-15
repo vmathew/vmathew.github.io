@@ -1,0 +1,53 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 316" role="img" aria-labelledby="scp-reach-t2 scp-reach-d2" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="scp-reach-t2">What a Service Control Policy can and cannot enforce</title>
+  <desc id="scp-reach-d2">In reach: which model is invoked, whether an approved guardrail is attached, which region and account, and which OU may use Bedrock at all. Out of reach: what is inside the prompt, which guardrail suits a use case, any telemetry, third-party model APIs called over the internet, and the management account.</desc>
+  <rect width="800" height="316" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="30" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">What the policy layer can and cannot see</text>
+  <text x="24" y="50" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">An SCP checks the shape of the API call, never its contents. That boundary is the reason it is the foundation and not the whole building.</text>
+
+  <!-- IN REACH -->
+  <rect x="20" y="66" width="372" height="228" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line-2, #c4d5f7)"/>
+  <rect x="20" y="66" width="372" height="4" rx="2" fill="var(--fig-blue, #2563eb)"/>
+  <text x="40" y="96" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">In reach of the SCP</text>
+  <text x="40" y="113" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Enforced, not requested. No account can override it.</text>
+
+  <g font-size="11.5" fill="var(--fig-ink, #1f2933)">
+    <circle cx="46" cy="140" r="7.5" fill="var(--fig-blue-bg-3, #dbe6fb)" stroke="var(--fig-blue, #2563eb)" stroke-width="1.4"/>
+    <path d="M42.5,140 L45,142.8 L49.8,137" fill="none" stroke="var(--fig-blue, #2563eb)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="144">Whether an approved guardrail is attached</text>
+    <circle cx="46" cy="170" r="7.5" fill="var(--fig-blue-bg-3, #dbe6fb)" stroke="var(--fig-blue, #2563eb)" stroke-width="1.4"/>
+    <path d="M42.5,170 L45,172.8 L49.8,167" fill="none" stroke="var(--fig-blue, #2563eb)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="174">Which foundation models may be invoked</text>
+    <circle cx="46" cy="200" r="7.5" fill="var(--fig-blue-bg-3, #dbe6fb)" stroke="var(--fig-blue, #2563eb)" stroke-width="1.4"/>
+    <path d="M42.5,200 L45,202.8 L49.8,197" fill="none" stroke="var(--fig-blue, #2563eb)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="204">Which regions and accounts may call at all</text>
+    <circle cx="46" cy="230" r="7.5" fill="var(--fig-blue-bg-3, #dbe6fb)" stroke="var(--fig-blue, #2563eb)" stroke-width="1.4"/>
+    <path d="M42.5,230 L45,232.8 L49.8,227" fill="none" stroke="var(--fig-blue, #2563eb)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="234">Different rules per OU: sandbox vs production</text>
+  </g>
+  <line x1="40" y1="252" x2="372" y2="252" stroke="var(--fig-blue-line-3, #d3e0f6)"/>
+  <text x="40" y="274" font-size="10.5" fill="var(--fig-muted, #5b6b7b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">bedrock:GuardrailIdentifier &#183; NotResource</text>
+
+  <!-- OUT OF REACH -->
+  <rect x="408" y="66" width="372" height="228" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="408" y="66" width="372" height="4" rx="2" fill="var(--fig-faint, #98a4b3)"/>
+  <text x="428" y="96" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Out of its reach</text>
+  <text x="428" y="113" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Real gaps &#8212; and the work that has to follow.</text>
+
+  <g font-size="11.5" fill="var(--fig-ink-2, #3c4a59)">
+    <circle cx="434" cy="140" r="7.5" fill="var(--fig-panel-4, #eef1f4)" stroke="var(--fig-faint, #98a4b3)" stroke-width="1.4"/>
+    <path d="M431,137 L437,143 M437,137 L431,143" stroke="var(--fig-faint-2, #6b7887)" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="450" y="144">What is actually inside the prompt</text>
+    <circle cx="434" cy="170" r="7.5" fill="var(--fig-panel-4, #eef1f4)" stroke="var(--fig-faint, #98a4b3)" stroke-width="1.4"/>
+    <path d="M431,167 L437,173 M437,167 L431,173" stroke="var(--fig-faint-2, #6b7887)" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="450" y="174">Which guardrail suits which use case</text>
+    <circle cx="434" cy="200" r="7.5" fill="var(--fig-panel-4, #eef1f4)" stroke="var(--fig-faint, #98a4b3)" stroke-width="1.4"/>
+    <path d="M431,197 L437,203 M437,197 L431,203" stroke="var(--fig-faint-2, #6b7887)" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="450" y="204">Telemetry &#8212; denies in CloudTrail, nothing more</text>
+    <circle cx="434" cy="230" r="7.5" fill="var(--fig-panel-4, #eef1f4)" stroke="var(--fig-faint, #98a4b3)" stroke-width="1.4"/>
+    <path d="M431,227 L437,233 M437,227 L431,233" stroke="var(--fig-faint-2, #6b7887)" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="450" y="234">Third-party model APIs called over the internet</text>
+  </g>
+  <line x1="428" y1="252" x2="760" y2="252" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="428" y="274" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Covered by the catalog, the gateway and egress controls.</text>
+</svg>

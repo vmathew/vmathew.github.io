@@ -1,0 +1,64 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-labelledby="three-reports-t3 three-reports-d3" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="three-reports-t3">Three reports and who reads them</title>
+  <desc id="three-reports-d3">The monthly chargeback goes to cost center owners, the weekly efficiency view goes to application teams, and the monthly governance view goes to leadership and risk. Each has one audience and one ask.</desc>
+  <rect width="800" height="300" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Three reports, three audiences, three asks</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">One dashboard with everything on it gets read by nobody. A report with a named owner gets read.</text>
+
+  <!-- CARD 1 -->
+  <rect x="20" y="66" width="244" height="222" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="20" y="66" width="244" height="4" rx="2" fill="var(--fig-blue, #2563eb)"/>
+  <rect x="186" y="82" width="62" height="17" rx="8.5" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line-2, #c4d5f7)"/>
+  <text x="217" y="94" font-size="8.5" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle" letter-spacing="0.4">MONTHLY</text>
+  <text x="40" y="96" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The chargeback</text>
+  <text x="40" y="119" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">READ BY</text>
+  <text x="40" y="136" font-size="11.5" font-weight="600" fill="var(--fig-blue, #2563eb)">Cost center owners</text>
+  <line x1="40" y1="150" x2="244" y2="150" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <g font-size="10.5" fill="var(--fig-ink-2, #3c4a59)">
+    <circle cx="44" cy="165" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="54" y="168">Spend MTD, by application</text>
+    <circle cx="44" cy="183" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="54" y="186">&#916; vs last month</text>
+    <circle cx="44" cy="201" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="54" y="204">Flat, exportable, sent to you</text>
+  </g>
+  <line x1="40" y1="220" x2="244" y2="220" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="40" y="240" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">THE ASK</text>
+  <text x="40" y="257" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">&#8220;This is your bill, and these</text>
+  <text x="40" y="271" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">are the apps driving it.&#8221;</text>
+
+  <!-- CARD 2 -->
+  <rect x="278" y="66" width="244" height="222" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="278" y="66" width="244" height="4" rx="2" fill="var(--fig-green-2, #0f7a56)"/>
+  <rect x="452" y="82" width="52" height="17" rx="8.5" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="478" y="94" font-size="8.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle" letter-spacing="0.4">WEEKLY</text>
+  <text x="298" y="96" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The efficiency view</text>
+  <text x="298" y="119" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">READ BY</text>
+  <text x="298" y="136" font-size="11.5" font-weight="600" fill="var(--fig-green, #0f6f4f)">Application teams</text>
+  <line x1="298" y1="150" x2="502" y2="150" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <g font-size="10.5" fill="var(--fig-ink-2, #3c4a59)">
+    <circle cx="302" cy="165" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="312" y="168">Tokens per request, trended</text>
+    <circle cx="302" cy="183" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="312" y="186">Cost per request</text>
+    <circle cx="302" cy="201" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="312" y="204">Frontier-tier share</text>
+  </g>
+  <line x1="298" y1="220" x2="502" y2="220" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="298" y="240" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">THE ASK</text>
+  <text x="298" y="257" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">&#8220;Your tokens per request rose</text>
+  <text x="298" y="271" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">30%. Is that intentional?&#8221;</text>
+
+  <!-- CARD 3 -->
+  <rect x="536" y="66" width="244" height="222" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="536" y="66" width="244" height="4" rx="2" fill="var(--fig-amber, #b7791f)"/>
+  <rect x="702" y="82" width="62" height="17" rx="8.5" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="733" y="94" font-size="8.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle" letter-spacing="0.4">MONTHLY</text>
+  <text x="556" y="96" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">The governance view</text>
+  <text x="556" y="119" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">READ BY</text>
+  <text x="556" y="136" font-size="11.5" font-weight="600" fill="var(--fig-amber-ink, #8a5a13)">Leadership and risk</text>
+  <line x1="556" y1="150" x2="760" y2="150" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <g font-size="10.5" fill="var(--fig-ink-2, #3c4a59)">
+    <circle cx="560" cy="165" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="570" y="168">Spend by tier and environment</text>
+    <circle cx="560" cy="183" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="570" y="186">Attribution coverage: 100%</text>
+    <circle cx="560" cy="201" r="2.2" fill="var(--fig-faint, #98a4b3)"/><text x="570" y="204">Guardrail coverage: 100%</text>
+  </g>
+  <line x1="556" y1="220" x2="760" y2="220" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="556" y="240" font-size="8.5" fill="var(--fig-faint, #98a4b3)" letter-spacing="0.8">THE ASK</text>
+  <text x="556" y="257" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">&#8220;Growing, 100% attributed,</text>
+  <text x="556" y="271" font-size="10.5" fill="var(--fig-ink, #1f2933)" font-style="italic">100% guardrailed.&#8221;</text>
+</svg>

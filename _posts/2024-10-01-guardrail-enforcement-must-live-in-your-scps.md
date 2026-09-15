@@ -9,7 +9,9 @@ author: Vivek Mathew
 ---
 
 # Guardrail Enforcement Must Live in Your SCPs, Not as an Afterthought in Your Application Code
-![The same guardrail requirement enforced in application code versus in a Service Control Policy]({{ '/assets/img/scp-guardrails/where-the-control-lives.svg' | relative_url }})
+<figure class="fig">
+{% include figures/scp-guardrails--where-the-control-lives.svg %}
+</figure>
 
 Every enterprise adopting generative AI eventually writes the same sentence in a standards document: *"All applications must apply guardrails to LLM inputs and outputs."*
 
@@ -116,9 +118,10 @@ Together, these two statements say something no standards document can say on it
 
 ## What SCPs deliberately don't do
 
-![What an SCP can and cannot enforce]({{ '/assets/img/scp-guardrails/scp-reach.svg' | relative_url }})
-
-*The policy layer checks the shape of the call, never its contents. Both columns are real.*
+<figure class="fig">
+{% include figures/scp-guardrails--scp-reach.svg %}
+<figcaption>The policy layer checks the shape of the call, never its contents. Both columns are real.</figcaption>
+</figure>
 
 It's worth being precise here, because this is where the objections come from and where over-claiming loses credibility.
 
@@ -138,9 +141,10 @@ None of these are reasons to skip the SCP. They're the reasons the SCP is the *m
 
 ## The rest of the building
 
-![Four layers: SCP foundation, gateway or SDK, egress controls, observability]({{ '/assets/img/scp-guardrails/the-layers.svg' | relative_url }})
-
-*Three layers you can phase in, sitting on one you can't.*
+<figure class="fig">
+{% include figures/scp-guardrails--the-layers.svg %}
+<figcaption>Three layers you can phase in, sitting on one you can't.</figcaption>
+</figure>
 
 ### A gateway or SDK, for developer experience and observability
 
@@ -162,9 +166,10 @@ With every call flowing through a guardrailed, gated, logged path, the audit con
 
 If you're starting from app-level guidance today, this sequence has worked in my experience:
 
-![Six-step rollout sequence from guardrail catalog to monthly reporting]({{ '/assets/img/scp-guardrails/rollout.svg' | relative_url }})
-
-*Step 4 is the one everyone wants to do first. It goes fourth for a reason.*
+<figure class="fig">
+{% include figures/scp-guardrails--rollout.svg %}
+<figcaption>Step 4 is the one everyone wants to do first. It goes fourth for a reason.</figcaption>
+</figure>
 
 1. **Build the guardrail catalog first.** Two or three named guardrails with clear ownership. Risk and compliance own the content; platform owns the plumbing. Resist the single mega-policy.
 2. **Write the SCP, but don't attach it yet.** Instead, query CloudTrail for every `InvokeModel` and `Converse` event over a few weeks and check which ones would have been denied. This is your list of teams to talk to before anyone gets a surprise `403`.

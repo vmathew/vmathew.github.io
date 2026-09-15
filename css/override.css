@@ -18,6 +18,45 @@
   --figure-bg:   #ffffff;
   --measure:     820px;
   color-scheme: light;
+
+  /* Figure palette — inlined SVGs inherit these. */
+  --fig-bg: #ffffff;
+  --fig-box: #ffffff;
+  --fig-on-accent: #ffffff;
+  --fig-ink: #1f2933;
+  --fig-ink-2: #3c4a59;
+  --fig-muted: #5b6b7b;
+  --fig-muted-2: #7a8896;
+  --fig-faint: #98a4b3;
+  --fig-faint-2: #6b7887;
+  --fig-panel: #f8f9fa;
+  --fig-panel-2: #f6f8fa;
+  --fig-panel-3: #eef2f7;
+  --fig-panel-4: #eef1f4;
+  --fig-rule: #dde4ec;
+  --fig-rule-2: #cfd8e3;
+  --fig-rule-3: #e2e8f0;
+  --fig-blue: #2563eb;
+  --fig-blue-ink: #17315e;
+  --fig-blue-ink-2: #33507f;
+  --fig-blue-bg: #e7edfd;
+  --fig-blue-bg-2: #f3f7fd;
+  --fig-blue-bg-3: #dbe6fb;
+  --fig-blue-line: #93b0f5;
+  --fig-blue-line-2: #c4d5f7;
+  --fig-blue-line-3: #d3e0f6;
+  --fig-green: #0f6f4f;
+  --fig-green-2: #0f7a56;
+  --fig-green-3: #4a8f75;
+  --fig-green-bg: #e3f5ec;
+  --fig-green-line: #9fd8bf;
+  --fig-red: #c0392b;
+  --fig-red-bg: #fdeceb;
+  --fig-red-line: #eab5ae;
+  --fig-amber: #b7791f;
+  --fig-amber-ink: #8a5a13;
+  --fig-amber-bg: #fdf3e0;
+  --fig-amber-line: #e8cc9a;
 }
 
 /* Dark palette applies when the OS asks for it AND the reader hasn't pinned
@@ -36,6 +75,43 @@
     --code-text:   #e6edf3;
     --code-inline: #1c232b;
     --figure-bg:   #f4f6f8;
+    --fig-bg: #12171d;
+    --fig-box: #222b35;
+    --fig-on-accent: #0f1419;
+    --fig-ink: #e3e8ee;
+    --fig-ink-2: #c8d2dc;
+    --fig-muted: #9aa7b4;
+    --fig-muted-2: #8b98a6;
+    --fig-faint: #6f7d8b;
+    --fig-faint-2: #8b98a6;
+    --fig-panel: #1a212a;
+    --fig-panel-2: #1a212a;
+    --fig-panel-3: #232c37;
+    --fig-panel-4: #232c37;
+    --fig-rule: #303a45;
+    --fig-rule-2: #39434f;
+    --fig-rule-3: #2b333d;
+    --fig-blue: #7aa7ff;
+    --fig-blue-ink: #bcd2f8;
+    --fig-blue-ink-2: #a4bdea;
+    --fig-blue-bg: #1b2740;
+    --fig-blue-bg-2: #171f2e;
+    --fig-blue-bg-3: #22314e;
+    --fig-blue-line: #4368ad;
+    --fig-blue-line-2: #39568f;
+    --fig-blue-line-3: #33496f;
+    --fig-green: #5fd3a6;
+    --fig-green-2: #52c99b;
+    --fig-green-3: #79b79c;
+    --fig-green-bg: #10302a;
+    --fig-green-line: #2f6f57;
+    --fig-red: #ff8f80;
+    --fig-red-bg: #3a201d;
+    --fig-red-line: #7f4a42;
+    --fig-amber: #dfa85c;
+    --fig-amber-ink: #e0b268;
+    --fig-amber-bg: #31270f;
+    --fig-amber-line: #6d5626;
     color-scheme: dark;
   }
 }
@@ -52,6 +128,43 @@
     --code-text:   #e6edf3;
     --code-inline: #1c232b;
     --figure-bg:   #f4f6f8;
+  --fig-bg: #12171d;
+  --fig-box: #222b35;
+  --fig-on-accent: #0f1419;
+  --fig-ink: #e3e8ee;
+  --fig-ink-2: #c8d2dc;
+  --fig-muted: #9aa7b4;
+  --fig-muted-2: #8b98a6;
+  --fig-faint: #6f7d8b;
+  --fig-faint-2: #8b98a6;
+  --fig-panel: #1a212a;
+  --fig-panel-2: #1a212a;
+  --fig-panel-3: #232c37;
+  --fig-panel-4: #232c37;
+  --fig-rule: #303a45;
+  --fig-rule-2: #39434f;
+  --fig-rule-3: #2b333d;
+  --fig-blue: #7aa7ff;
+  --fig-blue-ink: #bcd2f8;
+  --fig-blue-ink-2: #a4bdea;
+  --fig-blue-bg: #1b2740;
+  --fig-blue-bg-2: #171f2e;
+  --fig-blue-bg-3: #22314e;
+  --fig-blue-line: #4368ad;
+  --fig-blue-line-2: #39568f;
+  --fig-blue-line-3: #33496f;
+  --fig-green: #5fd3a6;
+  --fig-green-2: #52c99b;
+  --fig-green-3: #79b79c;
+  --fig-green-bg: #10302a;
+  --fig-green-line: #2f6f57;
+  --fig-red: #ff8f80;
+  --fig-red-bg: #3a201d;
+  --fig-red-line: #7f4a42;
+  --fig-amber: #dfa85c;
+  --fig-amber-ink: #e0b268;
+  --fig-amber-bg: #31270f;
+  --fig-amber-line: #6d5626;
   color-scheme: dark;
 }
 
@@ -231,7 +344,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 28px auto 10px;
   border: 1px solid var(--rule);
   border-radius: 10px;
-  background: var(--figure-bg);
+}
+
+/* Inlined SVG diagrams. They read the --fig-* tokens above, so they follow
+   the theme toggle rather than being stuck on one background. */
+.fig { margin: 30px 0; }
+.fig-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+}
+.fig figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 /* The paragraph immediately after an image is its caption. Scoped with :has()
