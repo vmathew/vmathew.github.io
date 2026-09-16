@@ -1,0 +1,13 @@
+name = "bitsnbeyond-counter"
+main = "src/worker.js"
+compatibility_date = "2026-01-01"
+
+# Created with:  npx wrangler kv namespace create COUNTS
+# Paste the returned id below.
+[[kv_namespaces]]
+binding = "COUNTS"
+id = "a391f4e6ff4e4dd88793e05c10264ddc"
+
+# SALT is a secret, not a var. Set it once with:
+#   npx wrangler secret put SALT
+# Any long random string; it only has to stay constant and private.
