@@ -58,3 +58,9 @@ defaults:
 
 exclude:
   - editorial-redesign
+  - counter-worker
+
+# View/like counter. Set once the Worker in counter-worker/ is deployed;
+# until then the feedback bar renders nothing.
+counter_api: "https://bitsnbeyond-counter.bitsnbeyond.workers.dev"
+

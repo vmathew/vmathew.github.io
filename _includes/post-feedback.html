@@ -1,0 +1,54 @@
+{%- comment -%}
+  View count + like button, backed by the Cloudflare Worker in counter-worker/.
+
+  Renders nothing at all unless site.counter_api is set, so the site is
+  unaffected until the Worker is deployed. The bar also stays hidden if the
+  request fails — a broken counter should leave no trace on the page rather
+  than showing a stuck "0".
+{%- endcomment -%}
+{%- if site.counter_api -%}
+{%- assign slug = page.url | split: "/" | last | remove: ".html" -%}
+<div class="post-feedback" data-slug="{{ slug }}" data-api="{{ site.counter_api }}" hidden>
+  <span class="post-feedback-views"><span class="post-feedback-count" data-views>—</span> views</span>
+  <button class="post-feedback-like" type="button" aria-pressed="false">
+    <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">
+      <path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"
+            fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    </svg>
+    <span class="post-feedback-label">Like</span>
+    <span class="post-feedback-count" data-likes>—</span>
+  </button>
+</div>
+<script>
+(function () {
+  var el = document.querySelector('.post-feedback');
+  if (!el) return;
+  var api = el.dataset.api.replace(/\/$/, '');
+  var slug = el.dataset.slug;
+  var btn = el.querySelector('.post-feedback-like');
+  var viewsEl = el.querySelector('[data-views]');
+  var likesEl = el.querySelector('[data-likes]');
+
+  function paint(d) {
+    viewsEl.textContent = d.views.toLocaleString();
+    likesEl.textContent = d.likes.toLocaleString();
+    btn.setAttribute('aria-pressed', d.liked ? 'true' : 'false');
+    btn.disabled = !!d.liked;
+    el.hidden = false;
+  }
+
+  function send(path) {
+    return fetch(api + path + '/' + encodeURIComponent(slug), { method: 'POST' })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); });
+  }
+
+  // Record the view. If the counter is down, the bar simply never appears.
+  send('/hit').then(paint).catch(function () {});
+
+  btn.addEventListener('click', function () {
+    btn.disabled = true;
+    send('/like').then(paint).catch(function () { btn.disabled = false; });
+  });
+}());
+</script>
+{%- endif -%}

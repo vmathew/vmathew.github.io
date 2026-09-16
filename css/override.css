@@ -848,9 +848,16 @@ hr {
 
 code, pre, .post-meta time { font-family: var(--mono); }
 
-/* Post pages keep a reading measure even though the shell is wider. */
-.post, .page-content > .wrapper > *:not(.home) { max-width: var(--text-measure); }
-.post { margin-left: auto; margin-right: auto; }
+/* Post pages keep a reading measure even though the shell is wider.
+   The comments block is a sibling of <article>, not a child, so it needs the
+   same centring — without it, giscus sat 760px wide but flush left while the
+   article above it was centred. Standalone pages get the same treatment. */
+.post,
+.page-content > .wrapper > *:not(.home) {
+  max-width: var(--text-measure);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* --- Editorial home ------------------------------------------------------ */
 
@@ -1217,4 +1224,60 @@ code, pre, .post-meta time { font-family: var(--mono); }
 @media screen and (max-width: 640px) {
   .topics { gap: 40px; }
   .topics-index { columns: 1; }
+}
+
+/* --- Post feedback bar (views + likes) ------------------------------------ */
+
+.post-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 34px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+}
+
+.post-feedback-views {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.post-feedback-count { font-weight: 700; color: var(--text); }
+
+.post-feedback-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.post-feedback-like:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.post-feedback-like:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Once liked the button is spent — fill the heart and stop the hover cue
+   rather than greying it out, which would read as "broken". */
+.post-feedback-like[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+  cursor: default;
+}
+.post-feedback-like[aria-pressed="true"] svg { fill: currentColor; }
+
+@media screen and (max-width: 480px) {
+  .post-feedback { justify-content: center; }
 }
