@@ -10,7 +10,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/css/override.css' | relative_url }}">
+    {%- comment -%}
+      Cache-bust on every build. GitHub Pages serves CSS with max-age=600, so
+      without this a reader can get new HTML against a stale stylesheet for up
+      to ten minutes after a deploy.
+    {%- endcomment -%}
+    <link rel="stylesheet" href="{{ '/css/override.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3911008403069012"
      crossorigin="anonymous"></script>
@@ -31,6 +36,7 @@
         <nav class="site-nav">
           <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
           <a class="page-link" href="{{ '/categories/' | relative_url }}">Topics</a>
+          {% include rss-link.html %}
           {% include theme-toggle.html %}
           <!-- <a href="{{ site.github.repository_url }}">GitHub</a> -->
         </nav>

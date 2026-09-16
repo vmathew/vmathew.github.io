@@ -1,0 +1,13 @@
+{%- comment -%}
+  Points at the human-readable /subscribe/ page rather than /feed.xml, because
+  a raw Atom feed opened in a browser is a wall of XML (or a download prompt)
+  and reads as a broken link to anyone who isn't already an RSS user.
+  Feed readers still find the feed itself via the autodiscovery <link> in head.
+{%- endcomment -%}
+<a class="rss-link" href="{{ '/subscribe/' | relative_url }}" title="Subscribe by RSS" aria-label="Subscribe by RSS">
+  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+    <circle cx="5.8" cy="18.2" r="2.3" fill="currentColor"/>
+    <path d="M3.5 11.2a9.3 9.3 0 0 1 9.3 9.3" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/>
+    <path d="M3.5 4.6A15.9 15.9 0 0 1 19.4 20.5" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/>
+  </svg>
+</a>

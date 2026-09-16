@@ -1,0 +1,41 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 372" width="800" height="372" role="img" aria-labelledby="exec-three-answers-t exec-three-answers-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="exec-three-answers-t">Three ways to answer an executive demo request</title>
+  <desc id="exec-three-answers-d">The principled no teaches the executive that the platform slows ideas down. The side project teaches them the fast path goes around the platform. A governed yes on the platform teaches them the platform is the fast path.</desc>
+  <rect width="800" height="372" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Three answers, and what each one teaches</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The demo is a moment. What the executive learns from your answer lasts much longer.</text>
+  <rect x="20" y="70" width="244" height="240" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="40" y="96" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">The principled no</text>
+  <text x="40" y="124" font-size="10" fill="var(--fig-muted, #5b6b7b)">&#8220;It would need a guardrail, a risk</text>
+  <text x="40" y="140" font-size="10" fill="var(--fig-muted, #5b6b7b)">review, tool integration &#8212; so</text>
+  <text x="40" y="156" font-size="10" fill="var(--fig-muted, #5b6b7b)">realistically, next quarter.&#8221;</text>
+  <line x1="40" y1="188" x2="244" y2="188" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="40" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT THE EXECUTIVE LEARNS</text>
+  <text x="40" y="232" font-size="11.5" font-weight="700" fill="var(--fig-red, #c0392b)">The platform is where</text>
+  <text x="40" y="249" font-size="11.5" font-weight="700" fill="var(--fig-red, #c0392b)">ideas go to slow down.</text>
+  <rect x="40" y="276" width="116" height="20" rx="10" fill="var(--fig-box, #ffffff)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="50" y="290" font-size="9" font-weight="700" fill="var(--fig-red, #c0392b)" letter-spacing="0.5">EVERY WORD TRUE</text>
+  <rect x="278" y="70" width="244" height="240" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="298" y="96" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">The side project</text>
+  <text x="298" y="124" font-size="10" fill="var(--fig-muted, #5b6b7b)">&#8220;Sure, I&#8217;ll get someone to</text>
+  <text x="298" y="140" font-size="10" fill="var(--fig-muted, #5b6b7b)">spin something up.&#8221; An API key</text>
+  <text x="298" y="156" font-size="10" fill="var(--fig-muted, #5b6b7b)">and a weekend.</text>
+  <line x1="298" y1="188" x2="502" y2="188" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="298" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT THE EXECUTIVE LEARNS</text>
+  <text x="298" y="232" font-size="11.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">The fast path is the path</text>
+  <text x="298" y="249" font-size="11.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">around the platform.</text>
+  <rect x="298" y="276" width="129" height="20" rx="10" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="308" y="290" font-size="9" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" letter-spacing="0.5">SHADOW AI, BY YOU</text>
+  <rect x="536" y="70" width="244" height="240" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="556" y="96" font-size="13.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Yes, on the platform</text>
+  <text x="556" y="124" font-size="10" fill="var(--fig-muted, #5b6b7b)">&#8220;Running in ten days, sandbox</text>
+  <text x="556" y="140" font-size="10" fill="var(--fig-muted, #5b6b7b)">guardrail, synthetic data &#8212;</text>
+  <text x="556" y="156" font-size="10" fill="var(--fig-muted, #5b6b7b)">and here&#8217;s the path to real.&#8221;</text>
+  <line x1="556" y1="188" x2="760" y2="188" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="556" y="210" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT THE EXECUTIVE LEARNS</text>
+  <text x="556" y="232" font-size="11.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">The platform is the</text>
+  <text x="556" y="249" font-size="11.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">fast path.</text>
+  <rect x="556" y="276" width="78" height="20" rx="10" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="566" y="290" font-size="9" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.5">A SPONSOR</text>
+  <text x="400" y="344" font-size="11.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">The first two share a mistake: they treat the demo as the request.</text>
+</svg>

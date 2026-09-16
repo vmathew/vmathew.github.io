@@ -579,6 +579,34 @@ hr {
 
 .page-content > .wrapper > hr { margin: 36px 0 30px; }
 
+/* Tables on standalone pages were still picking up minima's bordered default,
+   because the table rules above are scoped to .post-content. */
+.page-content > .wrapper > table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  color: var(--text);
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+.page-content > .wrapper > table th {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--rule);
+  padding: 10px 14px 10px 0;
+  font-weight: 700;
+  text-align: left;
+}
+.page-content > .wrapper > table td {
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  padding: 10px 14px 10px 0;
+}
+.page-content > .wrapper > table tr:nth-child(even) { background: none; }
+@media screen and (max-width: 700px) {
+  .page-content > .wrapper > table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
 /* --- Connect card --------------------------------------------------------- */
 
 .connect-card {
@@ -813,4 +841,52 @@ hr {
     font-size: 20px;
     margin: -10px 0 30px;
   }
+}
+
+/* --- RSS link + subscribe page -------------------------------------------- */
+
+/* Matches `.site-nav a:not(:last-child)` specificity (0,2,1) and comes later,
+   so the icon gets a tighter gap than the text links either side of it. */
+.site-nav a.rss-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  color: var(--muted);
+  vertical-align: middle;
+}
+.site-nav a.rss-link:hover { color: var(--accent); text-decoration: none; }
+.site-nav a.rss-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+
+.feed-url {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin: 22px 0 28px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+}
+.feed-url-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+}
+.feed-url code {
+  font-size: 14px;
+  background: none;
+  padding: 0;
+  color: var(--text);
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav a.rss-link { margin-right: 2px; }
 }

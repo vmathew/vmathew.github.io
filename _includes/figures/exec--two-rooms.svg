@@ -1,0 +1,25 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-labelledby="exec-two-rooms-t exec-two-rooms-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="exec-two-rooms-t">The two rooms a platform leader answers to</title>
+  <desc id="exec-two-rooms-d">The risk committee wants evidence that you are in control. The executive wants evidence that you can move. The governed fast path is what lets the platform leader prove both in the same week without contradiction.</desc>
+  <rect width="800" height="320" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Two rooms, one platform</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The same discipline as the risk committee, pointed the other way.</text>
+  <rect x="20" y="70" width="372" height="140" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="40" y="96" font-size="13.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">The risk committee</text>
+  <text x="40" y="118" font-size="11" fill="var(--fig-blue-ink-2, #33507f)">Wants evidence that you are</text>
+  <text x="40" y="134" font-size="12.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">in control</text>
+  <text x="40" y="162" font-size="10" fill="var(--fig-muted, #5b6b7b)">Policy, coverage queries, traces,</text>
+  <text x="40" y="177" font-size="10" fill="var(--fig-muted, #5b6b7b)">a named owner per use case</text>
+  <text x="40" y="196" font-size="10" fill="var(--fig-muted-2, #7a8896)">Answered with a query, not a paragraph</text>
+  <rect x="408" y="70" width="372" height="140" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="428" y="96" font-size="13.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">The executive</text>
+  <text x="428" y="118" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">Wants evidence that you</text>
+  <text x="428" y="134" font-size="12.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">can move</text>
+  <text x="428" y="162" font-size="10" fill="var(--fig-muted, #5b6b7b)">A date, a working thing, a path</text>
+  <text x="428" y="177" font-size="10" fill="var(--fig-muted, #5b6b7b)">from demo to production</text>
+  <text x="428" y="196" font-size="10" fill="var(--fig-muted-2, #7a8896)">Answered with a date, not a maybe</text>
+  <path d="M206,210 L206,238 L594,238 L594,210" fill="none" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="1.6"/>
+  <rect x="180" y="248" width="440" height="50" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="2"/>
+  <text x="400" y="270" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">The governed fast path</text>
+  <text x="400" y="288" font-size="10.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">Lets you say both, in the same week, without contradiction</text>
+</svg>

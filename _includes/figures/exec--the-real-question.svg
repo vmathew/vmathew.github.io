@@ -1,0 +1,32 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 366" width="800" height="366" role="img" aria-labelledby="exec-the-real-question-t exec-the-real-question-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="exec-the-real-question-t">The three questions hiding behind a demo request</title>
+  <desc id="exec-the-real-question-d">Are we behind is anxiety about competitive position and needs an honest assessment. Can we do this is a feasibility question and needs a date. I need something to show is a communication need and wants an artifact.</desc>
+  <rect width="800" height="366" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">The demo is never the request</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">They have a question they have not said out loud, and the demo is the shape they gave it.</text>
+  <text x="44" y="84" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT THEY SAID</text>
+  <text x="300" y="84" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT IT REALLY IS</text>
+  <text x="530" y="84" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.7">WHAT IT ACTUALLY NEEDS</text>
+  <line x1="24" y1="92" x2="776" y2="92" stroke="var(--fig-rule-2, #cfd8e3)" stroke-width="2"/>
+  <rect x="24" y="102" width="752" height="60" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="138" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;Are we behind?&#8221;</text>
+  <text x="300" y="129" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Anxiety about</text>
+  <text x="300" y="145" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">competitive position</text>
+  <text x="530" y="129" font-size="10.5" fill="var(--fig-green, #0f6f4f)">An honest assessment.</text>
+  <text x="530" y="145" font-size="10.5" fill="var(--fig-green, #0f6f4f)">A demo will not settle it.</text>
+  <rect x="24" y="168" width="752" height="60" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="204" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;Can we do this?&#8221;</text>
+  <text x="300" y="195" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">A feasibility</text>
+  <text x="300" y="211" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">question</text>
+  <text x="530" y="195" font-size="10.5" fill="var(--fig-green, #0f6f4f)">A feasibility answer,</text>
+  <text x="530" y="211" font-size="10.5" fill="var(--fig-green, #0f6f4f)">with a date.</text>
+  <rect x="24" y="234" width="752" height="60" rx="9" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="270" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;I need something to show.&#8221;</text>
+  <text x="300" y="261" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">A communication</text>
+  <text x="300" y="277" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">need</text>
+  <text x="530" y="261" font-size="10.5" fill="var(--fig-green, #0f6f4f)">An artifact. Often a slide</text>
+  <text x="530" y="277" font-size="10.5" fill="var(--fig-green, #0f6f4f)">beats a chatbot.</text>
+  <rect x="24" y="306" width="752" height="44" rx="9" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="44" y="326" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.7">THE QUESTION THAT TELLS YOU WHICH</text>
+  <text x="44" y="342" font-size="12" font-weight="700" fill="var(--fig-blue-ink, #17315e)">&#8220;What would you want people to take away from seeing it?&#8221;</text>
+</svg>
