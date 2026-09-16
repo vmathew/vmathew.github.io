@@ -180,7 +180,7 @@
 /* --- Base ---------------------------------------------------------------- */
 
 body {
-  font: 400 17px/1.65 "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
@@ -809,9 +809,16 @@ hr {
 /* --- Editorial type system ---------------------------------------------- */
 
 :root {
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  /* System stacks: no web-font request, and identical rendering to the site
+     before the editorial redesign. The token names are kept so the layout
+     rules do not have to change; to try the web fonts again, restore the
+     commented values below and re-add the <link> in _layouts/default.html.
+       --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+       --sans:  "IBM Plex Sans", -apple-system, ... ;
+       --mono:  "IBM Plex Mono", ui-monospace, ... ;                        */
+  --serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono:  ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --measure: 1040px;
   --text-measure: 760px;
 }
@@ -823,7 +830,7 @@ hr {
 .page-content > .wrapper > h3,
 .page-heading {
   font-family: var(--serif);
-  letter-spacing: -0.012em;
+  letter-spacing: -0.022em;
 }
 
 .post-title { font-size: 42px; line-height: 1.12; font-weight: 700; }
