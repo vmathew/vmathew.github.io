@@ -965,14 +965,12 @@ code, pre, .post-meta time { font-family: var(--mono); }
 .home-side-series a, .home-side-series a:visited { color: var(--text); }
 .home-side-series a:hover { color: var(--accent); }
 .home-side-count { color: var(--muted); }
-.home-side-connect .connect-card {
-  margin: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 12px;
-}
-.home-side-connect .connect-card-body { width: 100%; }
+/* The sidebar card was re-laid-out as a vertical stack, which made it look
+   like a different component to the one at the foot of every post. It only
+   needs to drop the centring margin — the horizontal layout fits the ~333px
+   column, and the existing 480px breakpoint still stacks and centres it on
+   phones. */
+.home-side-connect .connect-card { margin: 0; }
 
 @media screen and (max-width: 900px) {
   .home-lede, .home-hero, .home-grid { grid-template-columns: minmax(0, 1fr); }
