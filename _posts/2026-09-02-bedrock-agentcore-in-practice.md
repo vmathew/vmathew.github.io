@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bedrock AgentCore in Practice: What the Managed Primitives Buy You, and What They Don't"
-date: 2026-08-30
+date: 2026-09-02
 categories: [AI, Architecture]
 tags: [Amazon Bedrock, AgentCore, AI Agents, AgenticAI, AWS, Platform Engineering, AI Governance]
 description: "AgentCore is a set of managed building blocks for agents, not an agent platform that thinks for you. A primitive-by-primitive look at what each one actually takes off your plate, what it leaves, and how the pieces fit into a governed enterprise platform."
