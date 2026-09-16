@@ -1,0 +1,31 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="gov-the-same-arc-t gov-the-same-arc-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="gov-the-same-arc-t">Cloud security travelled from guidance to enforcement; AI is at the start of the same road</title>
+  <desc id="gov-the-same-arc-d">Cloud security moved through three phases: please encrypt your buckets, then scan and chase owners, then deny unencrypted writes at the organization level. AI governance is mostly still in phase one, asking teams to apply guardrails.</desc>
+  <rect width="800" height="330" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">The same three phases, one layer up</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Cloud security took about a decade to walk this. AI governance does not have to take as long.</text>
+  <rect x="24" y="72" width="248" height="128" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="44" y="96" font-size="9.5" font-weight="700" fill="var(--fig-red, #c0392b)" letter-spacing="0.8">PHASE 1</text>
+  <text x="44" y="120" font-size="14" font-weight="700" fill="var(--fig-ink, #1f2933)">Guidance</text>
+  <text x="44" y="142" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">&#8220;Please encrypt your buckets.&#8221;</text>
+  <text x="44" y="168" font-size="10.5" fill="var(--fig-red, #c0392b)">Works at five teams.</text>
+  <text x="44" y="183" font-size="10.5" fill="var(--fig-red, #c0392b)">Fails at fifty.</text>
+  <rect x="276" y="72" width="248" height="128" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="296" y="96" font-size="9.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" letter-spacing="0.8">PHASE 2</text>
+  <text x="296" y="120" font-size="14" font-weight="700" fill="var(--fig-ink, #1f2933)">Detection</text>
+  <text x="296" y="142" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Scan, alert, chase the owner.</text>
+  <text x="296" y="168" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">You know about it &#8212;</text>
+  <text x="296" y="183" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">after the fact.</text>
+  <rect x="528" y="72" width="248" height="128" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="548" y="96" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.8">PHASE 3</text>
+  <text x="548" y="120" font-size="14" font-weight="700" fill="var(--fig-ink, #1f2933)">Enforcement</text>
+  <text x="548" y="142" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Deny it in organization policy.</text>
+  <text x="548" y="168" font-size="10.5" fill="var(--fig-green, #0f6f4f)">The wrong path stops</text>
+  <text x="548" y="183" font-size="10.5" fill="var(--fig-green, #0f6f4f)">working entirely.</text>
+  <rect x="24" y="222" width="752" height="40" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="240" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Where cloud security ended up</text>
+  <text x="44" y="256" font-size="10" fill="var(--fig-muted, #5b6b7b)">Encryption mandatory, public buckets impossible, the region list a policy rather than a wiki page.</text>
+  <circle cx="712" cy="242" r="13" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M706,242 L710,246.5 L718,237" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="298" font-size="11.5" font-weight="700" fill="var(--fig-red, #c0392b)" text-anchor="middle">Most enterprises adopting AI today are in phase one, writing the sentence about guardrails.</text>
+</svg>

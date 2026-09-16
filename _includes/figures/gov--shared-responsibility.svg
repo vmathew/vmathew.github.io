@@ -1,0 +1,25 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 352" width="800" height="352" role="img" aria-labelledby="gov-shared-responsibility-t gov-shared-responsibility-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="gov-shared-responsibility-t">Shared responsibility for AI, drawn as four layers</title>
+  <desc id="gov-shared-responsibility-d">The provider owns the foundation model. The platform team owns which models are reachable, guardrails, identity, attribution and traces. The business unit owns the use case and its data. The human using it owns the decision. Most governance gaps sit in the platform layer, because nobody owns it by default.</desc>
+  <rect width="800" height="352" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Shared responsibility, redrawn</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Cloud&#8217;s version worked because the line was legible. For AI the line sits in a different place.</text>
+  <rect x="24" y="72" width="752" height="58" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="96" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">The decision</text>
+  <text x="44" y="115" font-size="10" fill="var(--fig-muted, #5b6b7b)">Review, judgement, and accountability for acting on the output</text>
+  <text x="756" y="96" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="end">The human using it</text>
+  <rect x="24" y="140" width="752" height="58" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="164" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Use case and data</text>
+  <text x="44" y="183" font-size="10" fill="var(--fig-muted, #5b6b7b)">What it is for, what data it may touch, what &#8220;good&#8221; looks like</text>
+  <text x="756" y="164" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="end">The business unit</text>
+  <rect x="24" y="208" width="752" height="58" rx="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)" stroke-width="2"/>
+  <text x="44" y="232" font-size="12.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">Platform and configuration</text>
+  <text x="44" y="251" font-size="10" fill="var(--fig-muted, #5b6b7b)">Which models are reachable, guardrails, identity, attribution, traces</text>
+  <text x="756" y="232" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="end">Your platform team</text>
+  <text x="756" y="251" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="end">&#8592; the row nobody owns by default</text>
+  <rect x="24" y="276" width="752" height="58" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="300" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Foundation model</text>
+  <text x="44" y="319" font-size="10" fill="var(--fig-muted, #5b6b7b)">Training, model safety, availability, data-handling terms</text>
+  <text x="756" y="300" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="end">The provider</text>
+  <text x="400" y="344" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">If no platform team claims the blue row, every application team reinvents it differently.</text>
+</svg>
