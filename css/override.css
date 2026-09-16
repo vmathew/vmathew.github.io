@@ -1073,7 +1073,7 @@ code, pre, .post-meta time { font-family: var(--mono); }
 }
 .about-title {
   font-family: var(--serif);
-  font-size: 44px; line-height: 1.1; font-weight: 700;
+  font-size: 34px; line-height: 1.1; font-weight: 700;
   letter-spacing: -0.02em; margin: 0 0 18px; text-wrap: pretty;
 }
 .about-lede { font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 60ch; }
@@ -1150,7 +1150,7 @@ code, pre, .post-meta time { font-family: var(--mono); }
   .about-hero { grid-template-columns: minmax(0, 1fr); }
   .about-hero-mark { width: 120px; height: 120px; border-radius: 18px; order: -1; }
   .about-monogram { font-size: 40px; }
-  .about-title { font-size: 32px; }
+  .about-title { font-size: 26px; }
   .about-now-grid, .about-topics-grid { grid-template-columns: minmax(0, 1fr); }
   .about-timeline { grid-template-columns: minmax(0, 1fr); gap: 20px 0; }
   .about-timeline li { padding-right: 0; }
