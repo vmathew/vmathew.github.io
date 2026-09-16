@@ -9,7 +9,7 @@ permalink: /about/
   <section class="about-hero">
     <div class="about-hero-text">
       <p class="about-kicker">About</p>
-      <h1 class="about-title">I build AI systems that survive contact with a bank's risk committee.</h1>
+      <h1 class="about-title">"I build AI platforms that engineers want to use, risk teams can audit, and leaders can fund.</h1>
       <p class="about-lede">I'm <strong>Vivek Mathew</strong>, an AI and software engineering leader with 19+ years in distributed systems and cloud platforms, currently a Principal Architect at Fifth Third Bank.</p>
     </div>
     <div class="about-hero-mark" aria-hidden="true">
@@ -53,7 +53,7 @@ permalink: /about/
       </li>
       <li>
         <span class="about-timeline-when">2022 – 2024</span>
-        <span class="about-timeline-role">Sr. Cloud Application Architect</span>
+        <span class="about-timeline-role">Senior Cloud Application Architect</span>
         <span class="about-timeline-org">Amazon Web Services</span>
         <span class="about-timeline-note">Reference architectures and prototypes that put Claude, Llama, Titan and Mistral into enterprise products; GenAI Ambassador in the Technical Field Community.</span>
       </li>
