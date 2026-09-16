@@ -1,0 +1,35 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 352" width="800" height="352" role="img" aria-labelledby="agentcore-two-walls-t agentcore-two-walls-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="agentcore-two-walls-t">Gateway Policy is the inner wall; organization policy is the outer one</title>
+  <desc id="agentcore-two-walls-d">An agent on the runtime reaches tools through the AgentCore Gateway, where Policy, rate limits and traces apply. An attempt to reach an ungoverned tool endpoint directly bypasses Policy entirely and is stopped only by the outer wall of SCPs and egress controls.</desc>
+  <defs><marker id="agentcore-two-walls-g" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-green-2, #0f7a56)"/></marker></defs>
+  <rect width="800" height="352" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Two walls, and only one of them is managed</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Policy sees what reaches the Gateway. What never reaches it is the outer wall&#8217;s problem.</text>
+  <rect x="24" y="70" width="600" height="212" rx="12" fill="none" stroke="var(--fig-blue-line, #93b0f5)" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="44" y="92" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)" letter-spacing="0.6">OUTER WALL &#8212; SCPs + EGRESS CONTROLS (YOURS)</text>
+  <rect x="236" y="106" width="372" height="146" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="256" y="128" font-size="10.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)" letter-spacing="0.6">INNER WALL &#8212; AGENTCORE GATEWAY</text>
+  <text x="256" y="145" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)">Policy &#183; rate limits &#183; identity &#183; traces</text>
+  <rect x="256" y="158" width="164" height="36" rx="7" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="338" y="181" font-size="10.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">search &#183; read-only</text>
+  <rect x="256" y="200" width="164" height="36" rx="7" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="338" y="223" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">submit &#183; consequential</text>
+  <text x="516" y="180" font-size="10" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">every call is classified,</text>
+  <text x="516" y="194" font-size="10" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">logged and rate-limited</text>
+  <rect x="52" y="150" width="124" height="52" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="114" y="172" font-size="11.5" font-weight="600" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Agent</text>
+  <text x="114" y="188" font-size="8.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">on the Runtime</text>
+  <line x1="176" y1="164" x2="230" y2="164" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#agentcore-two-walls-g)"/>
+  <text x="203" y="156" font-size="9" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">governed</text>
+  <rect x="656" y="150" width="120" height="52" rx="8" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)" stroke-dasharray="5 4"/>
+  <text x="716" y="170" font-size="10" fill="var(--fig-red, #c0392b)" text-anchor="middle">Ungoverned</text>
+  <text x="716" y="184" font-size="10" fill="var(--fig-red, #c0392b)" text-anchor="middle">tool endpoint</text>
+  <text x="716" y="132" font-size="9" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">outside both walls</text>
+  <path d="M114,202 L114,306 L588,306" fill="none" stroke="var(--fig-red, #c0392b)" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="140" y="298" font-size="9.5" fill="var(--fig-red, #c0392b)">direct call &#8212; Policy never sees it</text>
+  <circle cx="612" cy="306" r="12" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red, #c0392b)" stroke-width="1.8"/>
+  <path d="M607,301 L617,311 M617,301 L607,311" stroke="var(--fig-red, #c0392b)" stroke-width="1.9" stroke-linecap="round"/>
+  <text x="634" y="302" font-size="10.5" font-weight="700" fill="var(--fig-red, #c0392b)">Stopped here, or not at all</text>
+  <text x="634" y="316" font-size="9.5" fill="var(--fig-muted, #5b6b7b)">only the outer wall can catch it</text>
+  <text x="400" y="342" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Without an SCP or a network policy, the Gateway is a convenience some teams use.</text>
+</svg>

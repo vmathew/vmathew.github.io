@@ -1,0 +1,40 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 462" width="800" height="462" role="img" aria-labelledby="agentcore-primitives-t agentcore-primitives-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="agentcore-primitives-t">What each AgentCore primitive buys you and what it leaves</title>
+  <desc id="agentcore-primitives-d">Runtime, Gateway, Identity, Memory, Policy, Observability and Evaluations, each with the chore it removes and the responsibility it leaves behind.</desc>
+  <rect width="800" height="462" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Primitive by primitive</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The right-hand column is the one that decides whether your agent programme succeeds.</text>
+  <text x="44" y="82" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">PRIMITIVE</text>
+  <text x="188" y="82" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.7">WHAT IT BUYS YOU</text>
+  <text x="472" y="82" font-size="9.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" letter-spacing="0.7">WHAT IT LEAVES YOU</text>
+  <line x1="24" y1="90" x2="776" y2="90" stroke="var(--fig-rule-2, #cfd8e3)" stroke-width="2"/>
+  <rect x="24" y="98" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="123" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Runtime</text>
+  <text x="188" y="123" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Somewhere to run, scale and isolate sessions</text>
+  <text x="472" y="123" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Your loop, retries, and the context bill</text>
+  <rect x="24" y="144" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="169" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Gateway</text>
+  <text x="188" y="169" font-size="10.5" fill="var(--fig-green, #0f6f4f)">One door to every tool, with rate limits</text>
+  <text x="472" y="169" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Tool classification &#8212; and making it mandatory</text>
+  <rect x="24" y="190" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="215" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Identity</text>
+  <text x="188" y="215" font-size="10.5" fill="var(--fig-green, #0f6f4f)">OAuth, token exchange, a credential vault</text>
+  <text x="472" y="215" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">What that identity may do downstream</text>
+  <rect x="24" y="236" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="261" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Memory</text>
+  <text x="188" y="261" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Session and long-term state, no vector store</text>
+  <text x="472" y="261" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Retention, classification and purge policy</text>
+  <rect x="24" y="282" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="307" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Policy</text>
+  <text x="188" y="307" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Rules enforced outside the agent&#8217;s code</text>
+  <text x="472" y="307" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Anything that bypasses this gateway</text>
+  <rect x="24" y="328" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="353" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Observability</text>
+  <text x="188" y="353" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Spans across runtime, gateway and tools</text>
+  <text x="472" y="353" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Judgment about what a good run looks like</text>
+  <rect x="24" y="374" width="752" height="40" rx="7" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="399" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)">Evaluations</text>
+  <text x="188" y="399" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Managed scorers and online evaluation</text>
+  <text x="472" y="399" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">What &#8220;good&#8221; means for your use case</text>
+  <text x="400" y="442" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Code Interpreter and Browser are open-world tools. Harness trades control for speed. The Registry is yours to govern.</text>
+</svg>

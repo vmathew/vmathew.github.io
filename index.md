@@ -1,1 +1,1 @@
-<p class="site-lede">How enterprises adopt AI without losing control of it.</p>
+<p class="site-lede">Bits of enterprise AI, and what lies beyond the build.</p>

@@ -3,7 +3,7 @@ author: "Vivek Mathew"
 # Profile photo for the connect card. If this file is missing or fails to
 # load, the card falls back to a "VM" monogram.
 avatar: /assets/img/vivek.jpeg
-description: "How enterprises adopt AI without losing control of it — AI governance, guardrails, cost attribution and enterprise AI platforms." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Bits of enterprise AI, and what lies beyond the build — AI governance, guardrails, cost attribution and enterprise AI platforms." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 url: "https://www.bitsnbeyond.blog"
 google_analytics: G-2JYVC25XD5
 # Email / Social media user names used by the minima theme:

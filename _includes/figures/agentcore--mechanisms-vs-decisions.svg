@@ -1,0 +1,50 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 356" width="800" height="356" role="img" aria-labelledby="agentcore-mechanisms-vs-decisions-t agentcore-mechanisms-vs-decisions-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="agentcore-mechanisms-vs-decisions-t">Mechanisms AgentCore takes, decisions it leaves</title>
+  <desc id="agentcore-mechanisms-vs-decisions-d">AgentCore takes running, connecting, authenticating, remembering, enforcing, tracing and scoring off your plate. It leaves what the agent is for, what it may touch, what good looks like, who owns it, and what happens when it is wrong.</desc>
+  <rect width="800" height="356" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Mechanisms, not decisions</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Every primitive takes one mechanism off your plate. None of them takes a decision off it.</text>
+  <rect x="20" y="66" width="372" height="256" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="40" y="95" font-size="13.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">AgentCore takes these</text>
+  <text x="40" y="112" font-size="10" fill="var(--fig-green, #0f6f4f)">The undifferentiated plumbing</text>
+  <circle cx="46" cy="136" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,136 L45,138.8 L49.8,133" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="140" font-size="11.5" fill="var(--fig-ink, #1f2933)">Running the agent</text>
+  <circle cx="46" cy="161" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,161 L45,163.8 L49.8,158" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="165" font-size="11.5" fill="var(--fig-ink, #1f2933)">Connecting it to tools</text>
+  <circle cx="46" cy="186" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,186 L45,188.8 L49.8,183" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="190" font-size="11.5" fill="var(--fig-ink, #1f2933)">Authenticating as someone</text>
+  <circle cx="46" cy="211" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,211 L45,213.8 L49.8,208" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="215" font-size="11.5" fill="var(--fig-ink, #1f2933)">Remembering across sessions</text>
+  <circle cx="46" cy="236" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,236 L45,238.8 L49.8,233" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="240" font-size="11.5" fill="var(--fig-ink, #1f2933)">Enforcing rules at the gateway</text>
+  <circle cx="46" cy="261" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,261 L45,263.8 L49.8,258" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="265" font-size="11.5" fill="var(--fig-ink, #1f2933)">Tracing what happened</text>
+  <circle cx="46" cy="286" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <path d="M42.5,286 L45,288.8 L49.8,283" fill="none" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="290" font-size="11.5" fill="var(--fig-ink, #1f2933)">Scoring how it went</text>
+  <rect x="408" y="66" width="372" height="256" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="428" y="95" font-size="13.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">You still own these</text>
+  <text x="428" y="112" font-size="10" fill="var(--fig-amber-ink, #8a5a13)">No managed service decides them for you</text>
+  <circle cx="434" cy="142" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="434" y="146" font-size="10" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">1</text>
+  <text x="450" y="146" font-size="11.5" fill="var(--fig-ink, #1f2933)">What the agent is for</text>
+  <circle cx="434" cy="172" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="434" y="176" font-size="10" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">2</text>
+  <text x="450" y="176" font-size="11.5" fill="var(--fig-ink, #1f2933)">What it may touch</text>
+  <circle cx="434" cy="202" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="434" y="206" font-size="10" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">3</text>
+  <text x="450" y="206" font-size="11.5" fill="var(--fig-ink, #1f2933)">What &#8220;good&#8221; looks like</text>
+  <circle cx="434" cy="232" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="434" y="236" font-size="10" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">4</text>
+  <text x="450" y="236" font-size="11.5" fill="var(--fig-ink, #1f2933)">Who is accountable, by name</text>
+  <circle cx="434" cy="262" r="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="434" y="266" font-size="10" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">5</text>
+  <text x="450" y="266" font-size="11.5" fill="var(--fig-ink, #1f2933)">What happens when it is wrong</text>
+  <text x="400" y="344" font-size="11.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">It makes the mechanisms cheap. It makes the decisions unavoidable.</text>
+</svg>
