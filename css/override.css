@@ -1090,10 +1090,10 @@ code, pre, .post-meta time { font-family: var(--mono); }
 }
 .about-card p:last-child { font-size: 15.5px; line-height: 1.6; color: var(--muted); }
 
-.about-timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+.about-timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
 .about-timeline li {
   display: flex; flex-direction: column; gap: 4px; margin: 0;
-  padding: 22px 20px 0 0; border-top: 2px solid var(--rule); position: relative;
+  padding: 22px 24px 0 0; border-top: 2px solid var(--rule); position: relative;
 }
 .about-timeline li::before {
   content: ""; position: absolute; top: -6px; left: 0;
@@ -1102,7 +1102,7 @@ code, pre, .post-meta time { font-family: var(--mono); }
 .about-timeline li.is-current { border-top-color: var(--accent); }
 .about-timeline li.is-current::before { background: var(--accent); }
 .about-timeline-when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
-.about-timeline-role { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.3; margin-top: 4px; }
+.about-timeline-role { font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin-top: 4px; }
 .about-timeline-org { font-size: 14.5px; font-weight: 600; color: var(--accent); }
 .about-timeline-note { font-size: 14.5px; line-height: 1.55; color: var(--muted); margin-top: 8px; }
 
@@ -1135,17 +1135,13 @@ code, pre, .post-meta time { font-family: var(--mono); }
 .about-connect .connect-card { margin: 0; }
 .about-links { font-size: 15px; color: var(--muted); }
 
-@media screen and (max-width: 1000px) {
-  .about-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 20px; }
-}
 @media screen and (max-width: 800px) {
   .about { gap: 44px; }
   .about-hero { grid-template-columns: minmax(0, 1fr); }
   .about-hero-mark { width: 120px; height: 120px; border-radius: 18px; order: -1; }
   .about-monogram { font-size: 40px; }
   .about-title { font-size: 32px; }
-  .about-now-grid, .about-topics-grid { grid-template-columns: minmax(0, 1fr); }
-  .about-timeline { grid-template-columns: minmax(0, 1fr); gap: 20px 0; }
+  .about-now-grid, .about-topics-grid, .about-timeline { grid-template-columns: minmax(0, 1fr); }
   .about-timeline li { padding-right: 0; }
   .about-quote blockquote { font-size: 20px; padding-left: 20px; }
 }
