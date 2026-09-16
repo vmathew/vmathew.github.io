@@ -1,21 +1,30 @@
-<hr>
-<div class="post_navi">
+{%- comment -%}
+  Prev/next footer. Titles here are long, so each side is a flex column with
+  min-width:0 — without that, a flex item refuses to shrink below its content
+  and long titles blow out the row. Arrows come from CSS so the markup stays
+  clean and screen readers don't announce stray "<" and ">".
+{%- endcomment -%}
+<nav class="post_navi" aria-label="Post navigation">
   {%- if page.previous.url -%}
-  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Post</div><div><span>{{ page.previous.title }}</span></div>
+  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}">
+    <span class="post_navi-label">Previous post</span>
+    <span class="post_navi-title">{{ page.previous.title | escape }}</span>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Blog Archive</div><div><span>Archive of all previous blog posts</span></div>
+  <a class="post_navi-item nav_prev" href="{{ '/archive.html' | relative_url }}">
+    <span class="post_navi-label">Blog archive</span>
+    <span class="post_navi-title">All previous posts</span>
   </a>
   {%- endif -%}
   {%- if page.next.url -%}
-  <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Post</div><div><span>{{ page.next.title }}</span></div>
+  <a class="post_navi-item nav_next" href="{{ page.next.url }}">
+    <span class="post_navi-label">Next post</span>
+    <span class="post_navi-title">{{ page.next.title | escape }}</span>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Blog Archive</div><div><span>Archive of all previous blog posts</span></div>
+  <a class="post_navi-item nav_next" href="{{ '/archive.html' | relative_url }}">
+    <span class="post_navi-label">Blog archive</span>
+    <span class="post_navi-title">All previous posts</span>
   </a>
   {%- endif -%}
-</div>
+</nav>

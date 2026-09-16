@@ -498,9 +498,54 @@ hr {
 
 /* --- Post navigation (existing markup) ----------------------------------- */
 
-.post_navi { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 40px; }
-.post_navi .post_navi-item:hover { text-decoration: none; }
-.post_navi .post_navi-label { text-transform: uppercase; letter-spacing: 0.06em; }
+.post_navi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+  border-top: 1px solid var(--rule);
+  padding-top: 24px;
+  margin-top: 44px;
+}
+
+.post_navi-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1 1 240px;
+  /* Without min-width:0 a flex item will not shrink below its content, so a
+     long post title forces the row to overflow instead of wrapping. */
+  min-width: 0;
+  color: inherit;
+}
+.post_navi-item:hover { text-decoration: none; }
+.post_navi .nav_next { text-align: right; align-items: flex-end; }
+
+.post_navi-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+}
+/* Arrows live in CSS so they are not announced as stray characters. */
+.nav_prev .post_navi-label::before { content: "\2190\00a0"; }
+.nav_next .post_navi-label::after { content: "\00a0\2192"; }
+
+.post_navi-title,
+.post_navi-title:visited {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  overflow-wrap: break-word;
+}
+.post_navi-item:hover .post_navi-title { text-decoration: underline; }
+
+@media screen and (max-width: 600px) {
+  .post_navi { flex-direction: column; gap: 22px; }
+  .post_navi .nav_next { text-align: left; align-items: flex-start; }
+}
 
 /* --- Standalone pages (layout: default) ----------------------------------
    about.md and categories.md render their markdown straight into .wrapper
