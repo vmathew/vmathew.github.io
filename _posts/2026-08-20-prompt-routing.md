@@ -6,6 +6,8 @@ categories: [AI, Architecture]
 tags: [Prompt Routing, Model Routing, Amazon Bedrock, FinOps, LLM Architecture, Platform Engineering]
 description: "Most enterprise AI traffic is simple, and most of it is sent to a frontier model anyway. What prompt routing is, the three ways to do it, what it saves, and where it goes wrong."
 author: Vivek Mathew
+series: "Agents and architecture"
+figure: routing--three-ways.svg
 ---
 
 # Prompt Routing: Why Every Request Shouldn't Go to Your Most Expensive Model

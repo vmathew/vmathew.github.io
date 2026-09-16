@@ -55,3 +55,6 @@ defaults:
       layout: post
       tags: []
       categories: [tech]
+
+exclude:
+  - editorial-redesign

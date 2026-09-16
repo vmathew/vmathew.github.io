@@ -1,0 +1,11 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 250" role="img" aria-hidden="true" focusable="false">
+  <rect width="440" height="250" rx="8" fill="var(--fig-panel, #f8f9fa)"/>
+  <rect x="24" y="24" width="392" height="46" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="24" y="82" width="392" height="46" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="24" y="140" width="392" height="46" rx="8" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="24" y="198" width="392" height="30" rx="8" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <rect x="40" y="40" width="120" height="12" rx="6" fill="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="40" y="98" width="150" height="12" rx="6" fill="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="40" y="156" width="100" height="12" rx="6" fill="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="40" y="207" width="200" height="12" rx="6" fill="var(--fig-blue, #2563eb)"/>
+</svg>

@@ -6,6 +6,8 @@ categories: [AI, Governance, Leadership]
 tags: [AI Governance, Leadership, Risk Management, Financial Services, Platform Engineering]
 description: "Most AI initiatives in regulated enterprises don't fail on the technology. They fail in the room where risk partners decide whether to let them ship. What that room actually wants, and how a platform team gives it to them."
 author: Vivek Mathew
+series: "Leadership"
+figure: risk--four-questions.svg
 ---
 
 # How to Talk to a Risk Committee About AI: Controls as Evidence, Not Friction

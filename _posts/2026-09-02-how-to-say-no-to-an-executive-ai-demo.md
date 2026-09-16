@@ -6,6 +6,8 @@ categories: [AI, Leadership]
 tags: [AI Governance, Leadership, Stakeholder Management, Platform Engineering, Enterprise AI]
 description: "A senior leader saw something at a conference and wants it running by the quarterly review. Refuse and you're the blocker; build it on the side and you've created the shadow AI your platform exists to prevent. There's a third answer, and it turns the request into your platform's next customer."
 author: Vivek Mathew
+series: "Leadership"
+figure: exec--three-answers.svg
 ---
 
 # How to Say No to an Executive's AI Demo Without Losing the Executive

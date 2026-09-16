@@ -6,6 +6,8 @@ categories: [AI, Governance]
 tags: [AI Governance, Responsible AI, Cloud Security, Shared Responsibility, Platform Engineering]
 description: "Cloud security didn't get safe by asking developers to be careful. It got safe when the rules moved into policy nobody could bypass. AI governance is walking the same road, and the lesson transfers exactly."
 author: Vivek Mathew
+series: "AI governance in practice"
+part: 1
 ---
 
 # AI Governance Is the New Cloud Security

@@ -6,6 +6,9 @@ categories: [AI, Governance]
 tags: [AI Governance, MCP, Agents, Amazon Bedrock, AgentCore, Security, Platform Engineering]
 description: "A chatbot that says the wrong thing is a content problem. An agent that does the wrong thing is an incident. What changes in your threat model, your identity model, and your controls the moment an LLM can call a tool that writes."
 author: Vivek Mathew
+series: "AI governance in practice"
+part: 5
+figure: mcp--three-identities.svg
 ---
 
 # MCP Servers in the Enterprise: What Changes When Tools Can Act

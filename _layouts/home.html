@@ -1,26 +1,102 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Editorial home page.
+
+  Front matter a post can carry to shape this page (all optional):
+    series: "AI governance in practice"   groups it in the sidebar and shows a kicker
+    part: 2                               shown as "Part 2" next to the series name
+    figure: agentcore--primitives.svg     a file in _includes/figures/, used as the
+                                          hero thumbnail when the post is the latest
+  Posts without `series` show their first category as the kicker instead.
+{%- endcomment -%}
+{%- assign latest = site.posts.first -%}
+{%- assign rest = site.posts | offset: 1 -%}
+{%- assign start_here = site.posts | where: "part", 1 | first -%}
+{%- if start_here == nil -%}{%- assign start_here = site.posts.last -%}{%- endif -%}
+
 <div class="home">
-  {%- if page.title -%}<h1 class="page-heading">{{ page.title }}</h1>{%- endif -%}
 
-  {{ content }}
+  <section class="home-lede">
+    <p class="home-lede-title">{{ page.lede | default: site.description | split: " — " | first }}</p>
+    <p class="home-lede-sub">{{ page.lede_sub | default: "Governance, agents, cost and the leadership calls behind AI in regulated enterprises. By " }}{{ site.author }}.</p>
+  </section>
 
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h3>
-      {%- assign blurb = post.description | default: post.excerpt -%}
-      {%- if blurb -%}
-      <p class="post-excerpt">{{ blurb | strip_html | normalize_whitespace | truncate: 190 }}</p>
+  {%- if latest -%}
+  <section class="home-hero">
+    <div class="home-hero-body">
+      <p class="home-kicker">
+        <span class="home-kicker-label">Latest</span>
+        <span class="home-kicker-meta">{{ latest.date | date: "%b %-d, %Y" }}
+          {%- assign words = latest.content | strip_html | number_of_words -%}
+          {%- assign mins = words | divided_by: 220 | plus: 1 %} · {{ mins }} min</span>
+      </p>
+      <h2 class="home-hero-title"><a href="{{ latest.url | relative_url }}">{{ latest.title | escape }}</a></h2>
+      {%- assign blurb = latest.description | default: latest.excerpt -%}
+      <p class="home-hero-blurb">{{ blurb | strip_html | normalize_whitespace | truncatewords: 34 }}</p>
+      <a class="home-hero-cta" href="{{ latest.url | relative_url }}">Read the post →</a>
+    </div>
+    <a class="home-hero-figure" href="{{ latest.url | relative_url }}" aria-hidden="true" tabindex="-1">
+      {%- if latest.figure -%}
+        {%- capture figpath %}figures/{{ latest.figure }}{% endcapture -%}
+        {% include {{ figpath }} %}
+      {%- else -%}
+        {% include hero-placeholder.svg %}
       {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
+    </a>
+  </section>
   {%- endif -%}
+
+  <div class="home-grid">
+    <section class="home-list">
+      {%- for post in rest -%}
+      <article class="home-row">
+        <div class="home-row-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          {%- if post.series -%}
+            <span class="home-row-series">{{ post.series }}{% if post.part %} · Part {{ post.part }}{% endif %}</span>
+          {%- elsif post.categories.size > 0 -%}
+            <span class="home-row-series">{{ post.categories | last }}</span>
+          {%- endif -%}
+        </div>
+        <div class="home-row-body">
+          <h3 class="home-row-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          {%- assign blurb = post.description | default: post.excerpt -%}
+          {%- if blurb -%}
+          <p class="home-row-blurb">{{ blurb | strip_html | normalize_whitespace | truncatewords: 26 }}</p>
+          {%- endif -%}
+        </div>
+      </article>
+      {%- endfor -%}
+    </section>
+
+    <aside class="home-side">
+      {%- if start_here -%}
+      <div class="home-side-block">
+        <p class="home-side-label">Start here</p>
+        <a class="home-side-title" href="{{ start_here.url | relative_url }}">{{ start_here.title | escape }}</a>
+        <p class="home-side-note">The thesis the rest of the series builds on.</p>
+      </div>
+      {%- endif -%}
+
+      {%- assign ordered = site.posts | reverse -%}
+      {%- assign groups = ordered | where_exp: "p", "p.series" | group_by: "series" -%}
+      {%- if groups.size > 0 -%}
+      <div class="home-side-block">
+        <p class="home-side-label">Series</p>
+        <ul class="home-side-series">
+          {%- for g in groups -%}
+          {%- assign first = g.items | sort: "part" | first -%}
+          <li><a href="{{ first.url | relative_url }}">{{ g.name }}</a> <span class="home-side-count">· {{ g.size }}</span></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {%- endif -%}
+
+      <div class="home-side-block home-side-connect">
+        {% include connect-card.html %}
+      </div>
+    </aside>
+  </div>
 </div>

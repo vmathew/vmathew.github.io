@@ -6,6 +6,9 @@ categories: [AI, Governance]
 tags: [AI Governance, Observability, Amazon Bedrock, OpenTelemetry, Guardrails, Platform Engineering]
 description: "A guardrail that blocks a prompt with no trace is a black box with a 'no' button. What an LLM trace needs to contain, how to walk one when a prompt gets blocked, and why trace capture has to be enforced rather than encouraged."
 author: Vivek Mathew
+series: "AI governance in practice"
+part: 4
+figure: llm-observability--trace-anatomy.svg
 ---
 
 # Observability for LLM Calls: What a Trace Should Contain, and How to Debug a Blocked Prompt

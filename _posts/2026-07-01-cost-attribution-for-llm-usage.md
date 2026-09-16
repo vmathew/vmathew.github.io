@@ -6,6 +6,9 @@ categories: [AI, Governance]
 tags: [AI Governance, FinOps, Amazon Bedrock, Cost Attribution, Platform Engineering]
 description: "LLM spend is invisible until you make it visible, and 'we spent $X on AI' is not attribution. A practical tagging model, the three reports worth building, and who should be reading each one."
 author: Vivek Mathew
+series: "AI governance in practice"
+part: 3
+figure: llm-cost--three-reports.svg
 ---
 
 # Cost Attribution for LLM Usage: What to Tag, What to Report, Who Reads It

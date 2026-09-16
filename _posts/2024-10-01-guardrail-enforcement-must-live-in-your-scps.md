@@ -6,6 +6,9 @@ categories: [AI, Governance]
 tags: [AI Governance, Guardrails, Amazon Bedrock, AWS Organizations, SCP, Cloud Security]
 description: "A guardrail a developer can forget to call is a control you will eventually lose. In an enterprise, enforcing LLM guardrails at the Service Control Policy level isn't a best practice. It's a must."
 author: Vivek Mathew
+series: "AI governance in practice"
+part: 2
+figure: scp-guardrails--the-layers.svg
 ---
 
 # Guardrail Enforcement Must Live in Your SCPs, Not as an Afterthought in Your Application Code
