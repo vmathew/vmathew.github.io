@@ -53,7 +53,7 @@ permalink: /about/
       </li>
       <li>
         <span class="about-timeline-when">2022 – 2024</span>
-        <span class="about-timeline-role">Senior Cloud Application Architect</span>
+        <span class="about-timeline-role">Sr. Cloud Application Architect</span>
         <span class="about-timeline-org">Amazon Web Services</span>
         <span class="about-timeline-note">Reference architectures and prototypes that put Claude, Llama, Titan and Mistral into enterprise products; GenAI Ambassador in the Technical Field Community.</span>
       </li>
