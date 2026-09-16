@@ -1,2 +1,4 @@
 ﻿_site
 *.DS_Store
+# Local only: record of seeded counter values. Never commit — the repo is public.
+counter-worker/SEED-LEDGER.local.md
