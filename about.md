@@ -46,6 +46,12 @@ permalink: /about/
         <span class="about-timeline-note">Streaming and MLOps platforms my teams shipped became two US patents: <a href="https://patents.google.com/patent/US11886278B2/en">US11886278B2</a>, <a href="https://patents.google.com/patent/US11868749B2/en">US11868749B2</a>.</span>
       </li>
       <li>
+        <span class="about-timeline-when">2021 – 2022</span>
+        <span class="about-timeline-role">Senior Architect</span>
+        <span class="about-timeline-org">Big Compass</span>
+        <span class="about-timeline-note">Consulting on AWS architecture for containerized and streaming applications.</span>
+      </li>
+      <li>
         <span class="about-timeline-when">2022 – 2024</span>
         <span class="about-timeline-role">Senior Cloud Application Architect</span>
         <span class="about-timeline-org">Amazon Web Services</span>
