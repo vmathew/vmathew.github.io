@@ -1040,3 +1040,112 @@ code, pre, .post-meta time { font-family: var(--mono); }
 @media screen and (max-width: 600px) {
   .site-nav a.rss-link { margin-right: 2px; }
 }
+
+/* --- About page ----------------------------------------------------------- */
+
+.page-content > .wrapper > .about { max-width: none; }
+.about { display: flex; flex-direction: column; gap: 56px; }
+.about p { margin: 0; }
+
+.about-section-label {
+  font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 18px;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--text);
+}
+.about-kicker {
+  font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 14px;
+}
+.about-title {
+  font-family: var(--serif);
+  font-size: 44px; line-height: 1.1; font-weight: 700;
+  letter-spacing: -0.02em; margin: 0 0 18px; text-wrap: pretty;
+}
+.about-lede { font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 60ch; }
+.about-hero-mark {
+  position: relative; width: 200px; height: 200px; border-radius: 24px;
+  background: var(--accent); color: var(--on-accent);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.about-monogram { font-family: var(--serif); font-size: 64px; font-weight: 700; letter-spacing: -0.02em; }
+.about-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.about-now-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.about-card {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 26px 28px; border: 1px solid var(--rule); border-radius: 12px; background: var(--surface);
+}
+.about-card-num { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+.about-card-title {
+  font-family: var(--serif); font-size: 22px; line-height: 1.25;
+  font-weight: 600; margin: 0; letter-spacing: -0.01em;
+}
+.about-card p:last-child { font-size: 15.5px; line-height: 1.6; color: var(--muted); }
+
+.about-timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+.about-timeline li {
+  display: flex; flex-direction: column; gap: 4px; margin: 0;
+  padding: 22px 20px 0 0; border-top: 2px solid var(--rule); position: relative;
+}
+.about-timeline li::before {
+  content: ""; position: absolute; top: -6px; left: 0;
+  width: 10px; height: 10px; border-radius: 999px; background: var(--rule);
+}
+.about-timeline li.is-current { border-top-color: var(--accent); }
+.about-timeline li.is-current::before { background: var(--accent); }
+.about-timeline-when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.about-timeline-role { font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 1.3; margin-top: 4px; }
+.about-timeline-org { font-size: 14.5px; font-weight: 600; color: var(--accent); }
+.about-timeline-note { font-size: 14.5px; line-height: 1.55; color: var(--muted); margin-top: 8px; }
+
+.about-quote blockquote {
+  margin: 0; padding: 0 0 0 28px; border-left: 3px solid var(--accent);
+  font-family: var(--serif); font-size: 24px; line-height: 1.4; font-weight: 500;
+  color: var(--text); font-style: normal; letter-spacing: -0.005em; max-width: 34em;
+}
+.about-quote-more { margin-top: 22px; font-size: 15px; color: var(--muted); }
+
+.about-topics-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.about-topic {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 20px 22px; border: 1px solid var(--rule); border-radius: 12px;
+  color: var(--text); transition: border-color .15s ease;
+}
+.about-topic:visited { color: var(--text); }
+.about-topic:hover { border-color: var(--accent); text-decoration: none; color: var(--text); }
+.about-topic-name { font-family: var(--serif); font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
+.about-topic-desc { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+.about-disclaimer { margin-top: 18px; font-size: 14px; color: var(--muted); font-style: italic; }
+
+.about-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.about-chips li {
+  margin: 0; padding: 7px 13px; border-radius: 999px;
+  border: 1px solid var(--rule); background: var(--surface); font-size: 14px;
+}
+
+.about-connect { display: flex; flex-direction: column; gap: 14px; padding-top: 40px; border-top: 1px solid var(--rule); }
+.about-connect .connect-card { margin: 0; }
+.about-links { font-size: 15px; color: var(--muted); }
+
+@media screen and (max-width: 1000px) {
+  .about-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 20px; }
+}
+@media screen and (max-width: 800px) {
+  .about { gap: 44px; }
+  .about-hero { grid-template-columns: minmax(0, 1fr); }
+  .about-hero-mark { width: 120px; height: 120px; border-radius: 18px; order: -1; }
+  .about-monogram { font-size: 40px; }
+  .about-title { font-size: 32px; }
+  .about-now-grid, .about-topics-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-timeline { grid-template-columns: minmax(0, 1fr); gap: 20px 0; }
+  .about-timeline li { padding-right: 0; }
+  .about-quote blockquote { font-size: 20px; padding-left: 20px; }
+}
