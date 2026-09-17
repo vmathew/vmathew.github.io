@@ -7,6 +7,7 @@ tags: [AI Agents, AgenticAI, Amazon Bedrock, AgentCore, Agent Harness, Strands, 
 description: "The model is the engine; the harness is the rest of the car. Most enterprise agent failures are harness failures. A component-by-component map of what a harness does, which parts AWS now runs for you, which parts remain your decision, and how to choose between building one and adopting the managed one."
 author: Vivek Mathew
 series: "Agents and architecture"
+image: /assets/og/the-agent-harness-explained.png
 figure: harness--components-map.svg
 ---
 
@@ -164,3 +165,15 @@ And in both cases: the model still goes through the tagged inference profile and
 The reason to be precise about "harness" is that it's where the leadership decisions in an agent program actually live. "Which model" is a procurement question. "Which harness, and how much of it do we own" is an architecture and governance question, and it's the one that determines whether the platform can say yes to the next use case with evidence, or only with hope.
 
 Get the map right, decide which boxes must be code and which can be configuration, and make that decision once, at the platform level, rather than letting every team discover it on their own. Then the model can be as capable as it wants to be, inside a harness the organization actually understands.
+
+<!--
+LinkedIn blurb (paste above the link card after using the site's Share button):
+
+"Harness" has quietly become the most important word in agent engineering. The model is the engine; the harness is the rest of the car, and most enterprise agent failures are harness failures.
+
+I mapped the eight components, which ones AWS's AgentCore now runs for you, which stay your decision, and a short test for when to build your own versus adopt the managed one.
+
+Opinions my own; AgentCore details as of September 2026.
+
+#AIAgents #AgentCore #AmazonBedrock #AgenticAI #AIGovernance
+-->

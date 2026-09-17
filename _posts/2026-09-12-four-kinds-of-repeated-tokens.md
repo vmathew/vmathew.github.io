@@ -7,6 +7,7 @@ tags: [FinOps, Cost Attribution, Prompt Caching, AI Agents, Enterprise AI, Platf
 description: "Most of the tokens on most enterprise model calls have been sent before, by someone else. Sharing that context across users is four different problems with four different fixes, and a gateway is where they belong."
 author: Vivek Mathew
 series: "Agents and architecture"
+image: /assets/og/four-kinds-of-repeated-tokens.png
 figure: tokens--four-kinds.svg
 ---
 
@@ -153,3 +154,15 @@ And measure all four from the gateway, because the [routing post]({% post_url 20
 The tokens you're paying for twice are almost never the user's question. They're the scaffolding around it, and the scaffolding is the same for everyone. Sharing it is not one clever cache; it's four distinct mechanisms, each with a line it must not cross, applied once in the layer every application already passes through.
 
 Get the four straight, put them where they can't be skipped, and report what they save. Then the only tokens you pay full price for are the ones that were actually new.
+
+<!--
+LinkedIn blurb (paste above the link card after using the site's Share button):
+
+Pick any enterprise AI application and look at one model call. The user's question is a few dozen tokens. Everything around it (system prompt, tool schemas, the pasted policy doc, the growing history) was sent before, usually by someone else.
+
+"Can we share context across users?" is really four different problems with four different fixes, and most teams reach for a response cache to solve all of them. I split them apart and argue the right place for all four is the gateway, not each app.
+
+Opinions my own.
+
+#EnterpriseAI #FinOps #PromptCaching #AIAgents #AmazonBedrock
+-->
