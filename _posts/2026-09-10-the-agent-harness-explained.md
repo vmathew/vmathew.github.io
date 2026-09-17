@@ -12,6 +12,9 @@ figure: harness--components-map.svg
 ---
 
 # The Agent Harness, Explained: What It Is, and Which Parts Bedrock and AgentCore Give You
+<figure class="fig">
+{% include figures/harness--components-map.svg %}
+</figure>
 
 "Harness" has quietly become the most important word in agent engineering, and it now means two things. This post is about both, and about the gap between them, because that gap is where enterprise agent programs succeed or fail.
 
@@ -22,10 +25,6 @@ The specific meaning is AWS's **AgentCore harness**, which went generally availa
 If you build agents in an enterprise you need a clear picture of the first meaning before you can decide what to do with the second. That's the order this post takes.
 
 *Opinions here are my own and don't represent my employer. AgentCore details are as of September 2026 and move quickly; check the docs before relying on any specific one.*
-
-<figure class="fig">
-{% include figures/harness--components-map.svg %}
-</figure>
 
 ---
 
