@@ -84,7 +84,7 @@ Which tools the agent may call, under what conditions, and which actions require
 
 *Why it matters:* this is the difference between an agent that can be trusted with a consequential action and one that can only be trusted to draft. The [MCP post]({% post_url 2026-08-10-mcp-servers-in-the-enterprise %})'s approval gate lives here.
 
-*On AWS:* layered. AgentCore Policy enforces rules on tool calls at the Gateway, outside the agent's code (Cedar or natural language, with temporal rules and rate limiting added in August). The organization policy (SCPs, egress) is the outer wall that makes the Gateway mandatory. The approval gate for consequential actions, a pending record that a human executes, is still yours to design, though Policy is where it's starting to be expressible.
+*On AWS:* layered. AgentCore Policy enforces rules on tool calls at the Gateway, outside the agent's code (Cedar or natural language, with session-scoped temporal rules that can require an approval before an action, cap how many times it runs, or hold a running total under a budget). The organization policy (SCPs, egress) is the outer wall that makes the Gateway mandatory. The approval gate for consequential actions, a pending record that a human executes, is still yours to design, though Policy is where it's starting to be expressible.
 
 ### 6. Identity
 
