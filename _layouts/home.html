@@ -12,7 +12,6 @@ layout: default
   Posts without `series` show their first category as the kicker instead.
 {%- endcomment -%}
 {%- assign latest = site.posts.first -%}
-{%- assign rest = site.posts | offset: 1 -%}
 {%- assign start_here = site.posts | where: "part", 1 | first -%}
 {%- if start_here == nil -%}{%- assign start_here = site.posts.last -%}{%- endif -%}
 
@@ -50,7 +49,8 @@ layout: default
 
   <div class="home-grid">
     <section class="home-list">
-      {%- for post in rest -%}
+      {%- comment -%}offset:1 skips the post already shown in the hero above{%- endcomment -%}
+      {%- for post in site.posts offset: 1 -%}
       <article class="home-row">
         <div class="home-row-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
