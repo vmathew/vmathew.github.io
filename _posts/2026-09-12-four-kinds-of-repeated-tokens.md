@@ -16,7 +16,7 @@ figure: tokens--four-kinds.svg
 {% include figures/tokens--four-kinds.svg %}
 </figure>
 
-Pick any enterprise AI application and look at one model call. The user's actual question is a few dozen tokens. Around it sits everything else: a system prompt that hasn't changed in a month, tool schemas that are identical for every user, a policy document someone pasted in because the assistant needed it, the same conversation history that grows every turn. On most calls, most of the tokens have been sent before, often by a different user ten minutes ago.
+Pick any enterprise AI application and look at one model call. The user's actual question is a few dozen tokens. Around it sits everything else: a system prompt that hasn't changed in a month, tool schemas that are identical for every user, a policy document someone pasted in because the assistant needed it, the same conversation history that grows every turn. On most calls, most of the tokens have been sent before, often by a different user a few minutes ago.
 
 The question I get asked, in one form or another, is whether there's a tool that shares context across users so the organization stops paying for the same tokens over and over. The honest answer is that "sharing context" is four different problems, they have four different fixes, and the mistake most teams make is reaching for one of them (usually a response cache) to solve all four.
 
