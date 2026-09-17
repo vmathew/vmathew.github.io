@@ -96,7 +96,7 @@ So the semantic cache is a per-use-case decision, not a global switch. A public-
 
 If users are pasting the same document into their chats, or an agent is fetching the same reference on every call, the fix isn't a cache. It's to stop shipping the document.
 
-Index it once in a knowledge base and retrieve the few hundred tokens relevant to each question. The model never sees the whole document again, the tokens per call drop by an order of magnitude, and the answers usually get better, because a focused excerpt beats a 40-page manual buried in context. On AWS this is Bedrock Knowledge Bases (including the managed connectors that went GA this year) or your own retrieval pipeline; the mechanism matters less than the decision to retrieve rather than paste.
+Index it once in a knowledge base and retrieve the few hundred tokens relevant to each question: retrieval-augmented generation, or RAG, applied as a cost control rather than only as a quality technique. The model never sees the whole document again, the tokens per call drop by an order of magnitude, and the answers usually get better, because a focused excerpt beats a 40-page manual buried in context. On AWS this is Bedrock Knowledge Bases (including the managed connectors that went GA this year) or your own retrieval pipeline; the mechanism matters less than the decision to retrieve rather than paste.
 
 This is often the largest saving of the four for document-heavy use cases, and it's the one teams most often skip, because pasting the document "worked" in the prototype.
 
