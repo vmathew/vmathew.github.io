@@ -1,0 +1,27 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 372" width="800" height="372" role="img" aria-labelledby="harness-managed-split-t harness-managed-split-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="harness-managed-split-t">What the managed harness fills, and what it decides for you</title>
+  <desc id="harness-managed-split-d">AgentCore fills tools, memory, identity, evaluation and telemetry with the same primitives you would adopt anyway. It also takes over the loop, the context policy and in-agent permissions, which become AWS configuration rather than your code. Three questions decide whether that is acceptable.</desc>
+  <rect width="800" height="372" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">The managed harness fills every box &#8212; two of them differently</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The green half you would have adopted anyway. The amber half stops being your code.</text>
+  <rect x="20" y="68" width="372" height="172" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="40" y="94" font-size="13" font-weight="700" fill="var(--fig-green, #0f6f4f)">Same primitives either way</text>
+  <text x="40" y="111" font-size="10" fill="var(--fig-green, #0f6f4f)">Adopting these costs you nothing in control</text>
+  <text x="52" y="136" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Tools &#8212; via Gateway</text>
+  <text x="52" y="156" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Memory</text>
+  <text x="52" y="176" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Identity</text>
+  <text x="52" y="196" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Evaluation</text>
+  <text x="52" y="216" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Telemetry</text>
+  <rect x="408" y="68" width="372" height="172" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)" stroke-width="2"/>
+  <text x="428" y="94" font-size="13" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">Now AWS&#8217;s decisions</text>
+  <text x="428" y="111" font-size="10" fill="var(--fig-amber-ink, #8a5a13)">Configuration, where they used to be code you review</text>
+  <text x="440" y="140" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; The loop &#8212; and what stops it</text>
+  <text x="440" y="164" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; The context policy</text>
+  <text x="440" y="188" font-size="11.5" fill="var(--fig-ink, #1f2933)">&#183; Permissions inside the agent</text>
+  <text x="440" y="222" font-size="10" fill="var(--fig-amber-ink, #8a5a13)">The loop cannot be replaced &#8212; only exported to Strands.</text>
+  <rect x="20" y="256" width="760" height="96" rx="10" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="40" y="278" font-size="10" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.7">BEFORE ADOPTING IT FOR A CONSEQUENTIAL WORKLOAD, ASK</text>
+  <text x="40" y="300" font-size="11.5" font-weight="600" fill="var(--fig-blue-ink, #17315e)">1 &#183; What is its context policy for tool results holding classified data?</text>
+  <text x="40" y="320" font-size="11.5" font-weight="600" fill="var(--fig-blue-ink, #17315e)">2 &#183; What stops the loop &#8212; and can a policy stop it?</text>
+  <text x="40" y="340" font-size="11.5" font-weight="600" fill="var(--fig-blue-ink, #17315e)">3 &#183; Can you show, per action, that the permission check sat outside the model&#8217;s reach?</text>
+</svg>

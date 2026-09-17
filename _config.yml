@@ -59,6 +59,7 @@ defaults:
 exclude:
   - editorial-redesign
   - counter-worker
+  - "Claude outputs"
 
 # View/like counter. Set once the Worker in counter-worker/ is deployed;
 # until then the feedback bar renders nothing.

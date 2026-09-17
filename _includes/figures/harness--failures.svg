@@ -1,0 +1,34 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 456" width="800" height="456" role="img" aria-labelledby="harness-failures-t harness-failures-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="harness-failures-t">Symptoms blamed on the model that are really harness failures</title>
+  <desc id="harness-failures-d">Hallucination, wrong tool choice, failure to stop, following an injected instruction and being unable to tell which — each is caused by context management, tool descriptions, step limits, treating tool results as data, and telemetry respectively.</desc>
+  <rect width="800" height="456" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">It looks like a model failure</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Models improve on their own schedule. The harness is the part you control &#8212; and the part that actually broke.</text>
+  <text x="44" y="84" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">WHAT IT LOOKS LIKE</text>
+  <text x="286" y="84" font-size="9.5" font-weight="700" fill="var(--fig-red, #c0392b)" letter-spacing="0.7">WHAT GETS BLAMED</text>
+  <text x="430" y="84" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.7">WHAT ACTUALLY FAILED</text>
+  <line x1="24" y1="92" x2="776" y2="92" stroke="var(--fig-rule-2, #cfd8e3)" stroke-width="2"/>
+  <rect x="24" y="102" width="752" height="54" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="134" font-size="11.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;It hallucinated&#8221;</text>
+  <text x="286" y="134" font-size="10.5" fill="var(--fig-red, #c0392b)">The model</text>
+  <text x="430" y="127" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Context grew to 80,000 tokens of tool</text>
+  <text x="430" y="143" font-size="10.5" fill="var(--fig-green, #0f6f4f)">output and the instruction was buried</text>
+  <rect x="24" y="164" width="752" height="54" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="196" font-size="11.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;It picked the wrong tool&#8221;</text>
+  <text x="286" y="196" font-size="10.5" fill="var(--fig-red, #c0392b)">The model</text>
+  <text x="430" y="189" font-size="10.5" fill="var(--fig-green, #0f6f4f)">The tool description was ambiguous</text>
+  <rect x="24" y="226" width="752" height="54" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="258" font-size="11.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;It didn&#8217;t stop&#8221;</text>
+  <text x="286" y="258" font-size="10.5" fill="var(--fig-red, #c0392b)">The model</text>
+  <text x="430" y="251" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Nothing capped the number of steps</text>
+  <rect x="24" y="288" width="752" height="54" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="320" font-size="11.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;It did what the page said&#8221;</text>
+  <text x="286" y="320" font-size="10.5" fill="var(--fig-red, #c0392b)">The model</text>
+  <text x="430" y="313" font-size="10.5" fill="var(--fig-green, #0f6f4f)">A tool result carried an instruction and</text>
+  <text x="430" y="329" font-size="10.5" fill="var(--fig-green, #0f6f4f)">nothing treated it as data</text>
+  <rect x="24" y="350" width="752" height="54" rx="8" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="382" font-size="11.5" font-weight="700" fill="var(--fig-ink, #1f2933)">&#8220;We can&#8217;t tell which&#8221;</text>
+  <text x="286" y="382" font-size="10.5" fill="var(--fig-red, #c0392b)">&#8212;</text>
+  <text x="430" y="375" font-size="10.5" fill="var(--fig-green, #0f6f4f)">No trace existed</text>
+  <text x="400" y="438" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">So the question is not &#8220;which model?&#8221; &#8212; it is &#8220;which harness, and how much of it do we own?&#8221;</text>
+</svg>

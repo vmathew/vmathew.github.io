@@ -1,0 +1,39 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 384" width="800" height="384" role="img" aria-labelledby="harness-decision-test-t harness-decision-test-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="harness-decision-test-t">When to build your own harness and when to adopt the managed one</title>
+  <desc id="harness-decision-test-d">Build when the agent takes consequential actions, when the context policy is a data-classification control, when you must prove where the permission decision was made, or when the loop needs custom integration. Adopt when the use case is read-mostly, speed matters more than control of the loop, the team is new to agents, or the standard primitives already give the evidence. Either way the controls do not move.</desc>
+  <rect width="800" height="384" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">A decision test</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The harness decision is about the loop and the context. It is not about the controls.</text>
+  <rect x="20" y="68" width="372" height="196" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="20" y="68" width="372" height="4" rx="2" fill="var(--fig-blue, #2563eb)"/>
+  <text x="40" y="98" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">Build your own</text>
+  <text x="40" y="124" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; Consequential actions &#8212; you need the</text>
+  <text x="52" y="141" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">approval gate and step limits in code</text>
+  <text x="40" y="158" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; The context policy is a data-</text>
+  <text x="52" y="175" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">classification control</text>
+  <text x="40" y="192" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; You must prove, per action, where the</text>
+  <text x="52" y="209" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">permission decision was made</text>
+  <text x="40" y="226" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; The loop needs a custom evaluator</text>
+  <text x="52" y="243" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">or a bespoke stop condition</text>
+  <rect x="408" y="68" width="372" height="196" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <rect x="408" y="68" width="372" height="4" rx="2" fill="var(--fig-green, #0f6f4f)"/>
+  <text x="428" y="98" font-size="13" font-weight="700" fill="var(--fig-ink, #1f2933)">Adopt the managed harness</text>
+  <text x="428" y="124" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; Read-mostly or reversible-write,</text>
+  <text x="440" y="141" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">with low blast radius</text>
+  <text x="428" y="158" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; Speed to a governed first version</text>
+  <text x="440" y="175" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">beats control of the loop</text>
+  <text x="428" y="192" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; The team is new to agents and would</text>
+  <text x="440" y="209" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">hand-build a worse harness</text>
+  <text x="428" y="226" font-size="10.5" fill="var(--fig-ink, #1f2933)">&#183; The standard primitives already give</text>
+  <text x="440" y="243" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">you the evidence you need</text>
+  <rect x="20" y="282" width="760" height="82" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="2"/>
+  <text x="400" y="306" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">In both cases, the controls do not move</text>
+  <rect x="118" y="322" width="150" height="24" rx="12" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="193" y="338" font-size="9.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">tagged inference profile</text>
+  <rect x="278" y="322" width="123" height="24" rx="12" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="339" y="338" font-size="9.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">mandatory guardrail</text>
+  <rect x="410" y="322" width="112" height="24" rx="12" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="466" y="338" font-size="9.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">tools via Gateway</text>
+  <rect x="532" y="322" width="177" height="24" rx="12" fill="var(--fig-box, #ffffff)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="620" y="338" font-size="9.5" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">SCP makes them the only doors</text>
+</svg>
