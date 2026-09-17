@@ -52,24 +52,11 @@ This is slower in the meeting and faster everywhere else. The engineer who works
 
 There's a limit. When the engineer is stuck or the clock is real, give the answer, but give it with the reasoning attached, so the next design doesn't need you.
 
-<!-- ============================================================================
-     ILLUSTRATIVE DRAFT — NOT A REAL EVENT. Do not publish as written.
-     Use it for shape and length (~5 sentences), then rewrite from something
-     that actually happened. What makes this shape work: a concrete design, the
-     instruction you nearly gave, the question you asked instead, what they
-     found that you hadn't, and the unprompted change on a later design.
-     ============================================================================
+The shape it takes is worth being concrete about. A design arrives with a queue-based fan-out, and it is pinned to one region in three places. The instruction is right there — *this won't survive the DR requirement* — and the question instead is "what happens the week we turn on the second region?" What comes back two days later is usually not the fix you had in mind. It is a list: three assumptions rather than the one you spotted, and often one of them inside a library a different team owns. The return on the slower meeting shows up a quarter later, on an unrelated design, when the slide headed "what breaks in region two" is already there and nobody asked for it.
 
-> An engineer brought me a design for a document-processing service that fanned work
-> out to a queue. It would have worked, and it was pinned to a single region in three
-> places. The instruction was right there — *this won't survive the DR requirement* —
-> and I asked instead: "What happens to this the week we turn on the second region?"
-> She came back two days later not with a fix but with a list: three assumptions, one
-> of them inside a library another team owned, which I hadn't spotted. The part that
-> mattered came a quarter later, on an unrelated design, where her second slide was
-> already titled "what breaks in region two." Nobody had asked her for it.
-
-     ---------------------------------------------------------------------------- -->
+<!-- If you have a real instance of this, it will beat the generic version above.
+     Keep the shape: the instruction you swallowed, the question you asked, what
+     they found that you hadn't, and the unprompted change on a later design. -->
 
 ---
 
@@ -123,25 +110,11 @@ This is where the teaching review matters most and where reviewers most often fl
 
 An architect without direct reports can and should have this conversation. It's one of the few genuinely leadership acts available from that seat, and it's the one that people remember.
 
-<!-- ============================================================================
-     ILLUSTRATIVE DRAFT — NOT A REAL EVENT. Do not publish as written.
-     Shape, borrowed from draft 1: short blunt line rather than a speech; the
-     other person pushes back and is partly right; you change something too;
-     no tidy bow at the end. Avoid making yourself the hero of your own
-     anecdote — that is what made the first version of this one worse.
-     ============================================================================
+In practice it is shorter and less scripted than people expect. Not a prepared speech; something closer to "third version, same gap — are these comments useful to you?", and then actually waiting for the answer. The answer often contains something the reviewer needed to hear: that the comments arrive as a wall of text two days before a deadline, so the verdict is the only part anyone can act on in the time available. Both things are usually true at once. The feedback was ignored, and the feedback was hard to use. A conversation that only establishes the first half will be needed again; one that surfaces the second half changes something on both sides, which is why it tends not to be needed twice.
 
-> A design came back a third time with the same unhandled failure mode, after two rounds
-> of comments that had named it. The design was fixable in an hour. What wasn't was that
-> he had stopped reading past the first line. I asked for ten minutes after the call,
-> with nobody else on it: "Third version, same gap. Are these comments useful to you?"
-> He said they were. I said I needed them acted on the first time. Then he pushed back —
-> the comments arrived as a wall of text two days before his deadline, and the verdict
-> was the only part he could act on in the time he had. He wasn't wrong about that. I
-> started writing them shorter and earlier; he started replying line by line. Neither of
-> us needed the conversation again.
-
-     ---------------------------------------------------------------------------- -->
+<!-- A real instance would be stronger here, anonymised. The part worth keeping
+     is the sentence you actually said — a remembered line reads differently
+     from a constructed one. -->
 
 ---
 
