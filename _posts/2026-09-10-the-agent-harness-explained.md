@@ -8,12 +8,12 @@ description: "The model is the engine; the harness is the rest of the car. Most 
 author: Vivek Mathew
 series: "Agents and architecture"
 image: /assets/og/the-agent-harness-explained.png
-figure: harness--components-map.svg
+figure: harness--two-meanings.svg
 ---
 
 # The Agent Harness, Explained: What It Is, and Which Parts Bedrock and AgentCore Give You
 <figure class="fig">
-{% include figures/harness--components-map.svg %}
+{% include figures/harness--two-meanings.svg %}
 </figure>
 
 "Harness" has quietly become the most important word in agent engineering, and it now means two things. This post is about both, and about the gap between them, because that gap is where enterprise agent programs succeed or fail.
@@ -44,6 +44,10 @@ Models improve on their own schedule. The harness is the part you control, and i
 ## The harness, component by component
 
 Here is the map. For each responsibility: what it is, why it matters in an enterprise, and where it lives on AWS today.
+
+<figure class="fig">
+{% include figures/harness--components-map.svg %}
+</figure>
 
 ### 1. The loop
 

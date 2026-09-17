@@ -1,0 +1,38 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 364" width="800" height="364" role="img" aria-labelledby="harness-two-meanings-t harness-two-meanings-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="harness-two-meanings-t">The two meanings of &#8220;harness&#8221;</title>
+  <desc id="harness-two-meanings-d">The general meaning is everything around the model that turns a completion API into something that can do a job: the loop, context, tools, memory, permissions, identity, evaluation and telemetry. The specific meaning is AWS AgentCore harness, a managed implementation where you configure the model, instructions, tools and skills, and AWS runs the loop, the sandbox, memory, identity and tracing.</desc>
+  <rect width="800" height="364" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">One word, two meanings</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">This post is about both, and about the gap between them &#8212; because that gap is where agent programmes succeed or fail.</text>
+
+  <rect x="20" y="68" width="372" height="236" rx="10" fill="var(--fig-panel-2, #f6f8fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="40" y="93" font-size="9.5" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.8">THE GENERAL MEANING</text>
+  <text x="40" y="120" font-size="19" font-weight="700" fill="var(--fig-ink, #1f2933)">the harness</text>
+  <text x="40" y="144" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Everything around the model that turns a</text>
+  <text x="40" y="160" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">completion API into something that does a job.</text>
+  <line x1="40" y1="178" x2="372" y2="178" stroke="var(--fig-rule-3, #e2e8f0)"/>
+  <text x="40" y="198" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">EIGHT RESPONSIBILITIES</text>
+  <text x="46" y="220" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; The loop</text>
+  <text x="216" y="220" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Permissions</text>
+  <text x="46" y="239" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Context</text>
+  <text x="216" y="239" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Identity</text>
+  <text x="46" y="258" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Tools</text>
+  <text x="216" y="258" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Evaluation</text>
+  <text x="46" y="277" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Memory</text>
+  <text x="216" y="277" font-size="11" fill="var(--fig-ink, #1f2933)">&#183; Telemetry</text>
+  <text x="40" y="294" font-size="10.5" font-weight="600" fill="var(--fig-amber-ink, #8a5a13)">Yours to assemble &#8212; from a framework, or by hand.</text>
+
+  <rect x="408" y="68" width="372" height="236" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)" stroke-width="2"/>
+  <text x="428" y="93" font-size="9.5" font-weight="700" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.8">THE SPECIFIC MEANING</text>
+  <text x="428" y="120" font-size="19" font-weight="700" fill="var(--fig-blue-ink, #17315e)">AgentCore harness</text>
+  <text x="428" y="144" font-size="10.5" fill="var(--fig-blue-ink-2, #33507f)">AWS&#8217;s managed implementation of all of it,</text>
+  <text x="428" y="160" font-size="10.5" fill="var(--fig-blue-ink-2, #33507f)">generally available since 2026.</text>
+  <line x1="428" y1="178" x2="760" y2="178" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="428" y="198" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.7">YOU CONFIGURE</text>
+  <text x="434" y="219" font-size="11" fill="var(--fig-blue-ink, #17315e)">model &#183; instructions &#183; tools &#183; skills</text>
+  <text x="428" y="248" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.7">AWS RUNS</text>
+  <text x="434" y="269" font-size="11" fill="var(--fig-blue-ink, #17315e)">the loop &#183; sandbox &#183; memory &#183; identity &#183; tracing</text>
+  <text x="428" y="294" font-size="10.5" font-weight="600" fill="var(--fig-blue, #2563eb)">Configuration, not code &#8212; until it isn&#8217;t enough.</text>
+
+  <text x="400" y="342" font-size="12" font-weight="700" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">The model is the engine. The harness is the rest of the car &#8212; and a very good engine in a bad car still crashes.</text>
+</svg>
