@@ -1,0 +1,27 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 344" width="800" height="344" role="img" aria-labelledby="review-two-reviews-t review-two-reviews-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="review-two-reviews-t">Two reviews happen in every design review</title>
+  <desc id="review-two-reviews-d">The control review asks whether this is safe to build and produces a verdict. The teaching review asks what the engineer will be able to do next time and produces a lesson. The second makes the first cheaper over time.</desc>
+  <rect width="800" height="344" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Two reviews, one meeting</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The mistake is thinking they conflict. Run only the first and you stay the bottleneck forever.</text>
+  <rect x="20" y="68" width="372" height="196" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="40" y="93" font-size="9.5" font-weight="700" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.8">THE CONTROL REVIEW</text>
+  <text x="40" y="120" font-size="15" font-weight="700" fill="var(--fig-blue-ink, #17315e)">Is this safe to build?</text>
+  <text x="40" y="146" font-size="10.5" fill="var(--fig-blue-ink-2, #33507f)">Does it meet the standards, fit the platform,</text>
+  <text x="40" y="162" font-size="10.5" fill="var(--fig-blue-ink-2, #33507f)">create risk nobody agreed to?</text>
+  <text x="40" y="190" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">About the design.</text>
+  <line x1="40" y1="206" x2="372" y2="206" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="40" y="228" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">PRODUCES</text>
+  <text x="40" y="246" font-size="12.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">A verdict</text>
+  <rect x="408" y="68" width="372" height="196" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="2"/>
+  <text x="428" y="93" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.8">THE TEACHING REVIEW</text>
+  <text x="428" y="120" font-size="15" font-weight="700" fill="var(--fig-green, #0f6f4f)">What can they do next time?</text>
+  <text x="428" y="146" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Which question will they now ask of their</text>
+  <text x="428" y="162" font-size="10.5" fill="var(--fig-green, #0f6f4f)">own design, before anyone else does?</text>
+  <text x="428" y="190" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">About the engineer.</text>
+  <line x1="428" y1="206" x2="760" y2="206" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="428" y="228" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">PRODUCES</text>
+  <text x="428" y="246" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">A lesson</text>
+  <text x="400" y="296" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">The second makes the first cheaper every time it runs.</text>
+  <text x="400" y="318" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">An engineer told &#8220;use the paved road&#8221; brings back the same design with the names changed.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 336" width="800" height="336" role="img" aria-labelledby="review-verdict-and-lesson-t review-verdict-and-lesson-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="review-verdict-and-lesson-t">Separating the verdict from the lesson</title>
+  <desc id="review-verdict-and-lesson-d">State the decision clearly and first: approved, approved once something is addressed, or not yet. Then separately give two or three things that would make the next design better, framed as growth rather than as conditions.</desc>
+  <rect width="800" height="336" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Separate the verdict from the lesson</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">&#8220;Approved with comments&#8221; teaches nothing: the engineer reads the verdict and skips the comments.</text>
+  <rect x="24" y="72" width="752" height="86" rx="10" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="44" y="94" font-size="9" fill="var(--fig-blue-ink-2, #33507f)" letter-spacing="0.7">FIRST, AND ON ITS OWN &#8212; THE CONTROL REVIEW</text>
+  <text x="44" y="116" font-size="13.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">The decision</text>
+  <rect x="44" y="128" width="74" height="22" rx="11" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="81" y="143" font-size="10.5" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Approved</text>
+  <rect x="128" y="128" width="198" height="22" rx="11" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="226" y="143" font-size="10.5" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Approved once X is addressed</text>
+  <rect x="335" y="128" width="67" height="22" rx="11" fill="var(--fig-box, #ffffff)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="369" y="143" font-size="10.5" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Not yet</text>
+  <rect x="24" y="170" width="752" height="100" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="2"/>
+  <text x="44" y="192" font-size="9" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.7">SEPARATELY &#8212; THE TEACHING REVIEW</text>
+  <text x="44" y="214" font-size="13.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">Two or three things that would make the next design better</text>
+  <text x="44" y="236" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Framed as growth, not as conditions. And when it is good, say what specifically made it good:</text>
+  <text x="44" y="256" font-size="10.5" font-style="italic" fill="var(--fig-green, #0f6f4f)">&#8220;the way you sized the blast radius of that tool is exactly the reasoning we want everywhere.&#8221;</text>
+  <text x="400" y="304" font-size="11.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Engineers can hear both, as long as they are not tangled together.</text>
+</svg>

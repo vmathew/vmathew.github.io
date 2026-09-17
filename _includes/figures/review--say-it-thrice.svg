@@ -1,0 +1,24 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="review-say-it-thrice-t review-say-it-thrice-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="review-say-it-thrice-t">Turning a recurring review comment into an artifact</title>
+  <desc id="review-say-it-thrice-d">A comment that is a rule becomes a line in the standards document. A comment that is a pattern becomes a worked example on the platform. A comment that is a way of thinking becomes a question in the pre-review template.</desc>
+  <defs><marker id="review-say-it-thrice-g" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-green-2, #0f7a56)"/></marker></defs>
+  <rect width="800" height="330" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Anything you have said three times</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Spoken feedback reaches one engineer and evaporates. Written feedback reaches the next ten.</text>
+  <rect x="24" y="76" width="188" height="86" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="118" y="106" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">A comment you</text>
+  <text x="118" y="124" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">keep repeating</text>
+  <text x="118" y="146" font-size="10" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">said three times = a signal</text>
+  <line x1="212" y1="119" x2="246" y2="119" stroke="var(--fig-green-2, #0f7a56)" stroke-width="1.6" marker-end="url(#review-say-it-thrice-g)"/>
+  <rect x="252" y="76" width="524" height="56" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="272" y="99" font-size="10" fill="var(--fig-blue-ink, #17315e)">If it is a rule</text>
+  <text x="272" y="118" font-size="12.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)">A line in the standards document</text>
+  <rect x="252" y="140" width="524" height="56" rx="9" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="272" y="163" font-size="10" fill="var(--fig-green, #0f6f4f)">If it is a pattern</text>
+  <text x="272" y="182" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">A worked example on the platform</text>
+  <rect x="252" y="204" width="524" height="56" rx="9" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="272" y="227" font-size="10" fill="var(--fig-amber-ink, #8a5a13)">If it is a way of thinking</text>
+  <text x="272" y="246" font-size="12.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">A question in the pre-review template</text>
+  <text x="400" y="296" font-size="12" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">The artifact reviews designs while the reviewer sleeps.</text>
+  <text x="400" y="318" font-size="11" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">It is also how a review board stops being one person&#8217;s calendar.</text>
+</svg>
