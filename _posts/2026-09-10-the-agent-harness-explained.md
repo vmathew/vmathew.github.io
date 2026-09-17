@@ -59,7 +59,7 @@ Deciding what the model sees on each turn: the system prompt, how much history, 
 
 *Why it matters:* context is the cost lever. The [routing post]({% post_url 2026-08-20-prompt-routing %}) covered picking the model; this is the other half. A chat agent whose context grows every turn gets slower, more expensive, and worse, all at once. In a regulated setting context is also a data-classification question: what from a sensitive tool result is allowed to persist into later turns?
 
-*On AWS:* mostly yours. Prompt caching (now with a one-hour TTL) and the 1M-token context windows change the arithmetic but not the responsibility; a platform still needs a policy for truncation, summarization, and what tool output is retained. AgentCore harness manages context for you inside its loop, which is convenient and also means you should know what its policy is before you trust it with a classified workload.
+*On AWS:* mostly yours. Prompt caching (5 minute cache by default, refreshed on every hit, with a 1 hour TTL you can opt into) and the 1M-token context windows change the arithmetic but not the responsibility; a platform still needs a policy for truncation, summarization, and what tool output is retained. AgentCore harness manages context for you inside its loop, which is convenient and also means you should know what its policy is before you trust it with a classified workload.
 
 ### 3. Tools
 

@@ -21,7 +21,7 @@ The question I get asked, in one form or another, is whether there's a tool that
 
 This post separates them, says which mechanism fits which, and argues that the right place for all four is the invocation layer this series has been building, rather than inside any one application.
 
-*Opinions here are my own and don't represent my employer. Examples are generic patterns.*
+*Opinions here are my own and don't represent my employer. Examples are generic patterns. Provider caching limits are as of September 2026 and move quickly; check the docs before relying on a specific number.*
 
 ---
 
@@ -45,7 +45,9 @@ Each of these has a different fix, and only one of them is a cache in the sense 
 
 Provider-side prompt caching is the single biggest lever for most applications, and it needs no framework at all.
 
-The mechanism: you mark a point in the prompt, the provider caches everything before it, and subsequent calls that begin with the identical prefix pay a small write cost once and then a steep discount on every read within the cache's lifetime. Amazon Bedrock, Anthropic, and OpenAI all offer it; Bedrock's cache lifetime went to an hour earlier this year, which is long enough for a shared prefix to stay warm across an organization's working day.
+The mechanism: you mark a point in the prompt, the provider caches everything before it, and every later call that begins with the identical prefix reads that stretch at a steep discount. The first call pays a premium to write the cache — on the order of 1.25× the normal input rate — which reuse repays quickly and which is worth knowing before you read the first day's bill. Amazon Bedrock, Anthropic, and OpenAI all offer it, and Bedrock will also attempt the same thing implicitly, with no breakpoints at all, on a best-effort basis; marking the boundary yourself is what makes it predictable.
+
+The default lifetime is 5 minutes, which sounds far too short until you notice that it resets on every hit. A prefix in steady use across an organization keeps refreshing itself and stays warm all day, at no extra cost — the busier the shared prefix, the less the number matters. A 1 hour TTL is available as an opt-in on the newer Claude models, and it is for the opposite case: a prefix used often enough to be worth caching, but not often enough to keep itself alive.
 
 It is shared across users automatically. Nobody has to build a shared store: if two users' calls begin with the same bytes, the second one hits the cache the first one wrote. The catch is the word *identical*. The cache matches from the first byte and stops at the first difference, so where the first per-user byte appears decides how much of the prompt is cacheable.
 
@@ -55,6 +57,8 @@ It is shared across users automatically. Nobody has to build a shared store: if 
 </figure>
 
 That makes prompt caching mostly a matter of prompt discipline: static content first (system prompt, tools, examples, the reference document), per-user content last (history, the question, anything with a name or an account in it), and a cache breakpoint between them. Applications that greet the user by name in the first line of the system prompt are throwing the whole discount away.
+
+One threshold to know before you measure: a breakpoint only caches if the prefix in front of it clears a model-specific minimum — 512 tokens on Opus 5, 1,024 on Sonnet 5, 4,096 on Haiku 4.5. Under it the call still succeeds and simply caches nothing, which is a confusing way to learn that a short system prompt was never worth a breakpoint in the first place.
 
 For agents this matters even more than for chat. Every iteration of the agent loop re-sends the full context, and the tool schemas and system prompt are the same on every iteration, so an agent that isn't caching its prefix pays for it five, ten, twenty times per task. A well-structured prefix and a stable tool set turn that into one write and many cheap reads.
 
