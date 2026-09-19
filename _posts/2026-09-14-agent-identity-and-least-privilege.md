@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Who Is the Agent, Really? Identity and Least Privilege for AI Agents"
+title: "Who Did It? Identity and Least Privilege for AI Agents"
 date: 2026-09-14
 categories: [AI, Architecture]
 tags: [AI Agents, Identity, Least Privilege, Security, AI Governance, Bedrock AgentCore, Enterprise AI, Platform Engineering]
@@ -11,12 +11,12 @@ figure: identity--two-bad-answers.svg
 image: /assets/og/agent-identity-and-least-privilege.png
 ---
 
-# Who Is the Agent, Really? Identity and Least Privilege for AI Agents
+# Who Did It? Identity and Least Privilege for AI Agents
 <figure class="fig">
 {% include figures/identity--two-bad-answers.svg %}
 </figure>
 
-Ask a simple question about any AI agent running in your company: when it just did something, who did it?
+Ask a simple question about any AI agent running in your company: when it acts, who did it?
 
 Not "which model." Not "which team built it." Who, in the sense your security team means it: which identity was on the request when the agent read that customer record, sent that email, or changed that setting. If the answer is "the agent's service account," you have a problem that gets bigger with every tool you connect. If the answer is "the user who asked, acting through a specific agent, with only the permissions that user already had," you have something a risk partner can sign off on.
 
