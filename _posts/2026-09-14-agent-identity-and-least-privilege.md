@@ -8,6 +8,7 @@ description: "When an AI agent reads a record, sends an email, or moves money, w
 author: Vivek Mathew
 series: "Agents and architecture"
 figure: identity--two-bad-answers.svg
+image: /assets/og/agent-identity-and-least-privilege.png
 ---
 
 # Who Is the Agent, Really? Identity and Least Privilege for AI Agents
