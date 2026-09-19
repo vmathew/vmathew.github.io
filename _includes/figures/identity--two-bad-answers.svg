@@ -1,0 +1,26 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 356" width="800" height="356" role="img" aria-labelledby="identity-two-bad-answers-t identity-two-bad-answers-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="identity-two-bad-answers-t">The two identity designs that fail</title>
+  <desc id="identity-two-bad-answers-d">The super account runs every user request under one powerful service identity, so every user inherits its reach, the audit log names only the agent, and a prompt injection gains the whole account. The borrowed user has the agent use the person’s own credentials, so the log cannot separate agent from user, the credentials are handled by a system that reads untrusted text, and the user cannot limit what the agent does.</desc>
+  <rect width="800" height="356" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">The two bad answers</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Both are easy to build. Neither shows its failure until something has already gone wrong.</text>
+  <rect x="20" y="68" width="372" height="212" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="40" y="94" font-size="9.5" font-weight="700" fill="var(--fig-red, #c0392b)" letter-spacing="0.8">DESIGN 1</text>
+  <text x="40" y="119" font-size="15" font-weight="700" fill="var(--fig-ink, #1f2933)">The super account</text>
+  <text x="40" y="140" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">One powerful identity. Every request runs as it.</text>
+  <text x="46" y="168" font-size="11" fill="var(--fig-red, #c0392b)">&#183; Every user inherits the agent&#8217;s reach</text>
+  <text x="46" y="190" font-size="11" fill="var(--fig-red, #c0392b)">&#183; The log says the agent did everything</text>
+  <text x="46" y="212" font-size="11" fill="var(--fig-red, #c0392b)">&#183; One injection = the whole account</text>
+  <text x="40" y="256" font-size="10" fill="var(--fig-muted-2, #7a8896)">Blast radius: everything it can reach.</text>
+  <rect x="408" y="68" width="372" height="212" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="428" y="94" font-size="9.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" letter-spacing="0.8">DESIGN 2</text>
+  <text x="428" y="119" font-size="15" font-weight="700" fill="var(--fig-ink, #1f2933)">The borrowed user</text>
+  <text x="428" y="140" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">The agent uses the person&#8217;s own credentials.</text>
+  <text x="446" y="168" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">&#183; The log can&#8217;t tell agent from user</text>
+  <text x="446" y="187" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">&#183; Credentials held by something that</text>
+  <text x="456" y="206" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">reads untrusted text all day</text>
+  <text x="446" y="225" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">&#183; The user can&#8217;t scope it: all or nothing</text>
+  <text x="428" y="256" font-size="10" fill="var(--fig-muted-2, #7a8896)">Blast radius: the user, untraceably.</text>
+  <text x="400" y="312" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Both fail the same test.</text>
+  <text x="400" y="334" font-size="11.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Neither can answer &#8220;who did this, through what, with which permissions&#8221; with three separate answers.</text>
+</svg>
