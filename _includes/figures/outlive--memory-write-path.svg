@@ -1,0 +1,39 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="outlive-mem-t outlive-mem-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="outlive-mem-t">Shared agent memory: reads are open, writes go through a reviewed gate</title>
+  <desc id="outlive-mem-d">Agent sessions propose facts to a staging area. A curator, a person or a process with a person at the end, promotes them to the shared namespace, where every fact records who approved it and when and can be retracted. Every session reads the shared namespace. Without the gate, shared memory is a channel between users, an attack surface, and a source of truth with no owner.</desc>
+  <defs><marker id="outlive-mem-a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-muted, #5b6b7b)"/></marker><marker id="outlive-mem-b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--fig-blue, #2563eb)"/></marker></defs>
+  <rect width="800" height="330" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Reads are open. Writes go through a gate.</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The rule we already use for configuration, applied to what agents learn.</text>
+  <rect x="24" y="78" width="160" height="84" rx="10" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="104" y="104" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Agent sessions</text>
+  <text x="104" y="126" font-size="10" fill="var(--fig-muted, #5b6b7b)" text-anchor="middle">learn a fact</text>
+  <text x="104" y="140" font-size="10" fill="var(--fig-muted, #5b6b7b)" text-anchor="middle">while working</text>
+  <rect x="221" y="78" width="160" height="84" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="301" y="104" font-size="12.5" font-weight="700" fill="var(--fig-ink, #1f2933)" text-anchor="middle">Staging</text>
+  <text x="301" y="126" font-size="10" fill="var(--fig-muted, #5b6b7b)" text-anchor="middle">proposed, not yet</text>
+  <text x="301" y="140" font-size="10" fill="var(--fig-muted, #5b6b7b)" text-anchor="middle">trusted by anyone</text>
+  <rect x="418" y="78" width="160" height="84" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)" stroke-width="2"/>
+  <text x="498" y="104" font-size="12.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">Curator</text>
+  <text x="498" y="126" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">a person, or a process</text>
+  <text x="498" y="140" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">with a person at the end</text>
+  <rect x="616" y="78" width="160" height="84" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="696" y="104" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">Shared namespace</text>
+  <text x="696" y="126" font-size="10" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">approver and date on</text>
+  <text x="696" y="140" font-size="10" fill="var(--fig-green, #0f6f4f)" text-anchor="middle">every fact &#183; retractable</text>
+  <line x1="186" y1="120" x2="215" y2="120" stroke="var(--fig-muted, #5b6b7b)" stroke-width="1.6" marker-end="url(#outlive-mem-a)"/>
+  <line x1="383" y1="120" x2="412" y2="120" stroke="var(--fig-muted, #5b6b7b)" stroke-width="1.6" marker-end="url(#outlive-mem-a)"/>
+  <line x1="580" y1="120" x2="610" y2="120" stroke="var(--fig-muted, #5b6b7b)" stroke-width="1.6" marker-end="url(#outlive-mem-a)"/>
+  <path d="M696 164 V196 H104 V170" fill="none" stroke="var(--fig-blue, #2563eb)" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#outlive-mem-b)"/>
+  <text x="400" y="216" font-size="10.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">Every session reads the shared namespace</text>
+  <rect x="24" y="236" width="368" height="76" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="42" y="256" font-size="9" font-weight="700" fill="var(--fig-red, #c0392b)" letter-spacing="0.7">WITHOUT THE GATE</text>
+  <text x="42" y="274" font-size="10.5" fill="var(--fig-red, #c0392b)">A channel between users</text>
+  <text x="42" y="288" font-size="10.5" fill="var(--fig-red, #c0392b)">An attack surface for planted instructions</text>
+  <text x="42" y="302" font-size="10.5" fill="var(--fig-red, #c0392b)">A source of truth with no owner</text>
+  <rect x="408" y="236" width="368" height="76" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="426" y="256" font-size="9" font-weight="700" fill="var(--fig-green, #0f6f4f)" letter-spacing="0.7">WITH THE GATE</text>
+  <text x="426" y="274" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Every shared fact has an approver and a date</text>
+  <text x="426" y="288" font-size="10.5" fill="var(--fig-green, #0f6f4f)">A poisoned fact can be found and retracted</text>
+  <text x="426" y="302" font-size="10.5" fill="var(--fig-green, #0f6f4f)">Private memory never crosses without review</text>
+</svg>

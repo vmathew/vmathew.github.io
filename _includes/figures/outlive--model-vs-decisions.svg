@@ -1,0 +1,54 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 344" width="800" height="344" role="img" aria-labelledby="outlive-hero-t outlive-hero-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="outlive-hero-t">The model changes every quarter. Seven decisions underneath it do not</title>
+  <desc id="outlive-hero-d">A dashed box at the top is the model, swapped every quarter. Beneath it sit seven solid blocks: memory write path, knowledge base owner, guardrail false-positive budget, testing by property, trajectory tracing, the gateway boundary, and agent boundaries. Each is decided once and survives every model swap.</desc>
+  <rect width="800" height="344" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">What changes every quarter, and what doesn&#8217;t</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">Swap the model and everything underneath is still there. Get these wrong and every model inherits the mistake.</text>
+  <text x="24" y="82" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">CHANGES EVERY QUARTER</text>
+  <rect x="24" y="92" width="752" height="58" rx="10" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="44" y="117" font-size="13" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)">The model</text>
+  <text x="44" y="136" font-size="10.5" fill="var(--fig-amber-ink, #8a5a13)">Benchmarks move, a new one ships, every team asks whether to switch.</text>
+  <g opacity="0.45"><rect x="520" y="108" width="78" height="26" rx="13" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="559" y="125" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Q2 model</text></g>
+  <g opacity="1"><rect x="606" y="108" width="78" height="26" rx="13" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="645" y="125" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Q3 model</text></g>
+  <g opacity="0.45"><rect x="692" y="108" width="78" height="26" rx="13" fill="var(--fig-box, #ffffff)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="731" y="125" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Q4 model</text></g>
+  <text x="24" y="184" font-size="9" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">DECIDED ONCE &#183; STILL THERE AFTER EVERY SWAP</text>
+  <rect x="24.0" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="74.0" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">1</text>
+  <text x="74.0" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Memory</text>
+  <text x="74.0" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">write path</text>
+  <text x="74.0" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">reviewed writes</text>
+  <rect x="132.7" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="182.7" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">2</text>
+  <text x="182.7" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Knowledge</text>
+  <text x="182.7" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">base owner</text>
+  <text x="182.7" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">named owner</text>
+  <rect x="241.3" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="291.3" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">3</text>
+  <text x="291.3" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Guardrail</text>
+  <text x="291.3" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">FP budget</text>
+  <text x="291.3" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">measured tolerance</text>
+  <rect x="350.0" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="400.0" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">4</text>
+  <text x="400.0" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Testing by</text>
+  <text x="400.0" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">property</text>
+  <text x="400.0" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">suite before swap</text>
+  <rect x="458.7" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="508.7" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">5</text>
+  <text x="508.7" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Trajectory</text>
+  <text x="508.7" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">tracing</text>
+  <text x="508.7" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">one trace per task</text>
+  <rect x="567.3" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="617.3" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">6</text>
+  <text x="617.3" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">The</text>
+  <text x="617.3" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">gateway</text>
+  <text x="617.3" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">control boundary</text>
+  <rect x="676.0" y="194" width="100" height="96" rx="9" fill="var(--fig-blue-bg-2, #f3f7fd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="726.0" y="218" font-size="15" font-weight="700" fill="var(--fig-blue, #2563eb)" text-anchor="middle">7</text>
+  <text x="726.0" y="240" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">Agent</text>
+  <text x="726.0" y="254" font-size="11" font-weight="700" fill="var(--fig-blue-ink, #17315e)" text-anchor="middle">boundaries</text>
+  <text x="726.0" y="278" font-size="9.5" fill="var(--fig-blue-ink-2, #33507f)" text-anchor="middle">identity boundary</text>
+  <text x="400" y="324" font-size="11.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Each is usually decided by default, by whichever team got there first.</text>
+</svg>

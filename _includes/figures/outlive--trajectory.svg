@@ -1,0 +1,50 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 404" width="800" height="404" role="img" aria-labelledby="outlive-traj-t outlive-traj-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="outlive-traj-t">An agent trace is a tree spanning the whole task, not one model call</title>
+  <desc id="outlive-traj-d">One trace ID covers the task from user request to final action, with steps, tokens and spend summed on the root span. Child spans record each model decision, each tool call with its arguments, identity and policy check, a retrieval that surfaces a document past its review date, a guardrail block classified for the false-positive budget, and a memory write proposed to staging. The other decisions in the post become visible here.</desc>
+  <rect width="800" height="404" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">Trace the trajectory, not the call</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">One trace ID from request to final action, viewable as a tree by someone who wasn&#8217;t there.</text>
+  <g stroke="var(--fig-rule-2, #cfd8e3)" stroke-width="1.4" fill="none">
+    <path d="M40 102 V354"/>
+    <path d="M40 126 H56"/>
+    <path d="M40 164 H56"/>
+    <path d="M40 240 H56"/>
+    <path d="M40 278 H56"/>
+    <path d="M40 316 H56"/>
+    <path d="M40 354 H56"/>
+    <path d="M72 178 V202 H88"/>
+  </g>
+  <rect x="24" y="74" width="492" height="28" rx="7" fill="var(--fig-blue-bg, #e7edfd)" stroke="var(--fig-blue-line, #93b0f5)"/>
+  <text x="36" y="92" font-size="9.5" font-weight="700" fill="var(--fig-blue-ink, #17315e)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TASK</text>
+  <text x="96" y="92" font-size="11" font-weight="700" fill="var(--fig-ink, #1f2933)">user request &#8594; final action</text>
+  <text x="532" y="92" font-size="10" fill="var(--fig-blue-ink-2, #33507f)">&#931; steps &#183; &#931; tokens &#183; &#931; spend on the root</text>
+  <rect x="56" y="112" width="460" height="28" rx="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="68" y="130" font-size="9.5" font-weight="700" fill="var(--fig-muted, #5b6b7b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">MODEL</text>
+  <text x="128" y="130" font-size="11" fill="var(--fig-ink, #1f2933)">decides to call search_policy</text>
+  <text x="532" y="130" font-size="10" fill="var(--fig-muted-2, #7a8896)">context or pointer &#183; decision &#183; reason</text>
+  <rect x="56" y="150" width="460" height="28" rx="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="68" y="168" font-size="9.5" font-weight="700" fill="var(--fig-muted, #5b6b7b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TOOL</text>
+  <text x="128" y="168" font-size="11" fill="var(--fig-ink, #1f2933)">search_policy(query)</text>
+  <text x="532" y="168" font-size="10" fill="var(--fig-muted-2, #7a8896)">args &#183; result size &#183; identity &#183; policy check</text>
+  <rect x="88" y="188" width="428" height="28" rx="7" fill="var(--fig-amber-bg, #fdf3e0)" stroke="var(--fig-amber-line, #e8cc9a)"/>
+  <text x="100" y="206" font-size="9.5" font-weight="700" fill="var(--fig-amber-ink, #8a5a13)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">DOC</text>
+  <text x="160" y="206" font-size="11" fill="var(--fig-amber-ink, #8a5a13)">travel-policy-2023.pdf &#183; review date past due</text>
+  <text x="532" y="206" font-size="10" fill="var(--fig-amber-ink, #8a5a13)">decision 2: the stale document is visible</text>
+  <rect x="56" y="226" width="460" height="28" rx="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="68" y="244" font-size="9.5" font-weight="700" fill="var(--fig-muted, #5b6b7b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">MODEL</text>
+  <text x="128" y="244" font-size="11" fill="var(--fig-ink, #1f2933)">decides to call update_ticket</text>
+  <text x="532" y="244" font-size="10" fill="var(--fig-muted-2, #7a8896)">the why lives between spans, not in one</text>
+  <rect x="56" y="264" width="460" height="28" rx="7" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <text x="68" y="282" font-size="9.5" font-weight="700" fill="var(--fig-red, #c0392b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">GUARD</text>
+  <text x="128" y="282" font-size="11" fill="var(--fig-red, #c0392b)">blocked &#183; sampled and classified</text>
+  <text x="532" y="282" font-size="10" fill="var(--fig-red, #c0392b)">decision 3: counts against the FP budget</text>
+  <rect x="56" y="302" width="460" height="28" rx="7" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <text x="68" y="320" font-size="9.5" font-weight="700" fill="var(--fig-green, #0f6f4f)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">MEMORY</text>
+  <text x="128" y="320" font-size="11" fill="var(--fig-green, #0f6f4f)">fact proposed to staging</text>
+  <text x="532" y="320" font-size="10" fill="var(--fig-green, #0f6f4f)">decision 1: the write is a span</text>
+  <rect x="56" y="340" width="460" height="28" rx="7" fill="var(--fig-box, #ffffff)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="68" y="358" font-size="9.5" font-weight="700" fill="var(--fig-muted, #5b6b7b)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">ACTION</text>
+  <text x="128" y="358" font-size="11" fill="var(--fig-ink, #1f2933)">final answer and ticket update</text>
+  <text x="532" y="358" font-size="10" fill="var(--fig-muted-2, #7a8896)">ran as agent Y, on behalf of user X</text>
+  <text x="400" y="392" font-size="11.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">Memory writes, stale retrievals and guardrail blocks all land here. The trajectory is where the other six get audited.</text>
+</svg>
