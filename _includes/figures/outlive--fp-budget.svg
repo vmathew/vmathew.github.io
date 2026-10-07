@@ -1,0 +1,41 @@
+<svg class="fig-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 344" width="800" height="344" role="img" aria-labelledby="outlive-fp-t outlive-fp-d" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="outlive-fp-t">A guardrail gets a false-positive budget, like a service gets an error budget</title>
+  <desc id="outlive-fp-d">Step one: sample blocked prompts per use case and classify them as correctly blocked, incorrectly blocked, or ambiguous. Step two: compare each use case&#8217;s incorrect-block rate to a tolerance, for example two percent. Use case A is within budget; use case B is over. Step three: when a use case goes over budget, tune the guardrail for that use case so the control stays mandatory. Do not exempt the use case, which is how a mandatory control becomes optional.</desc>
+  <rect width="800" height="344" fill="var(--fig-bg, #ffffff)"/>
+  <text x="24" y="28" font-size="17" font-weight="700" fill="var(--fig-ink, #1f2933)">A guardrail gets a false-positive budget</text>
+  <text x="24" y="48" font-size="12.5" fill="var(--fig-muted, #5b6b7b)">The same idea as an error budget: measure what the control costs, so nobody has to argue for removing it.</text>
+  <rect x="24" y="70" width="360" height="124" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="44" y="92" font-size="9" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">1 &#183; SAMPLE AND CLASSIFY</text>
+  <text x="44" y="112" font-size="10.5" fill="var(--fig-muted, #5b6b7b)">Blocked prompts, per use case, under access controls</text>
+  <rect x="44" y="126" width="230" height="22" rx="4" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)"/>
+  <rect x="276" y="126" width="34" height="22" rx="4" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <rect x="312" y="126" width="52" height="22" rx="4" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="44" y="164" width="10" height="10" rx="2" fill="var(--fig-green-line, #9fd8bf)"/>
+  <text x="59" y="173" font-size="10" fill="var(--fig-green, #0f6f4f)">correctly blocked</text>
+  <rect x="166" y="164" width="10" height="10" rx="2" fill="var(--fig-red-line, #eab5ae)"/>
+  <text x="181" y="173" font-size="10" fill="var(--fig-red, #c0392b)">incorrectly blocked</text>
+  <rect x="296" y="164" width="10" height="10" rx="2" fill="var(--fig-rule-2, #cfd8e3)"/>
+  <text x="311" y="173" font-size="10" fill="var(--fig-muted, #5b6b7b)">ambiguous</text>
+  <rect x="416" y="70" width="360" height="124" rx="10" fill="var(--fig-panel, #f8f9fa)" stroke="var(--fig-rule, #dde4ec)"/>
+  <text x="436" y="92" font-size="9" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">2 &#183; COMPARE TO THE TOLERANCE</text>
+  <text x="436" y="119" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Use case A</text>
+  <rect x="520" y="110" width="190" height="11" rx="5.5" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="520" y="110" width="57" height="11" rx="5.5" fill="var(--fig-green-line, #9fd8bf)"/>
+  <text x="720" y="119" font-size="10" font-weight="700" fill="var(--fig-green, #0f6f4f)">within</text>
+  <text x="436" y="149" font-size="10.5" font-weight="700" fill="var(--fig-ink, #1f2933)">Use case B</text>
+  <rect x="520" y="140" width="190" height="11" rx="5.5" fill="var(--fig-panel-3, #eef2f7)" stroke="var(--fig-rule-2, #cfd8e3)"/>
+  <rect x="520" y="140" width="152" height="11" rx="5.5" fill="var(--fig-red-line, #eab5ae)"/>
+  <text x="720" y="149" font-size="10" font-weight="700" fill="var(--fig-red, #c0392b)">over</text>
+  <line x1="615" y1="102" x2="615" y2="160" stroke="var(--fig-amber, #b7791f)" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="615" y="178" font-size="10" fill="var(--fig-amber-ink, #8a5a13)" text-anchor="middle">tolerance, say 2% incorrect</text>
+  <text x="24" y="222" font-size="9" font-weight="700" fill="var(--fig-muted-2, #7a8896)" letter-spacing="0.7">3 &#183; WHEN A USE CASE GOES OVER BUDGET</text>
+  <rect x="24" y="232" width="368" height="70" rx="10" fill="var(--fig-green-bg, #e3f5ec)" stroke="var(--fig-green-line, #9fd8bf)" stroke-width="2"/>
+  <path d="M44 258 l5 6 l10 -12" stroke="var(--fig-green, #0f6f4f)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="68" y="262" font-size="12.5" font-weight="700" fill="var(--fig-green, #0f6f4f)">Tune the guardrail for that use case</text>
+  <text x="68" y="284" font-size="10.5" fill="var(--fig-green, #0f6f4f)">The control stays mandatory, and gets cheaper to live with.</text>
+  <rect x="408" y="232" width="368" height="70" rx="10" fill="var(--fig-red-bg, #fdeceb)" stroke="var(--fig-red-line, #eab5ae)"/>
+  <path d="M429 252 l10 10 M439 252 l-10 10" stroke="var(--fig-red, #c0392b)" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="452" y="262" font-size="12.5" font-weight="700" fill="var(--fig-red, #c0392b)">Exempt the use case from it</text>
+  <text x="452" y="284" font-size="10.5" fill="var(--fig-red, #c0392b)">How a mandatory control becomes optional.</text>
+  <text x="400" y="328" font-size="11.5" fill="var(--fig-muted-2, #7a8896)" text-anchor="middle">A control nobody measures the cost of is a control somebody will eventually remove.</text>
+</svg>

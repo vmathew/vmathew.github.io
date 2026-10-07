@@ -50,6 +50,11 @@ The decision is to treat a knowledge base as a system of record from day one. It
 
 ## 3. Guardrails have a false-positive budget
 
+<figure class="fig">
+{% include figures/outlive--fp-budget.svg %}
+<figcaption>Tune the guardrail, not the exemption list.</figcaption>
+</figure>
+
 A guardrail that blocks a harmful prompt is doing its job. A guardrail that blocks a legitimate one is also doing its job, from the guardrail's point of view, and that's the problem. Every false positive is a cost: an engineer's time, a user's trust, and most dangerously, an incentive to route around the guardrail. The team that gets blocked three times on reasonable requests is the team that asks for an exemption, and exemptions are how a mandatory control becomes optional.
 
 The decision is to give the guardrail a false-positive budget the way you give a service an error budget. Measure the block rate per use case, sample blocked prompts (with the right access controls, since they're prompts), and classify them: correctly blocked, incorrectly blocked, ambiguous. Set a tolerance, say two percent incorrect blocks, and when a use case exceeds it, the response is to tune the guardrail for that use case, not to exempt the use case from the guardrail. The [guardrails post]({% post_url 2024-10-01-guardrail-enforcement-must-live-in-your-scps %}) argued enforcement must be mandatory; this is how mandatory stays tolerable. A control nobody measures the cost of is a control somebody will eventually remove.
