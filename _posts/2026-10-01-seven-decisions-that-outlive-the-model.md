@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seven Architecture Decisions That Outlive the Model"
-date: 2026-10-07
+date: 2026-10-01
 categories: [AI, Architecture]
 tags: [AI Agents, Enterprise AI, Platform Engineering, AI Governance, Agent Memory, Knowledge Bases, Guardrails, Evaluation, Observability, AI Gateway, Multi-Agent]
 description: "Models change every quarter. These seven decisions don't: who may write to shared agent memory, who owns the knowledge base, how many false positives a guardrail is allowed, how you test something that never gives the same answer twice, how you trace an agent's whole trajectory, whether to build or buy the gateway, and when an agent should call another agent."
